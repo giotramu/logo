@@ -1,0 +1,69 @@
+{
+  "name": "@giotramu/logo",
+  "version": "0.0.1",
+  "description": "giotramu's logo transformed in web-components",
+  "author": "giotramu <https://twitter.com/giotramu>",
+  "homepage": "https://github.com/giotramu/logo#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/giotramu/logo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/giotramu/logo/issues"
+  },
+  "engines": {
+    "node": ">=10.18",
+    "npm": ">=6.13"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/components.d.ts",
+  "unpkg": "dist/giotramu-logo/giotramu-logo.js",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "check:src": "tsc --noEmit",
+    "lint:css": "stylelint ./src/components/**/*.css",
+    "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint": "run-p -clns check:src lint:src",
+    "test:watch": "stencil test --spec --e2e --watchAll",
+    "test": "stencil test --spec --e2e --coverage",
+    "start": "stencil build --dev --watch --serve",
+    "build": "stencil build --docs",
+    "generate": "stencil generate"
+  },
+  "devDependencies": {
+    "@giotramu/stylelint-config": "2.2.2",
+    "@stencil/core": "1.8.8",
+    "@types/jest": "24.0.25",
+    "@types/puppeteer": "1.19.0",
+    "eslint": "6.8.0",
+    "eslint-config-contactlab": "4.2.2",
+    "eslint-config-prettier": "6.10.1",
+    "eslint-plugin-react": "7.19.0",
+    "husky": "4.2.3",
+    "jest": "24.9.0",
+    "jest-cli": "24.9.0",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.0.2",
+    "pretty-quick": "2.0.1",
+    "puppeteer": "1.19.0",
+    "stylelint": "13.2.1"
+  },
+  "keywords": [
+    "custom-elements",
+    "web-components",
+    "stencil-js",
+    "giotramu"
+  ]
+}
