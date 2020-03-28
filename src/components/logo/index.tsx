@@ -1,30 +1,29 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Component, Prop, h } from "@stencil/core";
 import {LogoSize, LogoStyle} from '../../typings/props';
-import {handleSize, pxUnit} from '../../utils/helpers';
+import {handleSize} from '../../utils/helpers';
 
 @Component({
   shadow: true,
   tag: "giotramu-logo",
-  styleUrl: "./style.css"
+  styleUrl: "./styles.css"
 })
 export class Logo {
   @Prop() size?: LogoSize;
   @Prop() fillColor?: LogoStyle;
 
   render(): Element {
-    const width = pxUnit(this.getSize());
+    const width = this.getSize();
 
     return (
-      <div class="logo" style={{ width }}>
-        <giotramu-monogram size="100%" fillColor={this.fillColor} />
-        <giotramu-logotype size="100%" fillColor={this.fillColor} />
+      <div class="logo" style={{ width }} data-width-e2e={width}>
+        <giotramu-monogram class="monogram" fill-color={this.fillColor} />
+        <giotramu-logotype class="logotype" fill-color={this.fillColor} />
       </div>
     );
   }
 
   private getSize(): string {
-    const defaultSize = 600;
-    return handleSize({size: this.size, defaultSize});
+    return handleSize(this.size);
   }
 }

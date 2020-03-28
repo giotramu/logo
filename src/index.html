@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>[DEMO] giotramu-logo</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>[DEMO] giotramu-logo</title>
 
-  <script type="module" src="/build/giotramu-logo.esm.js"></script>
-  <script nomodule src="/build/giotramu-logo.js"></script>
+    <!-- demo styles -->
+    <style>
+      html {
+        box-sizing: border-box;
+      }
 
-  <script type="module" src="/build/giotramu-monogram.esm.js"></script>
-  <script nomodule src="/build/giotramu-monogram.js"></script>
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+      }
 
-  <script type="module" src="/build/giotramu-logotype.esm.js"></script>
-  <script nomodule src="/build/giotramu-logotype.js"></script>
-</head>
-<body>
+      .preview {
+        display: flex;
+        height: calc(100vh / 3);
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
 
-  <div>
-    <giotramu-logo size="150" fill-color="digital"></giotramu-logo>
-  </div>
+    <script type="module" src="/build/giotramu-logo.esm.js"></script>
+    <script nomodule src="/build/giotramu-logo.js"></script>
 
-  <div>
-    <giotramu-monogram fill-color="digital"></giotramu-monogram>
-  </div>
+    <script type="module" src="/build/giotramu-monogram.esm.js"></script>
+    <script nomodule src="/build/giotramu-monogram.js"></script>
 
-  <div>
-    <giotramu-logotype  fill-color="gray"></giotramu-logotype>
-  </div>
+    <script type="module" src="/build/giotramu-logotype.esm.js"></script>
+    <script nomodule src="/build/giotramu-logotype.js"></script>
+  </head>
+  <body>
+    <section class="preview">
+      <giotramu-logo size="350px" fill-color="dark"></giotramu-logo>
+    </section>
 
-</body>
+    <section class="preview">
+      <giotramu-monogram size="100px" fill-color="dark"></giotramu-monogram>
+    </section>
+
+    <section class="preview">
+      <giotramu-logotype size="200px" fill-color="dark"></giotramu-logotype>
+    </section>
+  </body>
 </html>

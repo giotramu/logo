@@ -5,31 +5,27 @@ describe('giotramu-logotype', () => {
     const page = await newE2EPage();
 
     await page.setContent('<giotramu-logotype></giotramu-logotype>');
-
     const element = await page.find('giotramu-logotype');
-
     expect(element).toHaveClass('hydrated');
   });
 
-  it('renders changes to the wrapper styles', async () => {
+  it('reflects changes to the component attributes', async () => {
     const page = await newE2EPage();
 
     await page.setContent('<giotramu-logotype></giotramu-logotype>');
 
     const component = await page.find('giotramu-logotype');
-    const wrapper = await page.find('giotramu-logotype >>> .wrapper');
+    const wrp = await page.find('giotramu-logotype >>> .wrapper');
+    const svg = await page.find('giotramu-logotype >>> .vector');
 
-    const styles = await wrapper.getComputedStyle();
-    expect(styles.width).toEqual('150px');
-    expect(styles.fill).toEqual('rgb(0, 0, 0)');
+    expect(wrp.getAttribute('data-width-e2e')).toBe('100%');
+    expect(svg.getAttribute('fill')).toBe('#000');
 
-    component.setProperty('size', '480');
+    component.setProperty('size', '480px');
     component.setProperty('fillColor', 'digital');
-
     await page.waitForChanges();
 
-    const freshStyles = await wrapper.getComputedStyle();
-    expect(freshStyles.width).toEqual('480px');
-    expect(freshStyles.fill).toEqual('rgb(12, 87, 251)');
+    expect(wrp.getAttribute('data-width-e2e')).toBe('480px');
+    expect(svg.getAttribute('fill')).toBe('#0C57FB');
   });
 });

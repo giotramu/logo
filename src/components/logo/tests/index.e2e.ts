@@ -1,32 +1,34 @@
-// import { newE2EPage } from '@stencil/core/testing';
+import {newE2EPage} from '@stencil/core/testing';
 
-// describe('my-component', () => {
-//   it('renders', async () => {
-//     const page = await newE2EPage();
+describe('giotramu-logo', () => {
+  it('renders', async () => {
+    const page = await newE2EPage();
 
-//     await page.setContent('<my-component></my-component>');
-//     const element = await page.find('my-component');
-//     expect(element).toHaveClass('hydrated');
-//   });
+    await page.setContent('<giotramu-logo></giotramu-logo>');
+    const element = await page.find('giotramu-logo');
+    expect(element).toHaveClass('hydrated');
+  });
 
-//   it('renders changes to the name data', async () => {
-//     const page = await newE2EPage();
+  // it('reflects changes to the component attributes', async () => {
+  //   const page = await newE2EPage();
 
-//     await page.setContent('<my-component></my-component>');
-//     const component = await page.find('my-component');
-//     const element = await page.find('my-component >>> div');
-//     expect(element.textContent).toEqual(`Hello, World! I'm `);
+  //   await page.setContent('<giotramu-logo></giotramu-logo>');
 
-//     component.setProperty('first', 'James');
-//     await page.waitForChanges();
-//     expect(element.textContent).toEqual(`Hello, World! I'm James`);
+  //   const component = await page.find('giotramu-logo');
+  //   const wrp = await page.find('giotramu-logo >>> .logo');
+  //   const monogram = await page.find('giotramu-logo >>> .monogram');
+  //   const logotype = await page.find('giotramu-logo >>> .logotype');
 
-//     component.setProperty('last', 'Quincy');
-//     await page.waitForChanges();
-//     expect(element.textContent).toEqual(`Hello, World! I'm James Quincy`);
+  //   expect(wrp.getAttribute('data-width-e2e')).toBe('100%');
+  //   expect(monogram.getAttribute('fill-color')).toBe('#000');
+  //   expect(logotype.getAttribute('fill-color')).toBe('#000');
 
-//     component.setProperty('middle', 'Earl');
-//     await page.waitForChanges();
-//     expect(element.textContent).toEqual(`Hello, World! I'm James Earl Quincy`);
-//   });
-// });
+  //   component.setProperty('size', '480px');
+  //   component.setProperty('fill-color', 'digital');
+  //   await page.waitForChanges();
+
+  //   expect(wrp.getAttribute('data-width-e2e')).toBe('480px');
+  //   expect(monogram.getAttribute('fill-color')).toBe('#0C57FB');
+  //   expect(logotype.getAttribute('fill-color')).toBe('#0C57FB');
+  // });
+});

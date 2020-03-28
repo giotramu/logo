@@ -1,17 +1,12 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Component, Prop, h} from '@stencil/core';
 import {LogoSize, LogoStyle} from '../../typings/props';
-import {
-  pxUnit,
-  handleColor,
-  handleSize,
-  calcPadding,
-} from '../../utils/helpers';
+import {calcPercentage, handleColor, handleSize} from '../../utils/helpers';
 
 @Component({
   shadow: true,
   tag: 'giotramu-logotype',
-  styleUrl: './style.css',
+  styleUrl: './styles.css',
 })
 export class Logotype {
   @Prop() size?: LogoSize;
@@ -19,22 +14,23 @@ export class Logotype {
 
   render(): SVGElement {
     const fill = this.getFillColor();
-    const width = pxUnit(this.getSize());
-    const paddingBottom = pxUnit(calcPadding({width: 604, height: 204}));
+    const width = this.getSize();
+    const paddingBottom = calcPercentage({width: 604, height: 204});
 
     return (
-      <div style={{width, fill}} class="wrapper">
+      <div style={{width}} data-width-e2e={width} class="wrapper">
         <svg
+          fill={fill}
           class="vector"
-          width="100%"
+          preserveAspectRatio="xMidYMin slice"
           viewBox="0 0 604 204"
           style={{
             paddingBottom,
           }}
-          preserveAspectRatio="xMidYMin slice"
           xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
         >
-          <g data-key="giovanni" fill="inherit">
+          <g data-key="giovanni">
             <path
               data-key="g"
               d="M52.64 102.96C37.7067 102.96 25.2933 98.2 15.4 88.68C5.41335 78.9733 0.420013 66.7467 0.420013 52C0.420013 37.0667 5.41335 24.84 15.4 15.32C25.2933 5.79999 37.94 1.03999 53.34 1.03999C64.6333 1.03999 74.4334 3.51333 82.74 8.46V28.34C73.6867 22.74 64.3533 19.94 54.74 19.94C44.7533 19.94 36.6334 22.9267 30.38 28.9C24.1267 34.78 21 42.62 21 52.42C21 62.1267 24.0333 69.8733 30.1 75.66C36.1667 81.4467 43.68 84.34 52.64 84.34C61.2267 84.34 67.8067 82.1933 72.38 77.9V44.16H92.54V87.42C88.34 91.9 82.74 95.5867 75.74 98.48C68.46 101.467 60.76 102.96 52.64 102.96Z"
@@ -69,7 +65,7 @@ export class Logotype {
             />
           </g>
 
-          <g data-key="tramutola" fill="inherit">
+          <g data-key="tramutola">
             <path
               data-key="t"
               d="M45.12 202H36.24V126.04H7.32001V118H74.4V126.04H45.12V202Z"
@@ -113,8 +109,7 @@ export class Logotype {
   }
 
   private getSize(): string {
-    const defaultSize = 150;
-    return handleSize({size: this.size, defaultSize});
+    return handleSize(this.size);
   }
 
   private getFillColor(): string {
