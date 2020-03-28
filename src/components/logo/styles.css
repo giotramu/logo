@@ -1,0 +1,16 @@
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 0;
+}
+
+.logo giotramu-monogram {
+  width: 30%;
+  margin-right: 1em;
+}
+
+.logo giotramu-logotype {
+  width: 70%;
+}
