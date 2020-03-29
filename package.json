@@ -36,11 +36,10 @@
     "lint:css": "stylelint ./src/components/**/*.css",
     "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "lint": "run-p -clns check:src lint:src",
-    "test:watch": "stencil test --spec --e2e --watchAll",
     "test": "stencil test --spec --e2e --coverage",
+    "test:watch": "stencil test --spec --e2e --watchAll",
     "start": "stencil build --dev --watch --serve",
-    "build": "stencil build --docs",
-    "generate": "stencil generate"
+    "build": "stencil build --docs"
   },
   "devDependencies": {
     "@giotramu/stylelint-config": "2.2.2",

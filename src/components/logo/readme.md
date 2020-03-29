@@ -7,10 +7,11 @@
 
 ## Properties
 
-| Property    | Attribute    | Description | Type                                                 | Default     |
-| ----------- | ------------ | ----------- | ---------------------------------------------------- | ----------- |
-| `fillColor` | `fill-color` |             | `"dark" \| "digital" \| "gray" \| "light" \| "none"` | `undefined` |
-| `size`      | `size`       |             | `string`                                             | `undefined` |
+| Property    | Attribute    | Description | Type                                                   | Default     |
+| ----------- | ------------ | ----------- | ------------------------------------------------------ | ----------- |
+| `column`    | `column`     |             | `boolean`                                              | `false`     |
+| `fillColor` | `fill-color` |             | `"dark" \| "digital" \| "light" \| "none" \| "silver"` | `undefined` |
+| `size`      | `size`       |             | `string`                                               | `undefined` |
 
 
 ## Dependencies
