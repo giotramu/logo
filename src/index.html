@@ -9,48 +9,140 @@
     <title>[DEMO] giotramu-logo</title>
 
     <!-- demo styles -->
+    <link rel="stylesheet" href="https://unpkg.com/sanitize.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sanitize.css/typography.css"
+    />
     <style>
-      html {
-        box-sizing: border-box;
+      :root {
+        --digital-color: #0C57FB;
+        --silver-color: #D3DDE6;
+        --dark-color: #1D2B3B;
+        --light-color: #FFF;
       }
 
-      *,
-      *::before,
-      *::after {
-        box-sizing: inherit;
+      .showcase {
+        padding: 4.8rem 0;
+        position: relative;
+      }
+
+      .showcase > h1 {
+        position: absolute;
+        top: 0;
+        left: 2.4rem;
+        opacity: 0.2;
+        white-space: nowrap;
+      }
+
+      .showcase > ul {
         margin: 0;
         padding: 0;
+        list-style: none;
       }
 
-      .preview {
+      .showcase > ul > li {
         display: flex;
-        height: calc(100vh / 3);
-        padding: 1rem;
+        padding: 2.4rem;
         align-items: center;
         justify-content: center;
+      }
+
+      .showcase--logo-row {
+        color: var(--light-color);
+        background-color: var(--digital-color);
+      }
+
+      .showcase--logo-column {
+        color: var(--dark-color);
+        background-color: var(--silver-color);
+      }
+
+      .showcase--monogram {
+        color: var(--dark-color);
+        background-color: var(--light-color);;
+      }
+
+      .showcase--logotype {
+        color: var(--light-color);;
+        background-color: var(--dark-color);
       }
     </style>
 
     <script type="module" src="/build/giotramu-logo.esm.js"></script>
     <script nomodule src="/build/giotramu-logo.js"></script>
-
-    <script type="module" src="/build/giotramu-monogram.esm.js"></script>
-    <script nomodule src="/build/giotramu-monogram.js"></script>
-
-    <script type="module" src="/build/giotramu-logotype.esm.js"></script>
-    <script nomodule src="/build/giotramu-logotype.js"></script>
   </head>
   <body>
-    <section class="preview">
-      <giotramu-logo size="350px" fill-color="dark"></giotramu-logo>
+    <section class="showcase showcase--logo-row">
+      <h1>Logo (row)</h1>
+      <ul>
+        <li>
+          <giotramu-logo size="100px" fill-color="light"></giotramu-logo>
+        </li>
+        <li>
+          <giotramu-logo size="150px" fill-color="light"></giotramu-logo>
+        </li>
+        <li>
+          <giotramu-logo size="300px" fill-color="light"></giotramu-logo>
+        </li>
+      </ul>
     </section>
 
-    <section class="preview">
-      <giotramu-monogram size="100px" fill-color="dark"></giotramu-monogram>
+    <section class="showcase showcase--logo-column">
+      <h1>Logo (column)</h1>
+      <ul>
+        <li>
+          <giotramu-logo
+            size="100px"
+            fill-color="digital"
+            column
+          ></giotramu-logo>
+        </li>
+        <li>
+          <giotramu-logo
+            size="150px"
+            fill-color="digital"
+            column
+          ></giotramu-logo>
+        </li>
+        <li>
+          <giotramu-logo
+            size="300px"
+            fill-color="digital"
+            column
+          ></giotramu-logo>
+        </li>
+      </ul>
     </section>
 
-    <section class="preview">
-      <giotramu-logotype size="200px" fill-color="dark"></giotramu-logotype>
+    <section class="showcase showcase--monogram">
+      <h1>Monogram</h1>
+      <ul>
+        <li>
+          <giotramu-monogram size="100px" fill-color="dark"></giotramu-monogram>
+        </li>
+        <li>
+          <giotramu-monogram size="150px" fill-color="dark"></giotramu-monogram>
+        </li>
+      </ul>
+    </section>
+
+    <section class="showcase showcase--logotype">
+      <h1>Logotype</h1>
+      <ul>
+        <li>
+          <giotramu-logotype
+            size="100px"
+            fill-color="light"
+          ></giotramu-logotype>
+        </li>
+        <li>
+          <giotramu-logotype
+            size="150px"
+            fill-color="light"
+          ></giotramu-logotype>
+        </li>
+      </ul>
     </section>
   </body>
 </html>

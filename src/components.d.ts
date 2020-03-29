@@ -14,16 +14,17 @@ import {
 
 export namespace Components {
   interface GiotramuLogo {
-    'fillColor'?: LogoStyle;
-    'size'?: LogoSize;
+    'column': boolean;
+    'fillColor': LogoStyle;
+    'size': LogoSize;
   }
   interface GiotramuLogotype {
     'fillColor': LogoStyle;
-    'size'?: LogoSize;
+    'size': LogoSize;
   }
   interface GiotramuMonogram {
     'fillColor': LogoStyle;
-    'size'?: LogoSize;
+    'size': LogoSize;
   }
 }
 
@@ -56,6 +57,7 @@ declare global {
 
 declare namespace LocalJSX {
   interface GiotramuLogo {
+    'column'?: boolean;
     'fillColor'?: LogoStyle;
     'size'?: LogoSize;
   }

@@ -9,7 +9,7 @@ import {calcPercentage, handleColor, handleSize} from '../../utils/helpers';
   styleUrl: './styles.css',
 })
 export class Monogram {
-  @Prop() size?: LogoSize;
+  @Prop() size: LogoSize;
   @Prop() fillColor: LogoStyle;
 
   render(): SVGElement {
@@ -18,10 +18,10 @@ export class Monogram {
     const paddingBottom = calcPercentage({width: 265, height: 315});
 
     return (
-      <div style={{width}} data-width-e2e={width} class="wrapper">
+      <div class="wrapper" style={{width}} e2e-width={width} >
         <svg
-          fill={fill}
           class="vector"
+          fill={fill}
           preserveAspectRatio="xMidYMin slice"
           viewBox="0 0 265 315"
           style={{

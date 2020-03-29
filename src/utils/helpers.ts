@@ -5,7 +5,7 @@ export function handleColor(color: LogoStyle): LogoColor {
   switch (color) {
     case 'digital':
       return '#0C57FB';
-    case 'gray':
+    case 'silver':
       return '#D3DDE6';
     case 'light':
       return '#FFF';

@@ -9,7 +9,7 @@ import {calcPercentage, handleColor, handleSize} from '../../utils/helpers';
   styleUrl: './styles.css',
 })
 export class Logotype {
-  @Prop() size?: LogoSize;
+  @Prop() size: LogoSize;
   @Prop() fillColor: LogoStyle;
 
   render(): SVGElement {
@@ -18,7 +18,7 @@ export class Logotype {
     const paddingBottom = calcPercentage({width: 604, height: 204});
 
     return (
-      <div style={{width}} data-width-e2e={width} class="wrapper">
+      <div class="wrapper" style={{width}} e2e-width={width}>
         <svg
           fill={fill}
           class="vector"

@@ -10,8 +10,7 @@
 | Property    | Attribute    | Description | Type                                                 | Default     |
 | ----------- | ------------ | ----------- | ---------------------------------------------------- | ----------- |
 | `fillColor` | `fill-color` |             | `"dark" \| "digital" \| "gray" \| "light" \| "none"` | `undefined` |
-| `height`    | `height`     |             | `string`                                             | `undefined` |
-| `width`     | `width`      |             | `string`                                             | `undefined` |
+| `size`      | `size`       |             | `string`                                             | `undefined` |
 
 
 ## Dependencies

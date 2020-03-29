@@ -9,7 +9,7 @@ describe('giotramu-logotype', () => {
     expect(element).toHaveClass('hydrated');
   });
 
-  it('reflects changes to the component attributes', async () => {
+  it('reflects changes to the attributes', async () => {
     const page = await newE2EPage();
 
     await page.setContent('<giotramu-logotype></giotramu-logotype>');
@@ -18,14 +18,14 @@ describe('giotramu-logotype', () => {
     const wrp = await page.find('giotramu-logotype >>> .wrapper');
     const svg = await page.find('giotramu-logotype >>> .vector');
 
-    expect(wrp.getAttribute('data-width-e2e')).toBe('100%');
+    expect(wrp.getAttribute('e2e-width')).toBe('100%');
     expect(svg.getAttribute('fill')).toBe('#000');
 
     component.setProperty('size', '480px');
     component.setProperty('fillColor', 'digital');
     await page.waitForChanges();
 
-    expect(wrp.getAttribute('data-width-e2e')).toBe('480px');
+    expect(wrp.getAttribute('e2e-width')).toBe('480px');
     expect(svg.getAttribute('fill')).toBe('#0C57FB');
   });
 });
