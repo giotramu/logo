@@ -1,8 +1,7 @@
-# My logo
+# Logo
 
-Personal logo transformed in web component.
+Personal logo transformed in web-components.
 
-[![npm package][npm-badge]][npm]
 [![build status][ci-badge]][ci]
 [![code coverage][coverage-badge]][coverage]
 [![dependencies][deps-badge]][deps]
@@ -20,12 +19,10 @@ Personal logo transformed in web component.
   L I N K S
 -->
 
-[npm]: https://www.npmjs.com/package/@giotramu/logo
-[npm-badge]: https://flat.badgen.net/npm/v/@giotramu/logo?icon=npm&label=npm%20package
-[ci]: https://circleci.com/gh/giotramu/logo
-[ci-badge]: https://flat.badgen.net/circleci/github/giotramu/logo?icon=circleci&label=build
+[ci]: https://github.com/giotramu/logo/actions
+[ci-badge]: https://img.shields.io/github/workflow/status/giotramu/logo/build/master?logo=github&style=flat-square
 [coverage]: https://codecov.io/gh/giotramu/logo
-[coverage-badge]: https://flat.badgen.net/codecov/c/github/giotramu/logo?icon=codecov&label=coverage
+[coverage-badge]: https://img.shields.io/codecov/c/github/giotramu/logo/master?logo=codecov&style=flat-square
 [deps]: https://david-dm.org/giotramu/logo
 [deps-badge]: https://flat.badgen.net/david/dep/giotramu/logo
 [devdeps]: https://david-dm.org/giotramu/logo?type=dev

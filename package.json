@@ -32,10 +32,10 @@
     "loader/"
   ],
   "scripts": {
-    "check:src": "tsc --noEmit",
+    "tsc:src": "tsc --noEmit",
     "lint:css": "stylelint ./src/components/**/*.css",
     "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "lint": "run-p -clns check:src lint:src",
+    "lint": "run-p -clns lint:**",
     "test": "stencil test --spec --e2e --coverage",
     "test:watch": "stencil test --spec --e2e --watchAll",
     "start": "stencil build --dev --watch --serve",

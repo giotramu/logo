@@ -1,0 +1,50 @@
+name: Logo Continuous Integration
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test_and_build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v2
+
+      - name: 'Setup Node.js ${{ matrix.node-version }}'
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: 'Install dependencies'
+        run: npm ci
+
+      - name: 'Run TypeScript compiler, ESLint and Stylelint'
+        run: |
+          npm run check:src --if-present
+          npm run lint --if-present
+
+      - name: 'Run unit and E2E tests'
+        run: npm run test
+        env:
+          CI: true
+
+      - name: 'Upload test coverage to Codecov'
+        uses: codecov/codecov-action@v1
+        with:
+          name: codecov-umbrella
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage/clover.xml
+          fail_ci_if_error: true
+
+      - name: 'Build the artifacts'
+        run: npm run build
+        env:
+          CI: true
