@@ -6,7 +6,7 @@ import {calcPercentage, handleColor, handleSize} from '../../utils/helpers';
 @Component({
   shadow: true,
   tag: 'giotramu-logotype',
-  styleUrl: './styles.css',
+  styleUrl: './styles.css'
 })
 export class Logotype {
   @Prop() size: LogoSize;
@@ -25,7 +25,7 @@ export class Logotype {
           preserveAspectRatio="xMidYMin slice"
           viewBox="0 0 604 204"
           style={{
-            paddingBottom,
+            paddingBottom
           }}
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"

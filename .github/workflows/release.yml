@@ -1,4 +1,4 @@
-name: Logo Package
+name: Package release
 
 on:
   release:

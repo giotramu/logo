@@ -1,4 +1,4 @@
-name: Logo Continuous Integration
+name: Test and build
 
 on:
   push:
@@ -36,13 +36,11 @@ jobs:
         env:
           CI: true
 
-      - name: 'Upload test coverage to Codecov'
-        uses: codecov/codecov-action@v1
+      - name: 'Upload test coverage to Coveralls'
+        uses: coverallsapp/github-action@master
         with:
-          name: codecov-umbrella
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage/clover.xml
-          fail_ci_if_error: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: ./coverage/lcov.info
 
       - name: 'Build the artifacts'
         run: npm run build

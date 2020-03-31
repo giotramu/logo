@@ -1,7 +1,7 @@
 {
   "name": "@giotramu/logo",
   "version": "0.0.1",
-  "description": "giotramu's logo transformed in web-components",
+  "description": "Web Components and resources related to personal logo.",
   "author": "giotramu <https://twitter.com/giotramu>",
   "homepage": "https://github.com/giotramu/logo#readme",
   "license": "MIT",
@@ -28,8 +28,10 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "files": [
+    "resources/",
     "dist/",
-    "loader/"
+    "loader/",
+    "LICENSE"
   ],
   "scripts": {
     "tsc:src": "tsc --noEmit",

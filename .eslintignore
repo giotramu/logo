@@ -1,6 +1,7 @@
+coverage/
 dist/
-www/
 loader/
+www/
 
 *~
 *.sw[mnpcod]
@@ -14,7 +15,6 @@ log.txt
 
 .stencil/
 .idea/
-.vscode/
 .sass-cache/
 .versions/
 node_modules/
@@ -24,3 +24,4 @@ $RECYCLE.BIN/
 Thumbs.db
 UserInterfaceState.xcuserstate
 .env
+.env.*
