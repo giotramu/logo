@@ -2,11 +2,11 @@
 
 Web Components and resources related to personal logo.
 
+[![NPM][npm-badge]][npm]
 [![Build Status][ci-badge]][ci]
 [![Code Coverage][coverage-badge]][coverage]
 [![Dependencies][deps-badge]][deps]
 [![Dev Dependencies][devdeps-badge]][devdeps]
-[![NPM][npm-badge]][npm]
 
 ## Install
 
