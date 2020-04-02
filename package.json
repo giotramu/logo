@@ -28,9 +28,9 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "files": [
-    "resources/",
     "dist/",
     "loader/",
+    "resources/",
     "LICENSE"
   ],
   "scripts": {
@@ -44,9 +44,9 @@
   },
   "devDependencies": {
     "@giotramu/stylelint-config": "2.2.2",
-    "@stencil/core": "1.8.8",
+    "@stencil/core": "1.12.0",
     "@types/jest": "24.0.25",
-    "@types/puppeteer": "1.19.0",
+    "@types/puppeteer": "2.0.1",
     "eslint": "6.8.0",
     "eslint-config-contactlab": "4.2.2",
     "eslint-config-prettier": "6.10.1",
@@ -57,7 +57,7 @@
     "npm-run-all": "4.1.5",
     "prettier": "2.0.2",
     "pretty-quick": "2.0.1",
-    "puppeteer": "1.19.0",
+    "puppeteer": "2.1.1",
     "stylelint": "13.2.1"
   },
   "keywords": [
