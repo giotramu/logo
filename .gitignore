@@ -1,9 +1,10 @@
+.stencil/
 coverage/
 dist/
 loader/
 www/
-.stencil/
 
+.cache
 .DS_Store
 .env
 .env.*

@@ -8,26 +8,6 @@ Web Components and resources related to personal logo.
 [![Dependencies][deps-badge]][deps]
 [![Dev Dependencies][devdeps-badge]][devdeps]
 
-## Install
-
-- **Script tag**
-
-Put a script tag in the head of your `index.html`. Then you can use the element anywhere in your template, JSX, Pug, etc.
-
-```html
-<script src="https://unpkg.com/@giotramu/logo@latest/dist/giotramu-logo.js"></script>
-```
-
-- **Node Modules**
-
-Run `npm install @giotramu/logo --save`.
-
-Put a script tag in the head of your `index.html`. Then you can use the element anywhere in your template, JSX, Pug, etc.
-
-```html
-<script src="node_modules/@giotramu/logo/dist/giotramu-logo.js"></script>
-```
-
 ## Web Components
 
 Web Components that run natively or near-natively in all widely used desktop and mobile browsers. [Check the browsers support](./docs/browsers-support.md).
@@ -59,7 +39,7 @@ Web Components that run natively or near-natively in all widely used desktop and
 [npm]: https://www.npmjs.com/package/@giotramu/logo
 [npm-badge]: https://badgen.net/npm/v/@giotramu/logo?icon=npm&label=npm%20package
 [ci]: https://github.com/giotramu/logo/actions
-[ci-badge]: https://github.com/giotramu/logo/workflows/build/badge.svg?branch=master
+[ci-badge]: https://github.com/giotramu/logo/workflows/test%20and%20build/badge.svg?branch=master
 [coverage]: https://coveralls.io/github/giotramu/logo
 [coverage-badge]: https://badgen.net/coveralls/c/github/giotramu/logo/master
 [deps]: https://david-dm.org/giotramu/logo

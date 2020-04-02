@@ -7,14 +7,30 @@
   "[json]": {
     "editor.formatOnSave": true
   },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
   "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
     "editor.formatOnSave": true
   },
   "typescript.validate.enable": true,
   "typescript.reportStyleChecksAsWarnings": false,
   "typescript.tsdk": "node_modules/typescript/lib",
-  "eslint.validate": ["typescript", "javascript"],
-  "prettier.bracketSpacing": false,
-  "prettier.singleQuote": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "css.validate": false
 }

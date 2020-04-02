@@ -2,13 +2,35 @@
 
 # giotramu-logotype
 
+## Install
+
+- **Script tag**
+
+Put a script tag in the head of your `index.html`:
+
+```html
+<script src="https://unpkg.com/@giotramu/logo@latest/dist/giotramu-logo.js"></script>
+```
+
+- **Node Modules**
+
+Run `npm install @giotramu/logo --save`.
+
+Put a script tag in the head of your `index.html`:
+
+```html
+<script src="node_modules/@giotramu/logo/dist/giotramu-logo.js"></script>
+```
+
 ## Usage
+
+You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ```html
 <giotramu-logotype size="320px" fill-color="digital"></giotramu-logotype>
 ```
 
-[Check the browsers support](./browsers-support.md).
+> [Check the browsers support](./browsers-support.md).
 
 ## Attributes
 

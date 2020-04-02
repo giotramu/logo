@@ -13,8 +13,8 @@
     "url": "https://github.com/giotramu/logo/issues"
   },
   "engines": {
-    "node": ">=10.18",
-    "npm": ">=6.13"
+    "node": ">=10.x",
+    "npm": ">=6.x"
   },
   "publishConfig": {
     "access": "public"
@@ -34,12 +34,11 @@
     "LICENSE"
   ],
   "scripts": {
-    "tsc:src": "tsc --noEmit",
+    "check:src": "tsc --noEmit",
     "lint:css": "stylelint ./src/components/**/*.css",
     "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "lint": "run-p -clns lint:**",
     "test": "stencil test --spec --e2e --coverage",
-    "test:watch": "stencil test --spec --e2e --watchAll",
     "start": "stencil build --dev --watch --serve",
     "build": "stencil build --docs"
   },
@@ -62,9 +61,10 @@
     "stylelint": "13.2.1"
   },
   "keywords": [
-    "custom-elements",
-    "web-components",
-    "stencil-js",
-    "giotramu"
+    "custom-elements-v1",
+    "logo",
+    "stencil-components",
+    "stenciljs",
+    "web-components"
   ]
 }
