@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/giotramu/logo.git"
+    "url": "git+https://github.com/giotramu/logo.git"
   },
   "bugs": {
     "url": "https://github.com/giotramu/logo/issues"
@@ -30,8 +30,7 @@
   "files": [
     "dist/",
     "loader/",
-    "resources/",
-    "LICENSE"
+    "resources/"
   ],
   "scripts": {
     "check:src": "tsc --noEmit",
