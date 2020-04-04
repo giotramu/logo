@@ -6,10 +6,10 @@
 
 - **Script tag**
 
-Put a script tag in the head of your `index.html`:
+Put a script tag in the head of your `index.html` document:
 
 ```html
-<script src="https://unpkg.com/@giotramu/logo@latest/dist/giotramu-logo.js"></script>
+<script src="https://unpkg.com/@giotramu/logo/dist/giotramu-logo.js"></script>
 ```
 
 - **Node Modules**

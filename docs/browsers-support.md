@@ -47,4 +47,4 @@
   </tbody>
 </table>
 
-> **Note:** Chrome and all Chromium based browsers (Edge 2020, Opera, Brave, etc.), are supported.
+> **Note:** Chrome & Chromium based browsers (Edge 2020, Brave, etc.) are supported.
