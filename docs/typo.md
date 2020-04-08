@@ -1,6 +1,6 @@
 [← Back](../README.md)
 
-# giotramu-monogram
+# \<giotramu-typo>
 
 ## Install
 
@@ -26,11 +26,11 @@ Put a script tag in the head of your `index.html`:
 
 You can use the element anywhere in your HTML template, JSX, Pug etc.
 
-```html
-<giotramu-monogram size="320px" fill-color="digital"></giotramu-monogram>
-```
+[Check the browsers support](./browsers-support.md).
 
-> [Check the browsers support](./browsers-support.md).
+```html
+<giotramu-typo size="320px" fill-color="digital"></giotramu-typo>
+```
 
 ## Attributes
 
@@ -47,7 +47,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
       <td>fill-color</td>
       <td><code>'dark' | 'digital' | 'light' | 'silver'</code></td>
       <td><code>'none'</code></td>
-      <td>The color of the component. The default is <code>'none'</code>, equal to <code>#000</code> (black). <a href="./color-schema.md" title="Color schema">Explore color schema</a></td>
+      <td>The color of the component. The default is <code>'none'</code>, equal to <code>#000</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
     </tr>
     <tr>
       <td>size</td>

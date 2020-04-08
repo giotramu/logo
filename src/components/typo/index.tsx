@@ -1,16 +1,15 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Component, Prop, h} from '@stencil/core';
-import {LogoSize, LogoStyle} from '../../typings/props';
+import {Size, FillStyle} from '../../typings/props';
 import {calcPercentage, handleColor, handleSize} from '../../utils/helpers';
 
 @Component({
   shadow: true,
-  tag: 'giotramu-logotype',
+  tag: 'giotramu-typo',
   styleUrl: './styles.css'
 })
-export class Logotype {
-  @Prop() size: LogoSize;
-  @Prop() fillColor: LogoStyle;
+export class Typo {
+  @Prop() size: Size;
+  @Prop() fillColor: FillStyle;
 
   render(): SVGElement {
     const fill = this.getFillColor();
@@ -20,8 +19,8 @@ export class Logotype {
     return (
       <div class="wrapper" style={{width}} e2e-width={width}>
         <svg
-          fill={fill}
           class="vector"
+          fill={fill}
           preserveAspectRatio="xMidYMin slice"
           viewBox="0 0 604 204"
           style={{

@@ -6,14 +6,17 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
     />
-    <title>[DEMO] giotramu-logo</title>
+    <title>[demo] giotramu-logo</title>
 
-    <!-- demo styles -->
-    <link rel="stylesheet" href="https://unpkg.com/sanitize.css" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/sanitize.css/typography.css"
+      href="https://unpkg.com/@giotramu/css-kit/reset.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@giotramu/css-kit/common.css"
+    />
+
     <style>
       :root {
         --digital-color: #0c57fb;
@@ -32,7 +35,14 @@
         top: 0;
         left: 2.4rem;
         opacity: 0.32;
+        font-size: 2.4rem;
         white-space: nowrap;
+      }
+
+      @media only screen and (min-width: 48em) {
+        .showcase > h1 {
+          font-size: 3.2rem;
+        }
       }
 
       .showcase > ul {
@@ -49,23 +59,23 @@
       }
 
       .showcase--logo-row {
-        color: var(--light-color);
-        background-color: var(--digital-color);
+        color: var(--giotramu-light);
+        background-color: var(--giotramu-digital);
       }
 
       .showcase--logo-column {
-        color: var(--dark-color);
-        background-color: var(--silver-color);
+        color: var(--giotramu-dark);
+        background-color: var(--giotramu-silver);
       }
 
       .showcase--monogram {
-        color: var(--dark-color);
-        background-color: var(--light-color);
+        color: var(--giotramu-dark);
+        background-color: var(--giotramu-light);
       }
 
       .showcase--logotype {
-        color: var(--light-color);
-        background-color: var(--dark-color);
+        color: var(--giotramu-light);
+        background-color: var(--giotramu-dark);
       }
     </style>
 
@@ -77,13 +87,13 @@
       <h1>Logo (row)</h1>
       <ul>
         <li>
-          <giotramu-logo size="100px" fill-color="light"></giotramu-logo>
-        </li>
-        <li>
-          <giotramu-logo size="150px" fill-color="light"></giotramu-logo>
+          <giotramu-logo size="200px" fill-color="light"></giotramu-logo>
         </li>
         <li>
           <giotramu-logo size="300px" fill-color="light"></giotramu-logo>
+        </li>
+        <li>
+          <giotramu-logo size="400px" fill-color="light"></giotramu-logo>
         </li>
       </ul>
     </section>
@@ -116,31 +126,25 @@
     </section>
 
     <section class="showcase showcase--monogram">
-      <h1>Monogram</h1>
+      <h1>Sign</h1>
       <ul>
         <li>
-          <giotramu-monogram size="100px" fill-color="dark"></giotramu-monogram>
+          <giotramu-sign size="100px" fill-color="dark"></giotramu-sign>
         </li>
         <li>
-          <giotramu-monogram size="150px" fill-color="dark"></giotramu-monogram>
+          <giotramu-sign size="150px" fill-color="dark"></giotramu-sign>
         </li>
       </ul>
     </section>
 
     <section class="showcase showcase--logotype">
-      <h1>Logotype</h1>
+      <h1>Typo</h1>
       <ul>
         <li>
-          <giotramu-logotype
-            size="100px"
-            fill-color="light"
-          ></giotramu-logotype>
+          <giotramu-typo size="100px" fill-color="light"></giotramu-typo>
         </li>
         <li>
-          <giotramu-logotype
-            size="150px"
-            fill-color="light"
-          ></giotramu-logotype>
+          <giotramu-typo size="150px" fill-color="light"></giotramu-typo>
         </li>
       </ul>
     </section>

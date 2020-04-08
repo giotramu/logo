@@ -1,7 +1,7 @@
-import {LogoStyle, LogoColor} from '../typings/props';
+import {FillStyle, HexColor} from '../typings/props';
 
 // --- handle component color
-export function handleColor(color: LogoStyle): LogoColor {
+export function handleColor(color: FillStyle): HexColor {
   switch (color) {
     case 'digital':
       return '#0C57FB';
@@ -34,7 +34,7 @@ interface CalcPercentageProps {
 export function calcPercentage({
   base = 100,
   width,
-  height,
+  height
 }: CalcPercentageProps): string {
   const formula = Math.round((base * height) / width);
   return isNaN(formula) ? 'none' : `${formula}%`;

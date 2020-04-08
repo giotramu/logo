@@ -14,9 +14,9 @@ Web Components that run natively or near-natively in all widely used desktop and
 
 > **[Try live on CodePen!](https://codepen.io/giotramu/full/xxGBBVm)**
 
-- [Logo](./docs/logo.md)
-- [Logotype](./docs/logotype.md)
-- [Monogram](./docs/monogram.md)
+- [\<giotramu-logo>](./docs/logo.md)
+- [\<giotramu-typo>](./docs/typo.md)
+- [\<giotramu-sign>](./docs/sign.md)
 
 ## Resources
 

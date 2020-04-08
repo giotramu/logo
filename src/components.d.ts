@@ -5,20 +5,20 @@
  * It contains typing information for all components that exist in this project.
  */
 import {HTMLStencilElement, JSXBase} from '@stencil/core/internal';
-import {LogoSize, LogoStyle} from './typings/props';
+import {FillStyle, Size} from './typings/props';
 export namespace Components {
   interface GiotramuLogo {
     column: boolean;
-    fillColor: LogoStyle;
-    size: LogoSize;
+    fillColor: FillStyle;
+    size: Size;
   }
-  interface GiotramuLogotype {
-    fillColor: LogoStyle;
-    size: LogoSize;
+  interface GiotramuSign {
+    fillColor: FillStyle;
+    size: Size;
   }
-  interface GiotramuMonogram {
-    fillColor: LogoStyle;
-    size: LogoSize;
+  interface GiotramuTypo {
+    fillColor: FillStyle;
+    size: Size;
   }
 }
 declare global {
@@ -29,44 +29,44 @@ declare global {
     prototype: HTMLGiotramuLogoElement;
     new (): HTMLGiotramuLogoElement;
   };
-  interface HTMLGiotramuLogotypeElement
-    extends Components.GiotramuLogotype,
+  interface HTMLGiotramuSignElement
+    extends Components.GiotramuSign,
       HTMLStencilElement {}
-  var HTMLGiotramuLogotypeElement: {
-    prototype: HTMLGiotramuLogotypeElement;
-    new (): HTMLGiotramuLogotypeElement;
+  var HTMLGiotramuSignElement: {
+    prototype: HTMLGiotramuSignElement;
+    new (): HTMLGiotramuSignElement;
   };
-  interface HTMLGiotramuMonogramElement
-    extends Components.GiotramuMonogram,
+  interface HTMLGiotramuTypoElement
+    extends Components.GiotramuTypo,
       HTMLStencilElement {}
-  var HTMLGiotramuMonogramElement: {
-    prototype: HTMLGiotramuMonogramElement;
-    new (): HTMLGiotramuMonogramElement;
+  var HTMLGiotramuTypoElement: {
+    prototype: HTMLGiotramuTypoElement;
+    new (): HTMLGiotramuTypoElement;
   };
   interface HTMLElementTagNameMap {
     'giotramu-logo': HTMLGiotramuLogoElement;
-    'giotramu-logotype': HTMLGiotramuLogotypeElement;
-    'giotramu-monogram': HTMLGiotramuMonogramElement;
+    'giotramu-sign': HTMLGiotramuSignElement;
+    'giotramu-typo': HTMLGiotramuTypoElement;
   }
 }
 declare namespace LocalJSX {
   interface GiotramuLogo {
     column?: boolean;
-    fillColor?: LogoStyle;
-    size?: LogoSize;
+    fillColor?: FillStyle;
+    size?: Size;
   }
-  interface GiotramuLogotype {
-    fillColor?: LogoStyle;
-    size?: LogoSize;
+  interface GiotramuSign {
+    fillColor?: FillStyle;
+    size?: Size;
   }
-  interface GiotramuMonogram {
-    fillColor?: LogoStyle;
-    size?: LogoSize;
+  interface GiotramuTypo {
+    fillColor?: FillStyle;
+    size?: Size;
   }
   interface IntrinsicElements {
     'giotramu-logo': GiotramuLogo;
-    'giotramu-logotype': GiotramuLogotype;
-    'giotramu-monogram': GiotramuMonogram;
+    'giotramu-sign': GiotramuSign;
+    'giotramu-typo': GiotramuTypo;
   }
 }
 export {LocalJSX as JSX};
@@ -75,10 +75,10 @@ declare module '@stencil/core' {
     interface IntrinsicElements {
       'giotramu-logo': LocalJSX.GiotramuLogo &
         JSXBase.HTMLAttributes<HTMLGiotramuLogoElement>;
-      'giotramu-logotype': LocalJSX.GiotramuLogotype &
-        JSXBase.HTMLAttributes<HTMLGiotramuLogotypeElement>;
-      'giotramu-monogram': LocalJSX.GiotramuMonogram &
-        JSXBase.HTMLAttributes<HTMLGiotramuMonogramElement>;
+      'giotramu-sign': LocalJSX.GiotramuSign &
+        JSXBase.HTMLAttributes<HTMLGiotramuSignElement>;
+      'giotramu-typo': LocalJSX.GiotramuTypo &
+        JSXBase.HTMLAttributes<HTMLGiotramuTypoElement>;
     }
   }
 }

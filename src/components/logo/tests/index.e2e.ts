@@ -5,8 +5,9 @@ describe('giotramu-logo', () => {
     const page = await newE2EPage();
     await page.setContent('<giotramu-logo></giotramu-logo>');
 
-    const element = await page.find('giotramu-logo');
-    expect(element).toHaveClass('hydrated');
+    const logo = await page.find('giotramu-logo');
+
+    expect(logo).toHaveClass('hydrated');
   });
 
   it('renders column attribute changes', async () => {
@@ -14,14 +15,13 @@ describe('giotramu-logo', () => {
     await page.setContent('<giotramu-logo></giotramu-logo>');
 
     const component = await page.find('giotramu-logo');
-    const element = await page.find('giotramu-logo >>> .logo');
-
-    expect(element.getAttribute('align-items')).toBe('row');
+    const logo = await page.find('giotramu-logo >>> .logo');
+    expect(logo.getAttribute('align-items')).toBe('row');
 
     component.setProperty('column', true);
     await page.waitForChanges();
 
-    expect(element.getAttribute('align-items')).toBe('column');
+    expect(logo.getAttribute('align-items')).toBe('column');
   });
 
   it('renders size attribute changes', async () => {
@@ -43,16 +43,16 @@ describe('giotramu-logo', () => {
     await page.setContent('<giotramu-logo></giotramu-logo>');
 
     const component = await page.find('giotramu-logo');
-    const monogram = await page.find('giotramu-logo >>> .monogram');
-    const logotype = await page.find('giotramu-logo >>> .logotype');
+    const sign = await page.find('giotramu-logo >>> .sign');
+    const typo = await page.find('giotramu-logo >>> .typo');
 
-    expect(monogram.getAttribute('fill-color')).toBe(null);
-    expect(logotype.getAttribute('fill-color')).toBe(null);
+    expect(sign.getAttribute('fill-color')).toBe(null);
+    expect(typo.getAttribute('fill-color')).toBe(null);
 
     component.setProperty('fillColor', 'silver');
     await page.waitForChanges();
 
-    expect(monogram.getAttribute('fill-color')).toBe('silver');
-    expect(logotype.getAttribute('fill-color')).toBe('silver');
+    expect(sign.getAttribute('fill-color')).toBe('silver');
+    expect(typo.getAttribute('fill-color')).toBe('silver');
   });
 });

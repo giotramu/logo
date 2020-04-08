@@ -1,6 +1,5 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Component, Prop, h} from '@stencil/core';
-import {LogoSize, LogoStyle, LogoAlignment} from '../../typings/props';
+import {Size, FillStyle, Alignment} from '../../typings/props';
 import {handleSize} from '../../utils/helpers';
 
 @Component({
@@ -9,8 +8,8 @@ import {handleSize} from '../../utils/helpers';
   styleUrl: './styles.css'
 })
 export class Logo {
-  @Prop() size: LogoSize;
-  @Prop() fillColor: LogoStyle;
+  @Prop() size: Size;
+  @Prop() fillColor: FillStyle;
   @Prop() column = false;
 
   render(): Element {
@@ -20,9 +19,8 @@ export class Logo {
 
     return (
       <div class="logo" style={{width}} align-items={align} e2e-width={width}>
-        <giotramu-monogram class="monogram" fill-color={fillColor} />
-        <hr class="divider" />
-        <giotramu-logotype class="logotype" fill-color={fillColor} />
+        <giotramu-sign class="sign" fill-color={fillColor} />
+        <giotramu-typo class="typo" fill-color={fillColor} />
       </div>
     );
   }
@@ -31,11 +29,11 @@ export class Logo {
     return handleSize(this.size);
   }
 
-  private getFillColor(): LogoStyle {
+  private getFillColor(): FillStyle {
     return this.fillColor;
   }
 
-  private getAlignment(): LogoAlignment {
+  private getAlignment(): Alignment {
     return this.column ? 'column' : 'row';
   }
 }

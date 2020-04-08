@@ -1,16 +1,15 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Component, Prop, h} from '@stencil/core';
-import {LogoSize, LogoStyle} from '../../typings/props';
+import {Size, FillStyle} from '../../typings/props';
 import {calcPercentage, handleColor, handleSize} from '../../utils/helpers';
 
 @Component({
   shadow: true,
-  tag: 'giotramu-monogram',
+  tag: 'giotramu-sign',
   styleUrl: './styles.css'
 })
-export class Monogram {
-  @Prop() size: LogoSize;
-  @Prop() fillColor: LogoStyle;
+export class Sign {
+  @Prop() size: Size;
+  @Prop() fillColor: FillStyle;
 
   render(): SVGElement {
     const fill = this.getFillColor();
