@@ -26,7 +26,7 @@
         display: grid;
         margin: 0 auto;
         padding: 0;
-        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         grid-gap: 1.6rem;
         list-style: none;
       }
@@ -39,21 +39,15 @@
 
       @media only screen and (min-width: 80em) {
         .showcase > ul {
-          max-width: 64vw;
-        }
-      }
-
-      @media only screen and (min-width: 100em) {
-        .showcase > ul {
-          max-width: 48vw;
+          max-width: 68vw;
         }
       }
 
       .showcase > ul > li {
         display: flex;
-        height: 16rem;
+        height: 20rem;
         border-radius: 1.6rem;
-        padding: 1.6rem;
+        padding: 2.4rem;
         align-items: center;
         justify-content: center;
         transition: box-shadow 0.4s ease-in-out;
