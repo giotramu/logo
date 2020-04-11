@@ -19,56 +19,80 @@
 
     <style>
       .showcase {
-        padding: 4.8rem 0;
-        position: relative;
+        overflow: hidden;
+        padding: 3.2rem;
+      }
+      .showcase > ul {
+        display: grid;
+        margin: 0 auto;
+        padding: 0;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        grid-gap: 1.6rem;
+        list-style: none;
       }
 
-      .showcase > h1 {
-        position: absolute;
-        top: 0;
-        left: 2.4rem;
-        opacity: 0.32;
-        font-size: 2.4rem;
-        white-space: nowrap;
-      }
-
-      @media only screen and (min-width: 48em) {
-        .showcase > h1 {
-          font-size: 3.2rem;
+      @media only screen and (min-width: 60em) {
+        .showcase > ul {
+          max-width: 80vw;
         }
       }
 
-      .showcase > ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+      @media only screen and (min-width: 80em) {
+        .showcase > ul {
+          max-width: 64vw;
+        }
+      }
+
+      @media only screen and (min-width: 100em) {
+        .showcase > ul {
+          max-width: 48vw;
+        }
       }
 
       .showcase > ul > li {
         display: flex;
-        padding: 2.4rem;
+        height: 16rem;
+        border-radius: 1.6rem;
+        padding: 1.6rem;
         align-items: center;
         justify-content: center;
+        transition: box-shadow 0.4s ease-in-out;
       }
 
-      .showcase--logo-row {
-        color: var(--giotramu-light);
+      .showcase--dark {
+        background-color: var(--giotramu-dark);
+      }
+
+      .showcase--dark ul > li:hover {
+        background-color: var(--giotramu-dark);
+        box-shadow: 40px 40px 80px #192532, -40px -40px 80px #213144;
+      }
+
+      .showcase--digital {
         background-color: var(--giotramu-digital);
       }
 
-      .showcase--logo-column {
-        color: var(--giotramu-dark);
+      .showcase--digital ul > li:hover {
+        background-color: var(--giotramu-digital);
+        box-shadow: 40px 40px 80px #0a4ad5, -40px -40px 80px #0e64ff;
+      }
+
+      .showcase--silver {
         background-color: var(--giotramu-silver);
       }
 
-      .showcase--monogram {
-        color: var(--giotramu-dark);
+      .showcase--silver ul > li:hover {
+        background-color: var(--giotramu-silver);
+        box-shadow: 40px 40px 80px #b3bcc4, -40px -40px 80px #f3feff;
+      }
+
+      .showcase--light {
         background-color: var(--giotramu-light);
       }
 
-      .showcase--logotype {
-        color: var(--giotramu-light);
-        background-color: var(--giotramu-dark);
+      .showcase--light ul > li:hover {
+        background-color: var(--giotramu-light);
+        box-shadow: 40px 40px 80px #d9d9d9, -40px -40px 80px #fff;
       }
     </style>
 
@@ -76,68 +100,83 @@
     <script nomodule src="/build/giotramu-logo.js"></script>
   </head>
   <body>
-    <section class="showcase showcase--logo-row">
-      <h1>Logo (row)</h1>
+    <section class="showcase showcase--digital">
       <ul>
         <li>
-          <giotramu-logo size="200px" fill-color="light"></giotramu-logo>
+          <giotramu-logo size="150px" fill-color="light"></giotramu-logo>
         </li>
         <li>
-          <giotramu-logo size="300px" fill-color="light"></giotramu-logo>
+          <giotramu-logo
+            size="100px"
+            fill-color="light"
+            column="column"
+          ></giotramu-logo>
         </li>
         <li>
-          <giotramu-logo size="400px" fill-color="light"></giotramu-logo>
+          <giotramu-sign size="50px" fill-color="light"></giotramu-sign>
+        </li>
+        <li>
+          <giotramu-typo size="100px" fill-color="light"></giotramu-typo>
         </li>
       </ul>
     </section>
-
-    <section class="showcase showcase--logo-column">
-      <h1>Logo (column)</h1>
+    <section class="showcase showcase--dark">
       <ul>
+        <li>
+          <giotramu-logo size="150px" fill-color="light"></giotramu-logo>
+        </li>
+        <li>
+          <giotramu-logo
+            size="100px"
+            fill-color="light"
+            column="column"
+          ></giotramu-logo>
+        </li>
+        <li>
+          <giotramu-sign size="50px" fill-color="light"></giotramu-sign>
+        </li>
+        <li>
+          <giotramu-typo size="100px" fill-color="light"></giotramu-typo>
+        </li>
+      </ul>
+    </section>
+    <section class="showcase showcase--silver">
+      <ul>
+        <li>
+          <giotramu-logo size="150px" fill-color="digital"></giotramu-logo>
+        </li>
         <li>
           <giotramu-logo
             size="100px"
             fill-color="digital"
-            column
+            column="column"
           ></giotramu-logo>
         </li>
         <li>
-          <giotramu-logo
-            size="150px"
-            fill-color="digital"
-            column
-          ></giotramu-logo>
+          <giotramu-sign size="50px" fill-color="digital"></giotramu-sign>
         </li>
         <li>
-          <giotramu-logo
-            size="300px"
-            fill-color="digital"
-            column
-          ></giotramu-logo>
+          <giotramu-typo size="100px" fill-color="digital"></giotramu-typo>
         </li>
       </ul>
     </section>
-
-    <section class="showcase showcase--monogram">
-      <h1>Sign</h1>
+    <section class="showcase showcase--light">
       <ul>
         <li>
-          <giotramu-sign size="100px" fill-color="dark"></giotramu-sign>
+          <giotramu-logo size="150px" fill-color="dark"></giotramu-logo>
         </li>
         <li>
-          <giotramu-sign size="150px" fill-color="dark"></giotramu-sign>
-        </li>
-      </ul>
-    </section>
-
-    <section class="showcase showcase--logotype">
-      <h1>Typo</h1>
-      <ul>
-        <li>
-          <giotramu-typo size="100px" fill-color="light"></giotramu-typo>
+          <giotramu-logo
+            size="100px"
+            fill-color="dark"
+            column="column"
+          ></giotramu-logo>
         </li>
         <li>
-          <giotramu-typo size="150px" fill-color="light"></giotramu-typo>
+          <giotramu-sign size="50px" fill-color="dark"></giotramu-sign>
+        </li>
+        <li>
+          <giotramu-typo size="100px" fill-color="dark"></giotramu-typo>
         </li>
       </ul>
     </section>
