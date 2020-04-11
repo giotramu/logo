@@ -37,6 +37,6 @@ describe('giotramu-typo', () => {
     component.setProperty('fillColor', 'digital');
     await page.waitForChanges();
 
-    expect(svg.getAttribute('fill')).toBe('#0C57FB');
+    expect(svg.getAttribute('fill')).toBe('#0c57fb');
   });
 });

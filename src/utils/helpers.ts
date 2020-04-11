@@ -4,13 +4,13 @@ import {FillStyle, HexColor} from '../typings/props';
 export function handleColor(color: FillStyle): HexColor {
   switch (color) {
     case 'digital':
-      return '#0C57FB';
+      return '#0c57fb';
     case 'silver':
-      return '#D3DDE6';
+      return '#d3dde6';
     case 'light':
-      return '#FFF';
+      return '#fff';
     case 'dark':
-      return '#1D2B3B';
+      return '#1d2b3b';
     default:
       return '#000';
   }

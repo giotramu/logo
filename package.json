@@ -39,7 +39,7 @@
     "lint": "run-p -clns lint:**",
     "test": "stencil test --spec --e2e --coverage",
     "start": "stencil build --dev --watch --serve",
-    "build": "stencil build --docs"
+    "build": "stencil build"
   },
   "devDependencies": {
     "@giotramu/stylelint-config": "2.2.2",

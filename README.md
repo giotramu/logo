@@ -3,6 +3,7 @@
 Web Components and resources related to personal logo.
 
 [![NPM][npm-badge]][npm]
+[![Bundlephobia][bundlephobia-badge]][bundlephobia]
 [![Build Status][ci-badge]][ci]
 [![Code Coverage][coverage-badge]][coverage]
 [![Dependencies][deps-badge]][deps]
@@ -36,14 +37,21 @@ Web Components that run natively or near-natively in all widely used desktop and
   L I N K S
 -->
 
-[npm]: https://www.npmjs.com/package/@giotramu/logo
-[npm-badge]: https://badgen.net/npm/v/@giotramu/logo?icon=npm&label=npm%20package
+[bundlephobia]: https://bundlephobia.com/result?p=@giotramu/logo
 [ci]: https://github.com/giotramu/logo/actions
-[ci-badge]: https://github.com/giotramu/logo/workflows/test%20and%20build/badge.svg?branch=master
 [coverage]: https://coveralls.io/github/giotramu/logo
-[coverage-badge]: https://badgen.net/coveralls/c/github/giotramu/logo/master
 [deps]: https://david-dm.org/giotramu/logo
-[deps-badge]: https://badgen.net/david/dep/giotramu/logo
 [devdeps]: https://david-dm.org/giotramu/logo?type=dev
-[devdeps-badge]: https://badgen.net/david/dev/giotramu/logo
+[npm]: https://www.npmjs.com/package/@giotramu/logo
 [stenciljs]: https://stenciljs.com/
+
+<!---
+  B A D G E S
+-->
+
+[bundlephobia-badge]: https://badgen.net/bundlephobia/minzip/@giotramu/logo
+[ci-badge]: https://github.com/giotramu/logo/workflows/test%20and%20build/badge.svg?branch=master
+[coverage-badge]: https://badgen.net/coveralls/c/github/giotramu/logo/master
+[deps-badge]: https://badgen.net/david/dep/giotramu/logo
+[devdeps-badge]: https://badgen.net/david/dev/giotramu/logo
+[npm-badge]: https://badgen.net/npm/v/@giotramu/logo?icon=npm&label=npm%20package
