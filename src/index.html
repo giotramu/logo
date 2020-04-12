@@ -18,10 +18,15 @@
     />
 
     <style>
+      body {
+        background-color: var(--giotramu-light);
+      }
+
       .showcase {
-        overflow: hidden;
+        overflow-y: hidden;
         padding: 3.2rem;
       }
+
       .showcase > ul {
         display: grid;
         margin: 0 auto;
@@ -31,13 +36,13 @@
         list-style: none;
       }
 
-      @media only screen and (min-width: 60em) {
+      @media only screen and (min-width: 80em) {
         .showcase > ul {
-          max-width: 80vw;
+          max-width: 76vw;
         }
       }
 
-      @media only screen and (min-width: 80em) {
+      @media only screen and (min-width: 100em) {
         .showcase > ul {
           max-width: 68vw;
         }
@@ -45,9 +50,9 @@
 
       .showcase > ul > li {
         display: flex;
-        height: 20rem;
+        height: 16rem;
         border-radius: 1.6rem;
-        padding: 2.4rem;
+        padding: 1.6rem;
         align-items: center;
         justify-content: center;
         transition: box-shadow 0.4s ease-in-out;
