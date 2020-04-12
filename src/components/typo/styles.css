@@ -1,5 +1,7 @@
 .wrapper {
+  box-sizing: border-box;
   overflow: visible;
+  font-size: 0;
   line-height: 0;
 }
 

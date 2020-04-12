@@ -1,5 +1,6 @@
 .logo {
   display: flex;
+  box-sizing: border-box;
   align-items: center;
   font-size: 0;
   line-height: 0;
