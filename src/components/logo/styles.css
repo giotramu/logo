@@ -8,11 +8,13 @@
 
 .sign {
   width: 28%;
-  margin-right: 6%;
+  margin-right: 8%;
 }
 
 .typo {
   width: 64%;
+  position: relative;
+  top: -1px;
 }
 
 .logo[align-items='column'] {
@@ -21,9 +23,9 @@
 }
 
 .logo[align-items='column'] .sign {
-  width: 40%;
+  width: 44%;
   margin-right: 0;
-  margin-bottom: 6%;
+  margin-bottom: 8%;
 }
 
 .logo[align-items='column'] .typo {
