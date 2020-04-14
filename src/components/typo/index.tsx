@@ -14,7 +14,10 @@ export class Typo {
   render(): SVGElement {
     const fill = this.getFillColor();
     const width = this.getSize();
-    const paddingBottom = calcPercentage({width: 604, height: 204});
+    const paddingBottom = calcPercentage({
+      width: 604, // viewbox width
+      height: 204 // viewbox height
+    });
 
     return (
       <div class="wrapper" style={{width}} e2e-width={width}>

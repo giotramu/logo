@@ -1,6 +1,5 @@
 import {FillStyle, HexColor} from '../typings/props';
 
-// --- handle component color
 export function handleColor(color: FillStyle): HexColor {
   switch (color) {
     case 'digital':
@@ -16,7 +15,6 @@ export function handleColor(color: FillStyle): HexColor {
   }
 }
 
-// --- handle component size
 export function handleSize(
   size?: string,
   defaultSize: string = '100%'
@@ -24,7 +22,10 @@ export function handleSize(
   return typeof size === 'undefined' ? defaultSize : size;
 }
 
-// --- hack svg padding for scaling
+/**
+ * hack the svg padding for scaling
+ * more info on the css-tricks blog: https://css-tricks.com/scale-svg/
+ */
 interface CalcPercentageProps {
   base?: number;
   width: number;

@@ -14,7 +14,10 @@ export class Sign {
   render(): SVGElement {
     const fill = this.getFillColor();
     const width = this.getSize();
-    const paddingBottom = calcPercentage({width: 265, height: 315});
+    const paddingBottom = calcPercentage({
+      width: 265, // viewbox width
+      height: 315 // viewbox height
+    });
 
     return (
       <div class="wrapper" style={{width}} e2e-width={width}>
