@@ -29,7 +29,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc. [Check the
 Drop this line in your HTML document:
 
 ```html
-<giotramu-logo size="200px" fill-color="digital" column></giotramu-logo>
+<giotramu-logo size="200px" fill-color="accent" column></giotramu-logo>
 ```
 
 The result:
@@ -39,7 +39,7 @@ The result:
 Or this one for obtaining the horizontal version:
 
 ```html
-<giotramu-logo size="300px" fill-color="digital"></giotramu-logo>
+<giotramu-logo size="300px" fill-color="accent"></giotramu-logo>
 ```
 
 <img width="300px" src="../resources/svg/logo-horizontal.svg" alt="Giovanni Tramutola Horizontal Logo" />
@@ -63,7 +63,7 @@ Or this one for obtaining the horizontal version:
     </tr>
     <tr>
       <td>fill-color</td>
-      <td><code>'dark' | 'digital' | 'light' | 'silver'</code></td>
+      <td><code>'dark' | 'accent' | 'light' | 'gray'</code></td>
       <td><code>'none'</code></td>
       <td>The color of the component. The default is <code>'none'</code>, equal to <code>#000</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
     </tr>

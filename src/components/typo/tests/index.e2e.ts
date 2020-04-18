@@ -34,7 +34,7 @@ describe('giotramu-typo', () => {
 
     expect(svg.getAttribute('fill')).toBe('#000');
 
-    component.setProperty('fillColor', 'digital');
+    component.setProperty('fillColor', 'accent');
     await page.waitForChanges();
 
     expect(svg.getAttribute('fill')).toBe('#0c57fb');

@@ -49,10 +49,10 @@ describe('giotramu-logo', () => {
     expect(sign.getAttribute('fill-color')).toBe(null);
     expect(typo.getAttribute('fill-color')).toBe(null);
 
-    component.setProperty('fillColor', 'silver');
+    component.setProperty('fillColor', 'gray');
     await page.waitForChanges();
 
-    expect(sign.getAttribute('fill-color')).toBe('silver');
-    expect(typo.getAttribute('fill-color')).toBe('silver');
+    expect(sign.getAttribute('fill-color')).toBe('gray');
+    expect(typo.getAttribute('fill-color')).toBe('gray');
   });
 });

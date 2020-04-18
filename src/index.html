@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
     />
-    <title>Personal logo - Web component</title>
+    <title>Giovanni Tramutola Logo - Web component</title>
 
     <link
       rel="stylesheet"
@@ -67,20 +67,20 @@
         box-shadow: 40px 40px 80px #192532, -40px -40px 80px #213144;
       }
 
-      .showcase--digital {
+      .showcase--accent {
         background-color: var(--gt-color-accent);
       }
 
-      .showcase--digital ul > li:hover {
+      .showcase--accent ul > li:hover {
         background-color: var(--gt-color-accent);
         box-shadow: 40px 40px 80px #0a4ad5, -40px -40px 80px #0e64ff;
       }
 
-      .showcase--silver {
+      .showcase--gray {
         background-color: var(--gt-color-gray);
       }
 
-      .showcase--silver ul > li:hover {
+      .showcase--gray ul > li:hover {
         background-color: var(--gt-color-gray);
         box-shadow: 40px 40px 80px #b3bcc4, -40px -40px 80px #f3feff;
       }
@@ -99,7 +99,7 @@
     <script nomodule src="/build/giotramu-logo.js"></script>
   </head>
   <body>
-    <section class="showcase showcase--digital">
+    <section class="showcase showcase--accent">
       <ul>
         <li>
           <giotramu-logo size="100px" fill-color="light" column></giotramu-logo>
@@ -131,23 +131,23 @@
         </li>
       </ul>
     </section>
-    <section class="showcase showcase--silver">
+    <section class="showcase showcase--gray">
       <ul>
         <li>
           <giotramu-logo
             size="100px"
-            fill-color="digital"
+            fill-color="accent"
             column
           ></giotramu-logo>
         </li>
         <li>
-          <giotramu-logo size="150px" fill-color="digital"></giotramu-logo>
+          <giotramu-logo size="150px" fill-color="accent"></giotramu-logo>
         </li>
         <li>
-          <giotramu-sign size="50px" fill-color="digital"></giotramu-sign>
+          <giotramu-sign size="50px" fill-color="accent"></giotramu-sign>
         </li>
         <li>
-          <giotramu-typo size="100px" fill-color="digital"></giotramu-typo>
+          <giotramu-typo size="100px" fill-color="accent"></giotramu-typo>
         </li>
       </ul>
     </section>

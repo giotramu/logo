@@ -29,7 +29,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc. [Check the
 Drop this line in your HTML document:
 
 ```html
-<giotramu-typo size="200px" fill-color="digital"></giotramu-typo>
+<giotramu-typo size="200px" fill-color="accent"></giotramu-typo>
 ```
 
 ## Attributes
@@ -45,7 +45,7 @@ Drop this line in your HTML document:
   <tbody>
     <tr>
       <td>fill-color</td>
-      <td><code>'dark' | 'digital' | 'light' | 'silver'</code></td>
+      <td><code>'dark' | 'accent' | 'light' | 'gray'</code></td>
       <td><code>'none'</code></td>
       <td>The color of the component. The default is <code>'none'</code>, equal to <code>#000</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
     </tr>

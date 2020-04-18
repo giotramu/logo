@@ -2,9 +2,9 @@ import {FillStyle, HexColor} from '../typings/props';
 
 export function handleColor(color: FillStyle): HexColor {
   switch (color) {
-    case 'digital':
+    case 'accent':
       return '#0c57fb';
-    case 'silver':
+    case 'gray':
       return '#d3dde6';
     case 'light':
       return '#fff';

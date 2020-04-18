@@ -1,9 +1,9 @@
 import {handleColor, handleSize, calcPercentage} from '../helpers';
 
 describe('handleColor', () => {
-  it(`returns a specific hex color for the "digital", "silver", "dark" and "light" keywords`, () => {
-    expect(handleColor('digital')).toBe('#0c57fb');
-    expect(handleColor('silver')).toBe('#d3dde6');
+  it(`returns a specific hex color for the "accent", "gray", "dark" and "light" keywords`, () => {
+    expect(handleColor('accent')).toBe('#0c57fb');
+    expect(handleColor('gray')).toBe('#d3dde6');
     expect(handleColor('dark')).toBe('#1d2b3b');
     expect(handleColor('light')).toBe('#fff');
   });
