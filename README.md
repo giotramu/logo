@@ -3,7 +3,7 @@
 Web Components and resources related to personal logo.
 
 [![NPM][npm-img]][npm-url]
-[![Bundlephobia][bundlephobia-img]][bundlephobia-url-url]
+[![Bundlephobia][bundlephobia-img]][bundlephobia-url]
 [![Build Status][ci-img]][ci-url]
 [![Code Coverage][coverage-img]][coverage-url]
 [![Dependencies][deps-img]][deps-url]
