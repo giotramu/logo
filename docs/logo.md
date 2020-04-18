@@ -24,13 +24,25 @@ Put a script tag in the head of your `index.html`:
 
 ## Usage
 
-You can use the element anywhere in your HTML template, JSX, Pug etc.
+You can use the element anywhere in your HTML template, JSX, Pug etc. [Check the browsers support](./browsers-support.md).
 
-[Check the browsers support](./browsers-support.md).
+Drop this line in your HTML document:
 
 ```html
-<giotramu-logo size="320px" fill-color="digital" column></giotramu-logo>
+<giotramu-logo size="200px" fill-color="digital" column></giotramu-logo>
 ```
+
+The result:
+
+<img width="200px" src="../resources/svg/logo-vertical.svg" alt="Giovanni Tramutola Vertical Logo" />
+
+Or this one for obtaining the horizontal version:
+
+```html
+<giotramu-logo size="300px" fill-color="digital"></giotramu-logo>
+```
+
+<img width="300px" src="../resources/svg/logo-horizontal.svg" alt="Giovanni Tramutola Horizontal Logo" />
 
 ## Attributes
 
@@ -47,7 +59,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
       <td>column</td>
       <td><code>boolean</code></td>
       <td><code>false</code></td>
-      <td>Place monogram and logotype on the horizontal or vertical axis</td>
+      <td>Place monogram and logotype on the horizontal or vertical axis.</td>
     </tr>
     <tr>
       <td>fill-color</td>
@@ -59,7 +71,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
       <td>size</td>
       <td><code>string</code></td>
       <td><code>'100%'</code></td>
-      <td>The width of the component. Use a length in <code>px</code>, <code>rem</code>, <code>em</code>, <code>%</code> unit
+      <td>The width of the component. Use a length in <code>px</code>, <code>rem</code>, <code>em</code>, <code>%</code> unit.
       </td>
     <tr>
   </tbody>

@@ -24,13 +24,17 @@ Put a script tag in the head of your `index.html`:
 
 ## Usage
 
-You can use the element anywhere in your HTML template, JSX, Pug etc.
+You can use the element anywhere in your HTML template, JSX, Pug etc. [Check the browsers support](./browsers-support.md).
 
-[Check the browsers support](./browsers-support.md).
+Drop this line in your HTML document:
 
 ```html
-<giotramu-sign size="320px" fill-color="digital"></giotramu-sign>
+<giotramu-sign size="100px" fill-color="digital"></giotramu-sign>
 ```
+
+The result:
+
+<img width="100px" src="../resources/svg/sign-only.svg" alt="Giovanni Tramutola Sign Only" />
 
 ## Attributes
 
@@ -53,7 +57,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
       <td>size</td>
       <td><code>string</code></td>
       <td><code>'100%'</code></td>
-      <td>The width of the component. Use a length in <code>px</code>, <code>rem</code>, <code>em</code>, <code>%</code> unit</td>
+      <td>The width of the component. Use a length in <code>px</code>, <code>rem</code>, <code>em</code>, <code>%</code> unit.</td>
     <tr>
   </tbody>
 </table>
