@@ -22,8 +22,9 @@ Web Components that run natively or near-natively in all widely used desktop and
 ## Resources
 
 - [Color schema](./docs/color-schema.md)
-- [png](./resources/png)
+- [favicon](./resources/favicon)
 - [jpg](./resources/jpeg)
+- [png](./resources/png)
 - [svg](./resources/svg)
 
 ## Thanks
@@ -44,7 +45,7 @@ Web Components that run natively or near-natively in all widely used desktop and
 [deps-url]: https://david-dm.org/giotramu/logo
 [devdeps-url]: https://david-dm.org/giotramu/logo?type=dev
 [npm-url]: https://www.npmjs.com/package/@giotramu/logo
-[stenciljs-url]: https://stenciljs.com/
+[stenciljs-url]: https://stenciljs.com
 
 <!---
   B A D G E S

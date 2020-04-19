@@ -2,13 +2,13 @@
 
 # Color schema
 
-|       Color       |   Key    |    Hex    |         RGB          |
-| :---------------: | :------: | :-------: | :------------------: |
-| ![accent][accent] | `accent` | `#0c57fb` |  `rgb(12, 87, 251)`  |
-|   ![gray][gray]   |  `gray`  | `#d3dde6` | `rgb(211, 221, 230)` |
-|   ![dark][dark]   |  `dark`  | `#1d2b3b` |  `rgb(29, 43, 59)`   |
-|  ![light][light]  | `light`  |  `#fff`   | `rgb(255, 255, 255)` |
-|   ![none][none]   |  `none`  |  `#000`   |    `rgb(0, 0, 0)`    |
+|       Color       |   Key    |       Hex |                  HSL |
+| :---------------: | :------: | --------: | -------------------: |
+| ![accent][accent] | `accent` | `#0c57fb` | `hsl(221, 97%, 52%)` |
+|   ![gray][gray]   |  `gray`  | `#d3dde6` | `hsl(208, 28%, 86%)` |
+|   ![dark][dark]   |  `dark`  | `#1d2b3b` | `hsl(212, 34%, 17%)` |
+|  ![light][light]  | `light`  |    `#fff` |    `hsl(0, 0, 100%)` |
+|   ![none][none]   |  `none`  |    `#000` |       `hsl(0, 0, 0)` |
 
 <!---
   I M A G E S
