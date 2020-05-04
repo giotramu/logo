@@ -1,6 +1,6 @@
 # Logo
 
-Web Components and resources related to personal logo.
+Web Component of my personal logo and related resources.
 
 [![NPM][npm-img]][npm-url]
 [![Bundlephobia][bundlephobia-img]][bundlephobia-url]
@@ -9,23 +9,39 @@ Web Components and resources related to personal logo.
 [![Dependencies][deps-img]][deps-url]
 [![Dev Dependencies][devdeps-img]][devdeps-url]
 
-## The Web Components
+## Table of contents
 
-Web Components that run natively or near-natively in all widely used desktop and mobile browsers. [Check the browsers support](./docs/browsers-support.md).
+- [Logo](#logo)
+  - [Web Component](#web-component)
+    - [Logo][logo-url]
+    - [Typo][typo-url]
+    - [Sign][sign-url]
+  - [Resources](#resources)
+    - [Color schema][color-schema-url]
+    - [Favicon][favicon-url]
+    - [JPG][jpg-url]
+    - [PNG][png-url]
+    - [SVG][svg-url]
+  - [Thanks](#thanks)
+  - [License](#license)
 
-> **[Try live on CodePen!](https://codepen.io/giotramu/full/xxGBBVm)**
+## Web Component
 
-- [\<giotramu-logo>](./docs/logo.md)
-- [\<giotramu-typo>](./docs/typo.md)
-- [\<giotramu-sign>](./docs/sign.md)
+Web Component (v1 spec) that run natively or near-natively in all widely used desktop and mobile browsers. [Check the browsers support](./docs/browsers-support.md).
+
+**[Try live on CodePen!](https://codepen.io/giotramu/full/xxGBBVm)**
+
+- [\<giotramu-logo>][logo-url]
+- [\<giotramu-typo>][typo-url]
+- [\<giotramu-sign>][sign-url]
 
 ## Resources
 
-- [Color schema](./docs/color-schema.md)
-- [favicon](./resources/favicon)
-- [jpg](./resources/jpeg)
-- [png](./resources/png)
-- [svg](./resources/svg)
+- [Color schema][color-schema-url]
+- [Favicon][favicon-url]
+- [JPG][jpg-url]
+- [PNG][png-url]
+- [SVG][svg-url]
 
 ## Thanks
 
@@ -46,6 +62,14 @@ Web Components that run natively or near-natively in all widely used desktop and
 [devdeps-url]: https://david-dm.org/giotramu/logo?type=dev
 [npm-url]: https://www.npmjs.com/package/@giotramu/logo
 [stenciljs-url]: https://stenciljs.com
+[color-schema-url]: ./docs/color-schema.md
+[favicon-url]: ./resources/favicon
+[jpg-url]: ./resources/jpeg
+[png-url]: ./resources/png
+[svg-url]: ./resources/svg
+[logo-url]: ./docs/logo.md
+[typo-url]: ./docs/typo.md
+[sign-url]: ./docs/sign.md
 
 <!---
   B A D G E S

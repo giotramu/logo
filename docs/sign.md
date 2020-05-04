@@ -2,37 +2,39 @@
 
 # \<giotramu-sign>
 
+## Table of contents
+
+- [Install](#install)
+- [Usage](#usage)
+- [Attributes](#attributes)
+
 ## Install
 
-- **Script tag**
-
-Put a script tag in the head of your `index.html` document:
+You can use the Web Component in your HTML template, JSX, Pug etc. [Check the browsers support](./browsers-support.md). Put the following scripts tag in the head of your document:
 
 ```html
-<script src="https://unpkg.com/@giotramu/logo/dist/giotramu-logo.js"></script>
-```
+<!-- for browsers where JavaScript Modules run natively  -->
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@giotramu/logo/dist/giotramu-logo/giotramu-logo.esm.js"
+></script>
 
-- **Node Modules**
-
-Run `npm install @giotramu/logo --save`.
-
-Put a script tag in the head of your `index.html`:
-
-```html
-<script src="node_modules/@giotramu/logo/dist/giotramu-logo.js"></script>
+<!-- for the legacy browsers -->
+<script
+  nomodule
+  src="https://cdn.jsdelivr.net/npm/@giotramu/logo/dist/giotramu-logo/giotramu-logo.js"
+></script>
 ```
 
 ## Usage
 
-You can use the element anywhere in your HTML template, JSX, Pug etc. [Check the browsers support](./browsers-support.md).
-
-Drop this line in your HTML document:
+Drop this line into your HTML document:
 
 ```html
 <giotramu-sign size="100px" fill-color="accent"></giotramu-sign>
 ```
 
-The result:
+Et... Voilà:
 
 <img width="100px" src="../resources/svg/sign-only.svg" alt="Giovanni Tramutola Sign Only" />
 

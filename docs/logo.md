@@ -2,47 +2,49 @@
 
 # \<giotramu-logo>
 
+## Table of contents
+
+- [Install](#install)
+- [Usage](#usage)
+- [Attributes](#attributes)
+
 ## Install
 
-- **Script tag**
-
-Put a script tag in the head of your `index.html` document:
+You can use the Web Component in your HTML template, JSX, Pug etc. [Check the browsers support](./browsers-support.md). Put the following scripts tag in the head of your document:
 
 ```html
-<script src="https://unpkg.com/@giotramu/logo/dist/giotramu-logo.js"></script>
-```
+<!-- for browsers where JavaScript Modules run natively  -->
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@giotramu/logo/dist/giotramu-logo/giotramu-logo.esm.js"
+></script>
 
-- **Node Modules**
-
-Run `npm install @giotramu/logo --save`.
-
-Put a script tag in the head of your `index.html`:
-
-```html
-<script src="node_modules/@giotramu/logo/dist/giotramu-logo.js"></script>
+<!-- for the legacy browsers -->
+<script
+  nomodule
+  src="https://cdn.jsdelivr.net/npm/@giotramu/logo/dist/giotramu-logo/giotramu-logo.js"
+></script>
 ```
 
 ## Usage
 
-You can use the element anywhere in your HTML template, JSX, Pug etc. [Check the browsers support](./browsers-support.md).
-
-Drop this line in your HTML document:
+Drop this line into your HTML document:
 
 ```html
-<giotramu-logo size="200px" fill-color="accent" column></giotramu-logo>
+<giotramu-logo size="180px" fill-color="accent" column></giotramu-logo>
 ```
 
-The result:
+Et... Voilà:
 
-<img width="200px" src="../resources/svg/logo-vertical.svg" alt="Giovanni Tramutola Vertical Logo" />
+<img width="180px" src="../resources/svg/logo-vertical.svg" alt="Giovanni Tramutola Vertical Logo" />
 
-Or this one for obtaining the horizontal version:
+Or use this one for the horizontal version:
 
 ```html
-<giotramu-logo size="300px" fill-color="accent"></giotramu-logo>
+<giotramu-logo size="280px" fill-color="accent"></giotramu-logo>
 ```
 
-<img width="300px" src="../resources/svg/logo-horizontal.svg" alt="Giovanni Tramutola Horizontal Logo" />
+<img width="280px" src="../resources/svg/logo-horizontal.svg" alt="Giovanni Tramutola Horizontal Logo" />
 
 ## Attributes
 
@@ -59,7 +61,7 @@ Or this one for obtaining the horizontal version:
       <td>column</td>
       <td><code>boolean</code></td>
       <td><code>false</code></td>
-      <td>Place monogram and logotype on the horizontal or vertical axis.</td>
+      <td>Place monogram and logotype in horizontal or vertical axis.</td>
     </tr>
     <tr>
       <td>fill-color</td>

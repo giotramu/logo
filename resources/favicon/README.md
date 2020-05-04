@@ -1,32 +1,54 @@
 # Favicon
 
-## Usage
-
-Copy the following link tags and paste them into the head of your HTML.
+Copy the following HTML tags and paste them into the head of your document:
 
 ```html
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<!-- Favicon -->
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="https://cdn.jsdelivr.net/npm/@giotramu/logo/resources/favicon/apple-touch-icon.png"
+/>
+
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="https://cdn.jsdelivr.net/npm/@giotramu/logo/resources/favicon/favicon-32.png"
+/>
+
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="https://cdn.jsdelivr.net/npm/@giotramu/logo/resources/favicon/favicon-16.png"
+/>
 ```
 
-Then, copy and paste the following properties to your project manifest.
+Do you have a [`manifest.json`][manifest-doc-url] in your project? Perfect! Copy and paste the following properties:
 
 ```json
 {
+  "display": "standalone",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "https://cdn.jsdelivr.net/npm/@giotramu/logo/resources/favicon/android-chrome-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "https://cdn.jsdelivr.net/npm/@giotramu/logo/resources/favicon/android-chrome-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "theme_color": "#0c57fb"
 }
 ```
+
+<!---
+  L I N K S
+-->
+
+[manifest-doc-url]: https://developer.chrome.com/extensions/manifest

@@ -47,4 +47,4 @@
   </tbody>
 </table>
 
-⚠ Support with bundled polyfills
+⚠ Polyfills are used to support.

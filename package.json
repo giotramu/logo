@@ -1,7 +1,7 @@
 {
   "name": "@giotramu/logo",
   "version": "1.1.2",
-  "description": "Web Components and resources related to personal logo.",
+  "description": "Web Component of my personal logo and related resources.",
   "author": "giotramu <https://twitter.com/giotramu>",
   "homepage": "https://github.com/giotramu/logo#readme",
   "license": "MIT",
@@ -34,14 +34,14 @@
   "scripts": {
     "check:src": "tsc --noEmit",
     "lint:css": "stylelint ./src/components/**/*.css",
-    "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "lint": "run-p -clns lint:**",
+    "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
+    "lint": "npm run lint:css && npm run lint:src",
     "test": "stencil test --spec --e2e --coverage",
     "dev": "stencil build --dev --watch --serve",
     "build": "stencil build"
   },
   "devDependencies": {
-    "@giotramu/stylelint-config": "2.3.0",
+    "@giotramu/stylelint-config": "3.0.3",
     "@stencil/core": "1.12.6",
     "@types/jest": "24.0.25",
     "@types/puppeteer": "2.0.1",
@@ -52,11 +52,10 @@
     "husky": "4.2.5",
     "jest": "24.9.0",
     "jest-cli": "24.9.0",
-    "npm-run-all": "4.1.5",
     "prettier": "2.0.5",
     "pretty-quick": "2.0.1",
     "puppeteer": "2.1.1",
-    "stylelint": "13.3.2"
+    "stylelint": "13.3.3"
   },
   "keywords": [
     "custom-elements-v1",
