@@ -27,7 +27,7 @@ Web Component of my personal logo and related resources.
 
 ## Web Component
 
-Web Component (v1 spec) that run natively or near-natively in all widely used desktop and mobile browsers. [Check the browsers support](./docs/browsers-support.md).
+Web Component that run natively or near-natively in all widely used desktop and mobile browsers. [Check the browsers support](./docs/browsers-support.md).
 
 **[Try live on CodePen!](https://codepen.io/giotramu/full/xxGBBVm)**
 
