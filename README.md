@@ -13,15 +13,15 @@ Web Component of my personal logo and related resources.
 
 - [Logo](#logo)
   - [Web Component](#web-component)
-    - [Logo][logo-url]
-    - [Typo][typo-url]
-    - [Sign][sign-url]
+    - [Logo][webc-logo-url]
+    - [Typo][webc-typo-url]
+    - [Sign][webc-sign-url]
   - [Resources](#resources)
     - [Color schema][color-schema-url]
-    - [Favicon][favicon-url]
-    - [JPG][jpg-url]
-    - [PNG][png-url]
-    - [SVG][svg-url]
+    - [Favicon][logo-favicon-url]
+    - [JPG][logo-jpg-url]
+    - [PNG][logo-png-url]
+    - [SVG][logo-svg-url]
   - [Thanks](#thanks)
   - [License](#license)
 
@@ -31,17 +31,17 @@ Web Component that run natively or near-natively in all widely used desktop and 
 
 **[Try live on CodePen!](https://codepen.io/giotramu/full/xxGBBVm)**
 
-- [\<giotramu-logo>][logo-url]
-- [\<giotramu-typo>][typo-url]
-- [\<giotramu-sign>][sign-url]
+- [\<giotramu-logo>][webc-logo-url]
+- [\<giotramu-typo>][webc-typo-url]
+- [\<giotramu-sign>][webc-sign-url]
 
 ## Resources
 
 - [Color schema][color-schema-url]
-- [Favicon][favicon-url]
-- [JPG][jpg-url]
-- [PNG][png-url]
-- [SVG][svg-url]
+- [Favicon][logo-favicon-url]
+- [JPG][logo-jpg-url]
+- [PNG][logo-png-url]
+- [SVG][logo-svg-url]
 
 ## Thanks
 
@@ -57,19 +57,19 @@ Web Component that run natively or near-natively in all widely used desktop and 
 
 [bundlephobia-url]: https://bundlephobia.com/result?p=@giotramu/logo
 [ci-url]: https://github.com/giotramu/logo/actions
+[color-schema-url]: ./docs/color-schema.md
 [coverage-url]: https://coveralls.io/github/giotramu/logo
 [deps-url]: https://david-dm.org/giotramu/logo
 [devdeps-url]: https://david-dm.org/giotramu/logo?type=dev
+[logo-favicon-url]: ./resources/favicon
+[logo-jpg-url]: ./resources/jpeg
+[logo-png-url]: ./resources/png
+[logo-svg-url]: ./resources/svg
 [npm-url]: https://www.npmjs.com/package/@giotramu/logo
 [stenciljs-url]: https://stenciljs.com
-[color-schema-url]: ./docs/color-schema.md
-[favicon-url]: ./resources/favicon
-[jpg-url]: ./resources/jpeg
-[png-url]: ./resources/png
-[svg-url]: ./resources/svg
-[logo-url]: ./docs/logo.md
-[typo-url]: ./docs/typo.md
-[sign-url]: ./docs/sign.md
+[webc-logo-url]: ./docs/logo.md
+[webc-sign-url]: ./docs/sign.md
+[webc-typo-url]: ./docs/typo.md
 
 <!---
   B A D G E S
