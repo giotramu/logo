@@ -51,7 +51,7 @@
     "eslint-plugin-react": "7.19.0",
     "husky": "4.2.5",
     "jest": "24.9.0",
-    "jest-cli": "24.9.0",
+    "jest-cli": "25.5.4",
     "prettier": "2.0.5",
     "pretty-quick": "2.0.1",
     "puppeteer": "3.0.2",
