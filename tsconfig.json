@@ -13,5 +13,5 @@
     "noUnusedParameters": true,
     "target": "es2017"
   },
-  "include": ["./src", "./types/jsx.d.ts"]
+  "include": ["src", "types/jsx.d.ts"]
 }

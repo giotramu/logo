@@ -80,4 +80,4 @@ Web Component that run natively or near-natively in all widely used desktop and 
 [coverage-img]: https://badgen.net/coveralls/c/github/giotramu/logo/master
 [deps-img]: https://badgen.net/david/dep/giotramu/logo
 [devdeps-img]: https://badgen.net/david/dev/giotramu/logo
-[npm-img]: https://badgen.net/npm/v/@giotramu/logo?icon=npm&label=npm%20package
+[npm-img]: https://badgen.net/npm/v/@giotramu/logo?label=npm%20package
