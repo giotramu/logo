@@ -65,9 +65,9 @@ Or use this one for the horizontal version:
     </tr>
     <tr>
       <td>fill-color</td>
-      <td><code>'dark' | 'accent' | 'light' | 'gray'</code></td>
+      <td><code>'accent-high' | 'accent-low' | 'base-high' | 'base-low' | 'light-high' | 'light-low' | 'white' | 'black'</code></td>
       <td><code>'none'</code></td>
-      <td>The color of the component. The default is <code>'none'</code>, equal to <code>#000</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
+      <td>The color of the component. The default is <code>'accent-high'</code>, equal to <code>#0072ff</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
     </tr>
     <tr>
       <td>size</td>

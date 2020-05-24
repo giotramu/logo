@@ -46,13 +46,13 @@ describe('giotramu-logo', () => {
     const sign = await page.find('giotramu-logo >>> .sign');
     const typo = await page.find('giotramu-logo >>> .typo');
 
-    expect(sign.getAttribute('fill-color')).toBe(null);
-    expect(typo.getAttribute('fill-color')).toBe(null);
+    expect(sign.getAttribute('fill-color')).toBe('accent-high');
+    expect(typo.getAttribute('fill-color')).toBe('accent-high');
 
-    component.setProperty('fillColor', 'gray');
+    component.setProperty('fillColor', 'base-high');
     await page.waitForChanges();
 
-    expect(sign.getAttribute('fill-color')).toBe('gray');
-    expect(typo.getAttribute('fill-color')).toBe('gray');
+    expect(sign.getAttribute('fill-color')).toBe('base-high');
+    expect(typo.getAttribute('fill-color')).toBe('base-high');
   });
 });

@@ -1,25 +1,28 @@
-import {FillStyle, HexColor} from '../typings/props';
+import {HexCode} from '../typings/props';
 
-export function handleColor(color: FillStyle): HexColor {
-  switch (color) {
-    case 'accent':
-      return '#0c57fb';
-    case 'gray':
-      return '#d3dde6';
-    case 'light':
-      return '#fff';
-    case 'dark':
-      return '#1d2b3b';
-    default:
-      return '#000';
+export const fillColors = {
+  'accent-high': '#0072ff',
+  'accent-low': '#0084ff',
+  'base-high': '#202d3a',
+  'base-low': '#5a5c6a',
+  'light-high': '#e1eaee',
+  'light-low': '#fafafa',
+  white: '#fff',
+  black: '#000'
+} as const;
+
+export function getHexCode(color: string): HexCode {
+  let hexCode: string = fillColors['accent-high'];
+
+  let key: keyof typeof fillColors;
+  for (key in fillColors) {
+    if (color === key) {
+      hexCode = fillColors[key];
+      break;
+    }
   }
-}
 
-export function handleSize(
-  size?: string,
-  defaultSize: string = '100%'
-): string {
-  return typeof size === 'undefined' ? defaultSize : size;
+  return hexCode;
 }
 
 /**

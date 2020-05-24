@@ -1,17 +1,29 @@
 {
   "compilerOptions": {
+    "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
+    "alwaysStrict": true,
+    "baseUrl": ".",
     "declaration": false,
+    "esModuleInterop": true,
     "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "jsxFactory": "h",
-    "lib": ["dom", "es2017"],
+    "lib": ["es2017", "dom"],
     "module": "esnext",
     "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "target": "es2017"
+    "sourceMap": false,
+    "strict": true,
+    "target": "es2017",
+    "typeRoots": ["typings", "node_modules/@types"]
   },
-  "include": ["src", "types/jsx.d.ts"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }

@@ -1,6 +1,6 @@
 # Favicon
 
-Copy the following HTML tags and paste them into the head of your document:
+Copy/paste the link tag in the head of your `index.html` document:
 
 ```html
 <!-- Favicon -->

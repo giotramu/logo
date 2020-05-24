@@ -2,20 +2,26 @@
 
 # Color schema
 
-|       Color       | Key      |       Hex |
-| :---------------: | :------- | --------: |
-| ![accent][accent] | `accent` | `#0c57fb` |
-|   ![gray][gray]   | `gray`   | `#d3dde6` |
-|   ![dark][dark]   | `dark`   | `#1d2b3b` |
-|  ![light][light]  | `light`  |    `#fff` |
-|   ![none][none]   | `none`   |    `#000` |
+|            Color            | Key           |       Hex |
+| :-------------------------: | :------------ | --------: |
+| ![accent-high][accent-high] | `accent-high` | `#0072ff` |
+|  ![accent-low][accent-low]  | `accent-low`  | `#0084ff` |
+|   ![base-high][base-high]   | `base-high`   | `#202d3a` |
+|    ![base-low][base-low]    | `base-low`    | `#5a5c6a` |
+|  ![light-high][light-high]  | `light-high`  | `#e1eaee` |
+|   ![light-low][light-low]   | `light-low`   | `#fafafa` |
+|       ![white][white]       | `white`       |    `#fff` |
+|       ![black][black]       | `black`       |    `#000` |
 
 <!---
   I M A G E S
 -->
 
-[accent]: https://via.placeholder.com/40/0c57fb/0c57fb.png
-[gray]: https://via.placeholder.com/40/d3dde6/d3dde6.png
-[light]: https://via.placeholder.com/40/fff/fff.png
-[dark]: https://via.placeholder.com/40/1d2b3b/1d2b3b.png
-[none]: https://via.placeholder.com/40/000/000.png
+[accent-high]: https://via.placeholder.com/40/0072ff/0072ff.png
+[accent-low]: https://via.placeholder.com/40/0084ff/0084ff.png
+[base-high]: https://via.placeholder.com/40/202d3a/202d3a.png
+[base-low]: https://via.placeholder.com/40/5a5c6a/5a5c6a.png
+[light-high]: https://via.placeholder.com/40/e1eaee/e1eaee.png
+[light-low]: https://via.placeholder.com/40/fafafa/fafafa.png
+[white]: https://via.placeholder.com/40/fff/fff.png
+[black]: https://via.placeholder.com/40/000/000.png

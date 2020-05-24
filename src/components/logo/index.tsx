@@ -1,6 +1,5 @@
 import {Component, Prop, h} from '@stencil/core';
-import {Size, FillStyle, Alignment} from '../../typings/props';
-import {handleSize} from '../../utils/helpers';
+import {Alignment, Size} from '../../typings/props';
 
 @Component({
   shadow: true,
@@ -8,8 +7,8 @@ import {handleSize} from '../../utils/helpers';
   styleUrl: './styles.css'
 })
 export class Logo {
-  @Prop() size: Size;
-  @Prop() fillColor: FillStyle;
+  @Prop() size = '100%';
+  @Prop() fillColor = 'accent-high';
   @Prop() column = false;
 
   render(): Element {
@@ -25,11 +24,11 @@ export class Logo {
     );
   }
 
-  private getSize(): string {
-    return handleSize(this.size);
+  private getSize(): Size {
+    return this.size;
   }
 
-  private getFillColor(): FillStyle {
+  private getFillColor(): string {
     return this.fillColor;
   }
 

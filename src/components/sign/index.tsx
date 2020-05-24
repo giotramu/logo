@@ -1,6 +1,6 @@
 import {Component, Prop, h} from '@stencil/core';
-import {Size, FillStyle} from '../../typings/props';
-import {calcPercentage, handleColor, handleSize} from '../../utils/helpers';
+import {HexCode, Size} from '../../typings/props';
+import {calcPercentage, getHexCode} from '../../utils/helpers';
 
 @Component({
   shadow: true,
@@ -8,8 +8,8 @@ import {calcPercentage, handleColor, handleSize} from '../../utils/helpers';
   styleUrl: './styles.css'
 })
 export class Sign {
-  @Prop() size: Size;
-  @Prop() fillColor: FillStyle;
+  @Prop() size = '100%';
+  @Prop() fillColor = 'accent-high';
 
   render(): SVGElement {
     const fill = this.getFillColor();
@@ -42,11 +42,11 @@ export class Sign {
     );
   }
 
-  private getSize(): string {
-    return handleSize(this.size);
+  private getSize(): Size {
+    return this.size;
   }
 
-  private getFillColor(): string {
-    return handleColor(this.fillColor);
+  private getFillColor(): HexCode {
+    return getHexCode(this.fillColor);
   }
 }

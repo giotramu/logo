@@ -1,29 +1,21 @@
-import {handleColor, handleSize, calcPercentage} from '../helpers';
+import {getHexCode, calcPercentage} from '../helpers';
 
-describe('handleColor', () => {
-  it(`returns a specific hex color for the "accent", "gray", "dark" and "light" keywords`, () => {
-    expect(handleColor('accent')).toBe('#0c57fb');
-    expect(handleColor('gray')).toBe('#d3dde6');
-    expect(handleColor('dark')).toBe('#1d2b3b');
-    expect(handleColor('light')).toBe('#fff');
+describe('getHexCode', () => {
+  it(`returns the color hex code`, () => {
+    expect(getHexCode('accent-high')).toBe('#0072ff');
+    expect(getHexCode('accent-low')).toBe('#0084ff');
+    expect(getHexCode('base-high')).toBe('#202d3a');
+    expect(getHexCode('base-low')).toBe('#5a5c6a');
+    expect(getHexCode('light-high')).toBe('#e1eaee');
+    expect(getHexCode('light-low')).toBe('#fafafa');
+    expect(getHexCode('white')).toBe('#fff');
+    expect(getHexCode('black')).toBe('#000');
   });
 
   it(`returns the black color for the the unknown keywords`, () => {
-    expect(handleColor('none')).toBe('#000');
+    expect(getHexCode('none')).toBe('#0072ff');
     // @ts-ignore
-    expect(handleColor('fake')).toBe('#000');
-  });
-});
-
-describe('handleSize', () => {
-  it(`returns declared size`, () => {
-    expect(handleSize('20px')).toBe('20px');
-  });
-
-  it(`returns defaultSize if size isn't declared`, () => {
-    expect(handleSize()).toBe('100%');
-    expect(handleSize(undefined)).toBe('100%');
-    expect(handleSize(undefined, '80%')).toBe('80%');
+    expect(getHexCode('fake')).toBe('#0072ff');
   });
 });
 

@@ -32,11 +32,11 @@ describe('giotramu-typo', () => {
     const component = await page.find('giotramu-typo');
     const svg = await page.find('giotramu-typo >>> .vector');
 
-    expect(svg.getAttribute('fill')).toBe('#000');
+    expect(svg.getAttribute('fill')).toBe('#0072ff');
 
-    component.setProperty('fillColor', 'accent');
+    component.setProperty('fillColor', 'light-high');
     await page.waitForChanges();
 
-    expect(svg.getAttribute('fill')).toBe('#0c57fb');
+    expect(svg.getAttribute('fill')).toBe('#e1eaee');
   });
 });
