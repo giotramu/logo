@@ -29,7 +29,8 @@
   "collection:main": "dist/collection/index.js",
   "files": [
     "dist/",
-    "loader/"
+    "loader/",
+    "resources/"
   ],
   "scripts": {
     "check:src": "tsc --noEmit",
