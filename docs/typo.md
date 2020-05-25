@@ -10,12 +10,14 @@ You can use the Web Component in your HTML template, JSX, Pug etc. [Check the br
 <!-- for browsers where JavaScript Modules run natively  -->
 <script
   type="module"
+  crossorigin="anonymous"
   src="https://cdn.jsdelivr.net/npm/@giotramu/logo/dist/giotramu-logo/giotramu-logo.esm.js"
 ></script>
 
 <!-- for the legacy browsers -->
 <script
   nomodule
+  crossorigin="anonymous"
   src="https://cdn.jsdelivr.net/npm/@giotramu/logo/dist/giotramu-logo/giotramu-logo.js"
 ></script>
 ```
@@ -42,7 +44,7 @@ Drop this line into your HTML document:
     <tr>
       <td>fill-color</td>
       <td><code>'accent-high' | 'accent-low' | 'base-high' | 'base-low' | 'light-high' | 'light-low' | 'white' | 'black'</code></td>
-      <td><code>'none'</code></td>
+      <td><code>'accent-high'</code></td>
       <td>The color of the component. The default is <code>'accent-high'</code>, equal to <code>#0072ff</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
     </tr>
     <tr>
