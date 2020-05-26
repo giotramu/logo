@@ -17,12 +17,12 @@ describe('giotramu-sign', () => {
     const component = await page.find('giotramu-sign');
     const wrp = await page.find('giotramu-sign >>> .wrapper');
 
-    expect(wrp.getAttribute('e2e-width')).toBe('100%');
+    expect(wrp.getAttribute('data-width')).toBe('100%');
 
     component.setProperty('size', '348px');
     await page.waitForChanges();
 
-    expect(wrp.getAttribute('e2e-width')).toBe('348px');
+    expect(wrp.getAttribute('data-width')).toBe('348px');
   });
 
   it('renders fill-color attribute changes', async () => {

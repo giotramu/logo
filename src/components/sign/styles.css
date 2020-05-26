@@ -1,6 +1,11 @@
+:host {
+  display: block;
+}
+
 .wrapper {
   box-sizing: border-box;
   overflow: visible;
+  width: attr(data-width);
   font-size: 0;
   line-height: 0;
 }

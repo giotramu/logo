@@ -8,90 +8,59 @@
     />
     <title>Giovanni Tramutola Logo - Web component</title>
 
+    <!-- Favicon -->
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/@giotramu/css-kit@2.1.0/reset.css"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://cdn.jsdelivr.net/npm/@giotramu/logo/resources/favicon/apple-touch-icon.png"
     />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://cdn.jsdelivr.net/npm/@giotramu/logo/resources/favicon/favicon-32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://cdn.jsdelivr.net/npm/@giotramu/logo/resources/favicon/favicon-16.png"
+    />
+
     <link
       rel="stylesheet"
-      href="https://unpkg.com/@giotramu/css-kit@2.1.0/common.css"
+      href="https://cdn.jsdelivr.net/npm/@giotramu/css-kit"
     />
 
     <style>
-      body {
-        background-color: var(--gt-color-light);
-      }
-
       .showcase {
-        overflow-y: hidden;
-        padding: 3.2rem;
+        overflow: hidden;
+        padding: 1rem;
       }
 
       .showcase > ul {
-        display: grid;
+        display: flex;
+        width: 80%;
+        max-width: 72rem;
+        height: 100vh;
         margin: 0 auto;
         padding: 0;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        grid-gap: 1.6rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
         list-style: none;
       }
 
-      @media only screen and (min-width: 80em) {
-        .showcase > ul {
-          max-width: 76vw;
-        }
-      }
-
-      @media only screen and (min-width: 100em) {
-        .showcase > ul {
-          max-width: 68vw;
-        }
-      }
-
       .showcase > ul > li {
-        display: flex;
-        height: 16rem;
-        border-radius: 1.6rem;
         padding: 1.6rem;
-        align-items: center;
-        justify-content: center;
-        transition: box-shadow 0.4s ease-in-out;
       }
 
-      .showcase--dark {
-        background-color: var(--gt-color-dark);
-      }
-
-      .showcase--dark ul > li:hover {
-        background-color: var(--gt-color-dark);
-        box-shadow: 40px 40px 80px #192532, -40px -40px 80px #213144;
-      }
-
-      .showcase--accent {
-        background-color: var(--gt-color-accent);
-      }
-
-      .showcase--accent ul > li:hover {
-        background-color: var(--gt-color-accent);
-        box-shadow: 40px 40px 80px #0a4ad5, -40px -40px 80px #0e64ff;
-      }
-
-      .showcase--gray {
-        background-color: var(--gt-color-gray);
-      }
-
-      .showcase--gray ul > li:hover {
-        background-color: var(--gt-color-gray);
-        box-shadow: 40px 40px 80px #b3bcc4, -40px -40px 80px #f3feff;
-      }
-
-      .showcase--light {
-        background-color: var(--gt-color-light);
-      }
-
-      .showcase--light ul > li:hover {
-        background-color: var(--gt-color-light);
-        box-shadow: 40px 40px 80px #d9d9d9, -40px -40px 80px #fff;
+      @media only screen and (min-width: 60em) {
+        .showcase > ul {
+          flex-direction: row;
+        }
       }
     </style>
 
@@ -99,83 +68,23 @@
     <script nomodule src="/build/giotramu-logo.js"></script>
   </head>
   <body>
-    <section class="showcase showcase--accent">
+    <section class="showcase showcase--accent-high">
       <ul>
         <li>
           <giotramu-logo
-            size="100px"
-            fill-color="light-low"
-            column
-          ></giotramu-logo>
-        </li>
-        <li>
-          <giotramu-logo size="150px" fill-color="light-low"></giotramu-logo>
-        </li>
-        <li>
-          <giotramu-sign size="50px" fill-color="light-low"></giotramu-sign>
-        </li>
-        <li>
-          <giotramu-typo size="100px" fill-color="light-low"></giotramu-typo>
-        </li>
-      </ul>
-    </section>
-    <section class="showcase showcase--dark">
-      <ul>
-        <li>
-          <giotramu-logo
-            size="100px"
-            fill-color="light-high"
-            column
-          ></giotramu-logo>
-        </li>
-        <li>
-          <giotramu-logo size="150px" fill-color="light-high"></giotramu-logo>
-        </li>
-        <li>
-          <giotramu-sign size="50px" fill-color="light-high"></giotramu-sign>
-        </li>
-        <li>
-          <giotramu-typo size="100px" fill-color="light-high"></giotramu-typo>
-        </li>
-      </ul>
-    </section>
-    <section class="showcase showcase--gray">
-      <ul>
-        <li>
-          <giotramu-logo
-            size="100px"
+            size="140px"
             fill-color="accent-high"
             column
           ></giotramu-logo>
         </li>
         <li>
-          <giotramu-logo size="150px" fill-color="accent-high"></giotramu-logo>
+          <giotramu-logo size="180px" fill-color="accent-high"></giotramu-logo>
         </li>
         <li>
-          <giotramu-sign size="50px" fill-color="accent-high"></giotramu-sign>
+          <giotramu-sign size="60px" fill-color="accent-high"></giotramu-sign>
         </li>
         <li>
-          <giotramu-typo size="100px" fill-color="accent-high"></giotramu-typo>
-        </li>
-      </ul>
-    </section>
-    <section class="showcase showcase--light">
-      <ul>
-        <li>
-          <giotramu-logo
-            size="100px"
-            fill-color="base-high"
-            column
-          ></giotramu-logo>
-        </li>
-        <li>
-          <giotramu-logo size="150px" fill-color="base-high"></giotramu-logo>
-        </li>
-        <li>
-          <giotramu-sign size="50px" fill-color="base-high"></giotramu-sign>
-        </li>
-        <li>
-          <giotramu-typo size="100px" fill-color="base-high"></giotramu-typo>
+          <giotramu-typo size="140px" fill-color="accent-high"></giotramu-typo>
         </li>
       </ul>
     </section>

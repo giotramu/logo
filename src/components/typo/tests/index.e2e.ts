@@ -17,12 +17,12 @@ describe('giotramu-typo', () => {
     const component = await page.find('giotramu-typo');
     const wrp = await page.find('giotramu-typo >>> .wrapper');
 
-    expect(wrp.getAttribute('e2e-width')).toBe('100%');
+    expect(wrp.getAttribute('data-width')).toBe('100%');
 
     component.setProperty('size', '480px');
     await page.waitForChanges();
 
-    expect(wrp.getAttribute('e2e-width')).toBe('480px');
+    expect(wrp.getAttribute('data-width')).toBe('480px');
   });
 
   it('renders fill-color attribute changes', async () => {

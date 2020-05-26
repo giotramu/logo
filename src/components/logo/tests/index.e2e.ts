@@ -16,12 +16,12 @@ describe('giotramu-logo', () => {
 
     const component = await page.find('giotramu-logo');
     const logo = await page.find('giotramu-logo >>> .logo');
-    expect(logo.getAttribute('align-items')).toBe('row');
+    expect(logo.getAttribute('data-align')).toBe('row');
 
     component.setProperty('column', true);
     await page.waitForChanges();
 
-    expect(logo.getAttribute('align-items')).toBe('column');
+    expect(logo.getAttribute('data-align')).toBe('column');
   });
 
   it('renders size attribute changes', async () => {
@@ -30,12 +30,12 @@ describe('giotramu-logo', () => {
 
     const component = await page.find('giotramu-logo');
     const element = await page.find('giotramu-logo >>> .logo');
-    expect(element.getAttribute('e2e-width')).toBe('100%');
+    expect(element.getAttribute('data-width')).toBe('100%');
 
     component.setProperty('size', '480px');
     await page.waitForChanges();
 
-    expect(element.getAttribute('e2e-width')).toBe('480px');
+    expect(element.getAttribute('data-width')).toBe('480px');
   });
 
   it('renders fill-color attribute changes', async () => {

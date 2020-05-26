@@ -1,4 +1,4 @@
-import {Component, Prop, h} from '@stencil/core';
+import {Component, Host, Prop, h} from '@stencil/core';
 import {Alignment, Size} from '../../typings/props';
 
 @Component({
@@ -17,10 +17,12 @@ export class Logo {
     const fillColor = this.getFillColor();
 
     return (
-      <div class="logo" style={{width}} align-items={align} e2e-width={width}>
-        <giotramu-sign class="sign" fill-color={fillColor} />
-        <giotramu-typo class="typo" fill-color={fillColor} />
-      </div>
+      <Host>
+        <div class="logo" style={{width}} data-align={align} data-width={width}>
+          <giotramu-sign class="sign" fill-color={fillColor} />
+          <giotramu-typo class="typo" fill-color={fillColor} />
+        </div>
+      </Host>
     );
   }
 
