@@ -6,6 +6,7 @@ Copy/paste the link tag in the head of your `index.html` document:
 <!-- Favicon -->
 <link
   rel="apple-touch-icon"
+  type="image/png"
   sizes="180x180"
   href="https://cdn.jsdelivr.net/npm/@giotramu/logo/resources/favicon/apple-touch-icon.png"
 />
@@ -42,8 +43,8 @@ Do you have a [`manifest.json`][manifest-doc-url] in your project? Perfect! Copy
       "type": "image/png"
     }
   ],
-  "background_color": "#ffffff",
-  "theme_color": "#0c57fb"
+  "background_color": "#fafafa",
+  "theme_color": "#202d3a"
 }
 ```
 
