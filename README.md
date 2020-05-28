@@ -17,7 +17,7 @@ Web Component version of my logo and related resources.
     - [Typo][webc-typo-url]
     - [Sign][webc-sign-url]
   - [Resources](#resources)
-    - [Color schema][color-schema-url]
+    - [Color scheme][color-scheme-url]
     - [Favicon][logo-favicon-url]
     - [JPG][logo-jpg-url]
     - [PNG][logo-png-url]
@@ -37,7 +37,7 @@ Web Component that run natively or near-natively in all widely used desktop and 
 
 ## Resources
 
-- [Color schema][color-schema-url]
+- [Color scheme][color-scheme-url]
 - [Favicon][logo-favicon-url]
 - [JPG][logo-jpg-url]
 - [PNG][logo-png-url]
@@ -57,7 +57,7 @@ Web Component that run natively or near-natively in all widely used desktop and 
 
 [bundlephobia-url]: https://bundlephobia.com/result?p=@giotramu/logo
 [ci-url]: https://github.com/giotramu/logo/actions
-[color-schema-url]: ./docs/color-schema.md
+[color-scheme-url]: ./docs/color-scheme.md
 [coverage-url]: https://coveralls.io/github/giotramu/logo
 [deps-url]: https://david-dm.org/giotramu/logo
 [devdeps-url]: https://david-dm.org/giotramu/logo?type=dev

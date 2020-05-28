@@ -2,49 +2,19 @@
 
 # Browsers support
 
-<table>
-  <thead>
-    <th></th>
-    <th><center><img width="20px" src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_32x32.png" title="Chrome" /><br/>60+</center></th>
-    <th><center><img width="20px" src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_32x32.png" title="Firefox" /><br/>63+</center></th>
-    <th><center><img width="20px" src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_32x32.png" title="Safari" /><br/>10.1+</center></th>
-    <th><center><img width="20px" src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_32x32.png" title="Edge" /><br/>16+</center></th>
-    <th><center><img width="20px" src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/edge_12-18/edge_12-18_32x32.png" title="Edge" /><br/>16+</center></th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Custom Elements</td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-      <td><center>⚠</center></td>
-    </tr>
-    <tr>
-      <td>Shadow DOM</td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-      <td><center>⚠</center></td>
-    </tr>
-    <tr>
-      <td>es2017</td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-    </tr>
-    <tr>
-      <td>ES Modules</td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-      <td><center>✔</center></td>
-    </tr>
-  </tbody>
-</table>
+|                 | ![chrome] | ![firefox] | ![safari] | ![edge] |
+| :-------------- | :-------: | :--------: | :-------: | :-----: |
+|                 |  **60+**  |  **63+**   | **10.1+** | **83+** |
+| Custom Elements |     ✔     |     ✔      |     ✔     |    ✔    |
+| Shadow DOM      |     ✔     |     ✔      |     ✔     |    ✔    |
+| es2017          |     ✔     |     ✔      |     ✔     |    ✔    |
+| ES Modules      |     ✔     |     ✔      |     ✔     |    ✔    |
 
-⚠ Polyfills are used to support.
+<!---
+  I M A G E S
+-->
+
+[chrome]: https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_24x24.png
+[firefox]: https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_24x24.png
+[safari]: https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_24x24.png
+[edge]: https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_24x24.png

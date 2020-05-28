@@ -4,7 +4,8 @@
 
 ## Install
 
-You can use the Web Component in your HTML template, JSX, Pug etc. [Check the browsers support](./browsers-support.md). Put the following scripts tag in the head of your document:
+You can use the Web Component in your HTML template, JSX, Pug etc. [Check the browsers support](./browsers-support.md).
+Put the following scripts tag in the head of your document:
 
 ```html
 <!-- for browsers where JavaScript Modules run natively  -->
@@ -45,7 +46,7 @@ Drop this line into your HTML document:
       <td>fill-color</td>
       <td><code>'accent-high' | 'accent-low' | 'base-high' | 'base-low' | 'light-high' | 'light-low' | 'white' | 'black'</code></td>
       <td><code>'accent-high'</code></td>
-      <td>The color of the component. The default is <code>'accent-high'</code>, equal to <code>#0072ff</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
+      <td>The color of the component. The default is <code>'accent-high'</code>, equal to <code>#0072ff</code>. <a href="./color-scheme.md" title="Color scheme">Check the color scheme</a>.</td>
     </tr>
     <tr>
       <td>size</td>
