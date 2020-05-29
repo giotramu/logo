@@ -14,8 +14,8 @@ Web Component version of my logo and related resources.
 - [Logo](#logo)
   - [Web Component](#web-component)
     - [Logo][webc-logo-url]
-    - [Typo][webc-typo-url]
     - [Sign][webc-sign-url]
+    - [Typo][webc-typo-url]
   - [Resources](#resources)
     - [Color scheme][color-scheme-url]
     - [Favicon][logo-favicon-url]
@@ -32,8 +32,8 @@ Web Component that run natively or near-natively in all widely used desktop and 
 **[Try live on CodePen!](https://codepen.io/giotramu/full/xxGBBVm)**
 
 - [\<giotramu-logo>][webc-logo-url]
-- [\<giotramu-typo>][webc-typo-url]
 - [\<giotramu-sign>][webc-sign-url]
+- [\<giotramu-typo>][webc-typo-url]
 
 ## Resources
 

@@ -8,14 +8,14 @@ You can use the Web Component in your HTML template, JSX, Pug etc. [Check the br
 Put the following scripts tag in the head of your document:
 
 ```html
-<!-- for browsers where JavaScript Modules run natively  -->
+<!-- for modern browsers, where JavaScript Modules run natively  -->
 <script
   type="module"
   crossorigin="anonymous"
   src="https://cdn.jsdelivr.net/npm/@giotramu/logo/dist/giotramu-logo/giotramu-logo.esm.js"
 ></script>
 
-<!-- for the legacy browsers -->
+<!-- for legacy browsers -->
 <script
   nomodule
   crossorigin="anonymous"
@@ -28,7 +28,7 @@ Put the following scripts tag in the head of your document:
 Drop this line into your HTML document:
 
 ```html
-<giotramu-typo size="200px" fill-color="accent"></giotramu-typo>
+<giotramu-typo size="250px"></giotramu-typo>
 ```
 
 ## Attributes

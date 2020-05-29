@@ -14,14 +14,14 @@ You can use the Web Component in your HTML template, JSX, Pug etc. [Check the br
 Put the following scripts tag in the head of your document:
 
 ```html
-<!-- for browsers where JavaScript Modules run natively  -->
+<!-- for modern browsers, where JavaScript Modules run natively  -->
 <script
   type="module"
   crossorigin="anonymous"
   src="https://cdn.jsdelivr.net/npm/@giotramu/logo/dist/giotramu-logo/giotramu-logo.esm.js"
 ></script>
 
-<!-- for the legacy browsers -->
+<!-- for legacy browsers -->
 <script
   nomodule
   crossorigin="anonymous"
@@ -34,20 +34,20 @@ Put the following scripts tag in the head of your document:
 Drop this line into your HTML document:
 
 ```html
-<giotramu-logo size="180px" fill-color="accent" column></giotramu-logo>
+<giotramu-logo size="150px" column></giotramu-logo>
 ```
 
 Et... Voilà:
 
-<img width="180px" src="../resources/svg/logo-vertical.svg" alt="Giovanni Tramutola Vertical Logo" />
+<img width="150px" src="../resources/svg/logo-vertical.svg" alt="Giovanni Tramutola" />
 
 Or use this one for the horizontal version:
 
 ```html
-<giotramu-logo size="280px" fill-color="accent"></giotramu-logo>
+<giotramu-logo size="250px"></giotramu-logo>
 ```
 
-<img width="280px" src="../resources/svg/logo-horizontal.svg" alt="Giovanni Tramutola Horizontal Logo" />
+<img width="250px" src="../resources/svg/logo-horizontal.svg" alt="Giovanni Tramutola" />
 
 ## Attributes
 
