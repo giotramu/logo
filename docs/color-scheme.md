@@ -4,14 +4,14 @@
 
 The logo has a pre-configured color palette. [Test foreground and background color combos][contrast-grid-url] for compliance with WCAG 2.0 minimum contrast.
 
-|     Color      | CSS Custom Property           |     Value |
-| :------------: | :---------------------------- | --------: |
-| ![accent-high] | `var(--ck-color-accent-high)` | `#0c57fb` |
-| ![accent-low]  | `var(--ck-color-accent-low)`  | `#0072ff` |
-|  ![base-high]  | `var(--ck-color-base-high)`   | `#202d3a` |
-|  ![base-low]   | `var(--ck-color-base-low)`    | `#5a5c6a` |
-| ![light-high]  | `var(--ck-color-light-high)`  | `#e1eaee` |
-|  ![light-low]  | `var(--ck-color-light-low)`   | `#fafafa` |
+|     Color      | CSS Custom Property |     Value |
+| :------------: | :------------------ | --------: |
+| ![accent-high] | `accent-high`       | `#0c57fb` |
+| ![accent-low]  | `accent-low`        | `#0072ff` |
+|  ![base-high]  | `base-high`         | `#202d3a` |
+|  ![base-low]   | `base-low`          | `#5a5c6a` |
+| ![light-high]  | `light-high`        | `#e1eaee` |
+|  ![light-low]  | `light-low`         | `#fafafa` |
 
 <!---
   I M A G E S
