@@ -32,11 +32,11 @@ describe('giotramu-sign', () => {
     const component = await page.find('giotramu-sign');
     const svg = await page.find('giotramu-sign >>> .vector');
 
-    expect(svg.getAttribute('fill')).toBe('#0072ff');
+    expect(svg.getAttribute('fill')).toBe('#0c57fb');
 
     component.setProperty('fillColor', 'accent-low');
     await page.waitForChanges();
 
-    expect(svg.getAttribute('fill')).toBe('#0084ff');
+    expect(svg.getAttribute('fill')).toBe('#0072ff');
   });
 });

@@ -1,8 +1,8 @@
 import {HexCode} from '../typings/props';
 
 export const fillColors = {
-  'accent-high': '#0072ff',
-  'accent-low': '#0084ff',
+  'accent-high': '#0c57fb',
+  'accent-low': '#0072ff',
   'base-high': '#202d3a',
   'base-low': '#5a5c6a',
   'light-high': '#e1eaee',

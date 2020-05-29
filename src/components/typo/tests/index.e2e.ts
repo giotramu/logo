@@ -32,7 +32,7 @@ describe('giotramu-typo', () => {
     const component = await page.find('giotramu-typo');
     const svg = await page.find('giotramu-typo >>> .vector');
 
-    expect(svg.getAttribute('fill')).toBe('#0072ff');
+    expect(svg.getAttribute('fill')).toBe('#0c57fb');
 
     component.setProperty('fillColor', 'light-high');
     await page.waitForChanges();

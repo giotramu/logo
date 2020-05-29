@@ -2,8 +2,8 @@ import {getHexCode, calcPercentage} from '../helpers';
 
 describe('getHexCode', () => {
   it(`returns the color hex code`, () => {
-    expect(getHexCode('accent-high')).toBe('#0072ff');
-    expect(getHexCode('accent-low')).toBe('#0084ff');
+    expect(getHexCode('accent-high')).toBe('#0c57fb');
+    expect(getHexCode('accent-low')).toBe('#0072ff');
     expect(getHexCode('base-high')).toBe('#202d3a');
     expect(getHexCode('base-low')).toBe('#5a5c6a');
     expect(getHexCode('light-high')).toBe('#e1eaee');
@@ -13,9 +13,9 @@ describe('getHexCode', () => {
   });
 
   it(`returns the black color for the the unknown keywords`, () => {
-    expect(getHexCode('none')).toBe('#0072ff');
+    expect(getHexCode('none')).toBe('#0c57fb');
     // @ts-ignore
-    expect(getHexCode('fake')).toBe('#0072ff');
+    expect(getHexCode('fake')).toBe('#0c57fb');
   });
 });
 
