@@ -3,4 +3,7 @@
 /dist/
 /loader/
 /www/
-*.d.ts
+
+.cache
+*.config.js
+node_modules

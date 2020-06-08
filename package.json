@@ -1,7 +1,7 @@
 {
   "name": "@giotramu/logo",
   "version": "1.4.1",
-  "description": "Web Component version of my logo and related resources.",
+  "description": "Web Component version of personal logo and related resources.",
   "author": "giotramu <https://twitter.com/giotramu>",
   "homepage": "https://github.com/giotramu/logo#readme",
   "license": "MIT",
@@ -33,10 +33,10 @@
     "resources/"
   ],
   "scripts": {
-    "clean": "rimraf dist loader www",
+    "clean": "rimraf ./coverage ./dist ./loader ./www",
     "check:src": "tsc --noEmit",
-    "lint:css": "stylelint ./src/components/**/*.css",
-    "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
+    "lint:css": "stylelint ./src/**/*.css --ignore-path .gitignore",
+    "lint:src": "eslint . --ext .js,.ts,.tsx",
     "lint": "npm run lint:css && npm run lint:src",
     "test": "stencil test --spec --e2e --coverage",
     "dev": "npm run build -- --dev --watch --serve",
@@ -49,7 +49,7 @@
     "@types/jest": "25.2.3",
     "@types/puppeteer": "3.0.0",
     "eslint": "7.2.0",
-    "eslint-config-contactlab": "4.2.2",
+    "eslint-config-contactlab": "5.0.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-react": "7.20.0",
     "husky": "4.2.5",
@@ -57,7 +57,7 @@
     "jest-cli": "26.0.1",
     "prettier": "2.0.5",
     "pretty-quick": "2.0.1",
-    "puppeteer": "3.2.0",
+    "puppeteer": "3.3.0",
     "rimraf": "3.0.2",
     "stylelint": "13.6.0"
   },

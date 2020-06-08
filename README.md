@@ -1,6 +1,6 @@
 # Logo
 
-Web Component version of my logo and related resources.
+Web Component version of personal logo and related resources.
 
 [![NPM][npm-img]][npm-url]
 [![Bundlephobia][bundlephobia-img]][bundlephobia-url]

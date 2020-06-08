@@ -5,11 +5,11 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'dist',
-      esmLoaderPath: '../loader',
+      esmLoaderPath: '../loader'
     },
     {
       type: 'www',
-      serviceWorker: null, // disable service workers
-    },
-  ],
+      serviceWorker: null // Disable service workers
+    }
+  ]
 };

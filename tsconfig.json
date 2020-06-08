@@ -12,7 +12,7 @@
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "jsxFactory": "h",
-    "lib": ["es2017", "dom"],
+    "lib": ["esnext", "dom", "dom.iterable"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmitOnError": true,
@@ -20,11 +20,10 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "sourceMap": false,
     "strict": true,
     "target": "es2017",
-    "typeRoots": ["typings", "node_modules/@types"]
+    "typeRoots": ["./typings", "./node_modules/@types"]
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
 }
