@@ -4,3 +4,6 @@
 /loader/
 /www/
 *.d.ts
+
+.cache
+node_modules/
