@@ -8,6 +8,7 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "jsx": "react",
     "jsxFactory": "h",
     "lib": ["esnext", "dom", "dom.iterable"],
@@ -21,7 +22,7 @@
     "noUnusedParameters": true,
     "strict": true,
     "target": "es2017",
-    "typeRoots": ["./typings", "./node_modules/@types"]
+    "typeRoots": ["./src/typings", "./node_modules/@types"]
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules"]
