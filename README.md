@@ -76,8 +76,8 @@ Web Component that run natively or near-natively in all widely used desktop and 
 -->
 
 [bundlephobia-img]: https://badgen.net/bundlephobia/minzip/@giotramu/logo
-[ci-img]: https://github.com/giotramu/logo/workflows/test%20+%20build/badge.svg?branch=master
-[coverage-img]: https://badgen.net/coveralls/c/github/giotramu/logo/master
+[ci-img]: https://github.com/giotramu/logo/workflows/test%20+%20build/badge.svg?branch=stable
+[coverage-img]: https://badgen.net/coveralls/c/github/giotramu/logo/stable
 [deps-img]: https://badgen.net/david/dep/giotramu/logo
 [devdeps-img]: https://badgen.net/david/dev/giotramu/logo
 [npm-img]: https://badgen.net/npm/v/@giotramu/logo?label=npm%20package
