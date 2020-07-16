@@ -60,7 +60,8 @@
     "pretty-quick": "2.0.1",
     "puppeteer": "5.0.0",
     "rimraf": "3.0.2",
-    "stylelint": "13.6.1"
+    "stylelint": "13.6.1",
+    "typescript": "3.9.6"
   },
   "keywords": [
     "custom-elements-v1",
