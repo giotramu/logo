@@ -51,7 +51,7 @@
     "eslint": "7.5.0",
     "eslint-config-contactlab": "5.0.0",
     "eslint-config-prettier": "6.11.0",
-    "eslint-plugin-react": "7.20.4",
+    "eslint-plugin-react": "7.20.5",
     "husky": "4.2.5",
     "jest": "26.1.0",
     "jest-cli": "26.2.2",
