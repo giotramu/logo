@@ -47,7 +47,7 @@
   "devDependencies": {
     "@giotramu/stylelint-config": "4.0.0",
     "@stencil/core": "2.0.3",
-    "@types/jest": "26.0.13",
+    "@types/jest": "26.0.14",
     "@types/puppeteer": "3.0.2",
     "eslint": "7.9.0",
     "eslint-config-contactlab": "5.0.0",
