@@ -45,7 +45,7 @@
     "build": "stencil build"
   },
   "devDependencies": {
-    "@giotramu/stylelint-config": "5.0.0",
+    "@giotramu/stylelint-config": "5.1.0",
     "@stencil/core": "2.0.3",
     "@types/jest": "26.0.14",
     "@types/puppeteer": "3.0.2",
