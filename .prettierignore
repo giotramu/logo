@@ -6,4 +6,4 @@
 *.d.ts
 
 .cache
-node_modules/
+node_modules

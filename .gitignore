@@ -5,16 +5,9 @@
 /www/
 
 .cache
-.DS_Store
 .env*
-.versions/
-*.lock
-*.log
-*.sw[mnpcod]
-*.tmp*
-*~
-$RECYCLE.BIN/
-log.txt
-node_modules/
+.DS_Store
+*lock
+*log
+node_modules
 Thumbs.db
-UserInterfaceState.xcuserstate
