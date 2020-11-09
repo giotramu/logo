@@ -2,7 +2,7 @@
 
 All notable changes to the project will be documented in this file.
 
-## [1.6.0] - 2020-09-10
+## 1.6.0 (2020-09-10)
 
 ### Added
 
@@ -18,7 +18,7 @@ All notable changes to the project will be documented in this file.
 
 ---
 
-## [1.5.0] - 2020-07-20
+## 1.5.0 (2020-07-20)
 
 ### Added
 
@@ -34,7 +34,7 @@ All notable changes to the project will be documented in this file.
 
 ---
 
-## [1.4.1] - 2020-05-30
+## 1.4.1 (2020-05-30)
 
 ### Added
 
@@ -51,7 +51,7 @@ All notable changes to the project will be documented in this file.
 
 ---
 
-## [1.4.0] - 2020-05-29
+## 1.4.0 (2020-05-29)
 
 ### Added
 
@@ -67,7 +67,7 @@ All notable changes to the project will be documented in this file.
 
 ---
 
-## [1.3.0] - 2020-05-25
+## 1.3.0 (2020-05-25)
 
 ### Added
 
@@ -83,7 +83,7 @@ All notable changes to the project will be documented in this file.
 
 ---
 
-## [1.2.0] - 2020-04-12
+## 1.2.0 (2020-04-12)
 
 ### Added
 
@@ -99,7 +99,7 @@ All notable changes to the project will be documented in this file.
 
 ---
 
-## [1.1.2] - 2020-04-14
+## 1.1.2 (2020-04-14)
 
 ### Added
 
@@ -115,7 +115,7 @@ All notable changes to the project will be documented in this file.
 
 ---
 
-## [1.1.1] - 2020-04-12
+## 1.1.1 (2020-04-12)
 
 ### Added
 
@@ -131,7 +131,7 @@ All notable changes to the project will be documented in this file.
 
 ---
 
-## [1.1.0] - 2020-04-11
+## 1.1.0 (2020-04-11)
 
 ### Added
 
@@ -147,7 +147,7 @@ All notable changes to the project will be documented in this file.
 
 ---
 
-## [1.0.0] - 2020-04-02
+## 1.0.0 (2020-04-02)
 
 ### Added
 
