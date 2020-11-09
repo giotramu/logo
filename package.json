@@ -33,11 +33,10 @@
     "resources/"
   ],
   "scripts": {
-    "check:src": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
     "lint:css": "stylelint ./src/**/*.css",
     "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint": "npm run lint:css & npm run lint:src",
-    "pretest": "npm run check:src & npm run lint",
     "test": "stencil test --spec --e2e --coverage",
     "dev": "npm run build -- --dev --watch --serve",
     "clean": "rimraf ./coverage ./dist ./loader ./www",
