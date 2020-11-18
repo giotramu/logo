@@ -1,13 +1,11 @@
 # Logo
 
-Web Component version of personal logo and related resources.
+A Web Component version of my logo built with Stenciljs with other resources (favicon, SVGs, etc.) bundled together.
 
 [![NPM][npm-img]][npm-url]
 [![Bundlephobia][bundlephobia-img]][bundlephobia-url]
 [![Build Status][ci-img]][ci-url]
 [![Code Coverage][coverage-img]][coverage-url]
-[![Dependencies][deps-img]][deps-url]
-[![Dev Dependencies][devdeps-img]][devdeps-url]
 
 ## Table of contents
 
@@ -75,9 +73,7 @@ Web Component that run natively or near-natively in all widely used desktop and 
   B A D G E S
 -->
 
-[bundlephobia-img]: https://badgen.net/bundlephobia/minzip/@giotramu/logo
-[ci-img]: https://github.com/giotramu/logo/workflows/test%20+%20build/badge.svg?branch=stable
-[coverage-img]: https://badgen.net/coveralls/c/github/giotramu/logo/stable
-[deps-img]: https://badgen.net/david/dep/giotramu/logo
-[devdeps-img]: https://badgen.net/david/dev/giotramu/logo
-[npm-img]: https://badgen.net/npm/v/@giotramu/logo?label=npm%20package
+[bundlephobia-img]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat&colorA=0c57fb&colorB=0c57fb
+[ci-img]: https://img.shields.io/github/workflow/status/giotramu/logo/test%20+%20build?style=flat&colorA=0c57fb&colorB=0c57fb
+[coverage-img]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat&colorA=0c57fb&colorB=0c57fb
+[npm-img]: https://img.shields.io/npm/v/@giotramu/logo?style=flat&colorA=0c57fb&colorB=0c57fb
