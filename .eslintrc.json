@@ -1,43 +1,46 @@
 {
   "root": true,
-  "parser": "@typescript-eslint/parser",
+  "plugins": ["react"],
   "extends": [
-    "@eslint-kit/base",
-    "@eslint-kit/prettier",
-    "@eslint-kit/react",
-    "@eslint-kit/typescript"
+    "plugin:react/recommended",
+    "contactlab/typescript",
+    "prettier/@typescript-eslint"
   ],
   "env": {
     "browser": true,
     "jest": true
   },
-  // "rules": {
-  //   "@typescript-eslint/ban-types": [
-  //     "error",
-  //     {
-  //       "types": {
-  //         "{}": false
-  //       },
-  //       "extendDefaults": true
-  //     }
-  //   ],
-  //   "react/jsx-uses-react": "error",
-  //   "react/jsx-uses-vars": "error"
-  // },
+  "settings": {
+    "react": {
+      "pragma": "h",
+      "version": "detect"
+    }
+  },
+  "rules": {
+    // --- TypeScript
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "{}": false
+        },
+        "extendDefaults": true
+      }
+    ],
+    // --- React
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/no-unknown-property": ["error", {"ignore": ["class"]}]
+  },
   "overrides": [
+    // --- Disable TypeScript rules for tests files
     {
-      "files": ["*.spec.ts*", "*.e2e.ts*"],
+      "files": ["*.spec.ts*", "./src/testing/**/*.ts"],
       "rules": {
         "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-explicit-any": "off"
       }
     }
-  ],
-  "settings": {
-    "react": {
-      "pragma": "h",
-      "version": "detect"
-    }
-  }
+  ]
 }
