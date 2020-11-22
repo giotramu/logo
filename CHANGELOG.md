@@ -2,6 +2,23 @@
 
 All notable changes to the project will be documented in this file.
 
+## 1.7.0 (2020-11-22)
+
+### Added
+
+- Distribute the `CHANGELOG.md` (this file) with NPM and GitHub packages
+
+### Changed
+
+- Update the `png` and `jpg` assets related to sign
+- Update dependencies
+
+### Fixed
+
+--
+
+---
+
 ## 1.6.0 (2020-09-10)
 
 ### Added
