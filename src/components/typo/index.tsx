@@ -15,8 +15,8 @@ export class Typo {
     const fill = this.getFillColor();
     const width = this.getSize();
     const paddingBottom = calcPercentage({
-      width: 518, // viewbox width
-      height: 175 // viewbox height
+      width: 518, // Viewbox width
+      height: 175 // Viewbox height
     });
 
     return (
@@ -30,8 +30,7 @@ export class Typo {
             style={{
               paddingBottom
             }}
-            xmlns="http://www.w3.org/2000/svg"
-          >
+            xmlns="http://www.w3.org/2000/svg">
             <g data-key="giovanni">
               <path
                 data-key="g"
