@@ -39,7 +39,7 @@ Web Component that run natively or near-natively in all widely used desktop and 
 
 [MIT License](./LICENSE)
 
-<!---
+<!--
   L I N K S
 -->
 
@@ -59,7 +59,7 @@ Web Component that run natively or near-natively in all widely used desktop and 
 [webc-sign-url]: ./docs/sign.md
 [webc-typo-url]: ./docs/typo.md
 
-<!---
+<!--
   B A D G E S
 -->
 
