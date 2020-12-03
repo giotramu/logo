@@ -10,16 +10,9 @@ A Web Component version of my logo built with Stenciljs with other resources (fa
 ## Table of contents
 
 - [Logo](#logo)
+  - [Table of contents](#table-of-contents)
   - [Web Component](#web-component)
-    - [Logo][webc-logo-url]
-    - [Sign][webc-sign-url]
-    - [Typo][webc-typo-url]
   - [Resources](#resources)
-    - [Color scheme][color-scheme-url]
-    - [Favicon][logo-favicon-url]
-    - [JPG][logo-jpg-url]
-    - [PNG][logo-png-url]
-    - [SVG][logo-svg-url]
   - [Thanks](#thanks)
   - [License](#license)
 
@@ -73,7 +66,7 @@ Web Component that run natively or near-natively in all widely used desktop and 
   B A D G E S
 -->
 
-[bundlephobia-img]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat-square&colorA=0c57fb&colorB=0c57fb
-[ci-img]: https://img.shields.io/github/workflow/status/giotramu/logo/test%20+%20build?style=flat-square&colorA=0c57fb&colorB=0c57fb
-[coverage-img]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat-square&colorA=0c57fb&colorB=0c57fb
-[npm-img]: https://img.shields.io/npm/v/@giotramu/logo?style=flat-square&colorA=0c57fb&colorB=0c57fb
+[bundlephobia-img]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat-square&colorA=202d3a&colorB=0c57fb
+[ci-img]: https://img.shields.io/github/workflow/status/giotramu/logo/test%20+%20build?style=flat-square&colorA=202d3a&colorB=0c57fb
+[coverage-img]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat-square&colorA=202d3a&colorB=0c57fb
+[npm-img]: https://img.shields.io/npm/v/@giotramu/logo?style=flat-square&colorA=202d3a&colorB=0c57fb
