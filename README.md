@@ -7,10 +7,7 @@ A Web Component version of my logo built with Stenciljs with other resources (fa
 [![Build Status][ci-img]][ci-url]
 [![Code Coverage][coverage-img]][coverage-url]
 
-## Table of contents
-
 - [Logo](#logo)
-  - [Table of contents](#table-of-contents)
   - [Web Component](#web-component)
   - [Resources](#resources)
   - [Thanks](#thanks)
