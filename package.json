@@ -61,7 +61,7 @@
     "@stencil/core": "2.5.2",
     "@types/jest": "26.0.22",
     "@types/puppeteer": "5.4.3",
-    "eslint": "7.21.0",
+    "eslint": "7.23.0",
     "eslint-config-contactlab": "6.1.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-react": "7.23.1",
