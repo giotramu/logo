@@ -58,7 +58,7 @@
   "devDependencies": {
     "@giotramu/prettier-config": "1.1.2",
     "@giotramu/stylelint-config": "7.0.1",
-    "@stencil/core": "2.4.0",
+    "@stencil/core": "2.5.2",
     "@types/jest": "26.0.22",
     "@types/puppeteer": "5.4.3",
     "eslint": "7.21.0",
