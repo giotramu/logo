@@ -59,7 +59,7 @@
     "@giotramu/prettier-config": "1.1.2",
     "@giotramu/stylelint-config": "7.0.1",
     "@stencil/core": "2.4.0",
-    "@types/jest": "26.0.20",
+    "@types/jest": "26.0.22",
     "@types/puppeteer": "5.4.3",
     "eslint": "7.21.0",
     "eslint-config-contactlab": "6.1.0",
