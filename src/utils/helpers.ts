@@ -1,4 +1,4 @@
-import {HexCode} from '../typings/props';
+import {HexCode} from '../types/props';
 
 export const fillColors = {
   'accent-high': '#0c57fb',

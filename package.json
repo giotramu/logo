@@ -13,7 +13,7 @@
     "url": "https://github.com/giotramu/logo/issues"
   },
   "engines": {
-    "node": ">=12.x",
+    "node": ">=14.x",
     "npm": ">=6.x"
   },
   "publishConfig": {
@@ -23,7 +23,7 @@
   "module": "dist/index.js",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
-  "types": "dist/types/components.d.ts",
+  "types": "dist/types/index.d.ts",
   "unpkg": "dist/giotramu-logo/giotramu-logo.js",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
@@ -38,40 +38,30 @@
     "lint:css": "stylelint ./src/**/*.css",
     "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint": "npm run lint:css & npm run lint:src",
-    "test": "stencil test --spec --e2e --coverage",
+    "test": "stencil test --spec --coverage",
+    "test:e2e": "stencil test --e2e",
     "dev": "npm run build -- --dev --watch --serve",
-    "clean": "rimraf ./coverage ./dist ./loader ./www",
+    "clean": "del ./coverage ./dist ./loader ./www",
     "prebuild": "npm run clean",
     "build": "stencil build"
   },
   "prettier": "@giotramu/prettier-config",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*": "prettier --write",
-    "*.{ts,tsx}": "eslint --fix",
-    "*.{css}": "stylelint --fix"
-  },
   "devDependencies": {
+    "@arkweid/lefthook": "0.7.5",
     "@giotramu/prettier-config": "1.1.2",
     "@giotramu/stylelint-config": "7.0.1",
     "@stencil/core": "2.5.2",
     "@types/jest": "26.0.23",
     "@types/puppeteer": "5.4.3",
-    "eslint": "7.25.0",
-    "eslint-config-contactlab": "6.1.0",
+    "del-cli": "3.0.1",
+    "eslint": "7.27.0",
+    "eslint-config-contactlab": "6.2.1",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-react": "7.23.2",
-    "husky": "6.0.0",
-    "jest": "26.6.3",
-    "jest-cli": "26.6.3",
-    "lint-staged": "10.5.4",
-    "prettier": "2.2.1",
+    "jest": "27.0.1",
+    "jest-cli": "27.0.1",
+    "prettier": "2.3.0",
     "puppeteer": "5.5.0",
-    "rimraf": "3.0.2",
     "stylelint": "13.13.1",
     "typescript": "4.2.4"
   },

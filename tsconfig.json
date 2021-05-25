@@ -1,18 +1,16 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "alwaysStrict": true,
     "baseUrl": ".",
     "declaration": true,
-    "declarationDir": "typings",
+    "declarationDir": "./types",
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "jsxFactory": "h",
-    "lib": ["esnext", "dom", "dom.iterable"],
+    "lib": ["esnext", "DOM", "DOM.iterable"],
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
@@ -20,8 +18,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strict": true,
-    "target": "es2017",
-    "typeRoots": ["src/typings", "node_modules/@types"]
+    "stripInternal": true,
+    "target": "ES2017",
+    "typeRoots": ["./src/types", "./node_modules/@types"]
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules"]

@@ -1,5 +1,5 @@
 import {Component, Host, Prop, h} from '@stencil/core';
-import {HexCode, Size} from '../../typings/props';
+import {HexCode, Size} from '../../types/props';
 import {calcPercentage, getHexCode} from '../../utils/helpers';
 
 @Component({
