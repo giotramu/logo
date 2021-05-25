@@ -1,13 +1,8 @@
 {
   "root": true,
   "plugins": ["react"],
-  "extends": [
-    "plugin:react/recommended",
-    "contactlab/typescript",
-    "prettier"
-  ],
+  "extends": ["plugin:react/recommended", "contactlab/typescript", "prettier"],
   "env": {
-    "browser": true,
     "jest": true
   },
   "settings": {
@@ -33,9 +28,7 @@
     "react/no-unknown-property": [
       "error",
       {
-        "ignore": [
-          "class"
-        ]
+        "ignore": ["class"]
       }
     ],
     "react/prop-types": "off"
