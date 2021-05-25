@@ -20,10 +20,10 @@
     "access": "public"
   },
   "main": "dist/index.cjs.js",
-  "module": "dist/index.js",
+  "module": "dist/custom-elements/index.js",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/custom-elements/index.d.ts",
   "unpkg": "dist/giotramu-logo/giotramu-logo.js",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
