@@ -30,6 +30,7 @@ jobs:
         run: |
           npm run typecheck --if-present
           npm run lint --if-present
+          npm run test
           npm run test:e2e
         env:
           CI: true

@@ -18,7 +18,7 @@ export class Logo {
 
     return (
       <Host>
-        <div class="logo" style={{width}} data-align={align} data-width={width}>
+        <div class="logo" style={{width}} data-width={width} data-align={align}>
           <giotramu-sign class="sign" fill-color={fillColor} />
           <giotramu-typo class="typo" fill-color={fillColor} />
         </div>
