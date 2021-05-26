@@ -1,6 +1,6 @@
 import {Component, Host, Prop, h} from '@stencil/core';
-import {HexCode, Size} from '../../types/props';
-import {calcPercentage, getHexCode} from '../../utils/helpers';
+import {HexColorCode, Size} from '../../types/commonProps';
+import {calcSvgPadding, getHexColorCode} from '../../utils/helpers';
 
 @Component({
   shadow: true,
@@ -14,9 +14,11 @@ export class Sign {
   render(): SVGElement {
     const fill = this.getFillColor();
     const width = this.getSize();
-    const paddingBottom = calcPercentage({
-      width: 290, // Viewbox width
-      height: 345 // Viewbox height
+    const viewBoxWidth = 290;
+    const viewBoxHeight = 345;
+    const paddingBottom = calcSvgPadding({
+      width: viewBoxWidth,
+      height: viewBoxHeight
     });
 
     return (
@@ -26,7 +28,7 @@ export class Sign {
             class="vector"
             fill={fill}
             preserveAspectRatio="xMidYMin slice"
-            viewBox="0 0 290 345"
+            viewBox={`0 0 ${viewBoxWidth} ${viewBoxHeight}`}
             style={{
               paddingBottom
             }}
@@ -47,7 +49,7 @@ export class Sign {
     return this.size;
   }
 
-  private getFillColor(): HexCode {
-    return getHexCode(this.fillColor);
+  private getFillColor(): HexColorCode {
+    return getHexColorCode(this.fillColor);
   }
 }

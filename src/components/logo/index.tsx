@@ -1,5 +1,5 @@
 import {Component, Host, Prop, h} from '@stencil/core';
-import {Alignment, Size} from '../../types/props';
+import {Alignment, Size} from '../../types/commonProps';
 
 @Component({
   shadow: true,

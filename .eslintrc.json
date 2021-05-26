@@ -21,6 +21,11 @@
         "extendDefaults": true
       }
     ],
+
+    // --- Fix shadowing issues with TypeScript enums (More info: https://stackoverflow.com/a/65768375)
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+
     // --- React
     "react/display-name": "off",
     "react/jsx-uses-react": "error",
@@ -36,7 +41,7 @@
   "overrides": [
     // --- Disable TypeScript rules for tests files
     {
-      "files": ["*.spec.ts*", "./src/testing/**/*.ts"],
+      "files": ["*.spec.ts*", "*.e2e.ts*"],
       "rules": {
         "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
