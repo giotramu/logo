@@ -1,4 +1,4 @@
-import type {HexColorCode} from '../types/commonProps';
+import type {HexColorCode} from '../types';
 
 enum FillColors {
   'accent-high' = '#0c57fb',
