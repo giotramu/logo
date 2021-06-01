@@ -63,7 +63,7 @@
     "prettier": "2.3.0",
     "puppeteer": "5.5.0",
     "stylelint": "13.13.1",
-    "typescript": "4.2.4"
+    "typescript": "4.3.2"
   },
   "keywords": [
     "custom-elements-v1",
