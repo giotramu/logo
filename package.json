@@ -61,7 +61,7 @@
     "jest": "27.0.4",
     "jest-cli": "26.6.3",
     "prettier": "2.3.0",
-    "puppeteer": "5.5.0",
+    "puppeteer": "6.0.0",
     "stylelint": "13.13.1",
     "typescript": "4.3.2"
   },
