@@ -1,6 +1,6 @@
 # Logo
 
-A Web Component version of my logo built with Stenciljs with other resources (favicon, SVGs, etc.) bundled together.
+A Web Component version of my logo built with Stencil.js
 
 [![NPM][npm-img]][npm-url]
 [![Bundlephobia][bundlephobia-img]][bundlephobia-url]
