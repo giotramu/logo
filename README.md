@@ -2,7 +2,8 @@
 
 A Web Component version of my logo built with Stencil.js
 
-[![NPM][npm-img]][npm-url]
+[![NPM][npm-version-img]][npm-url]
+[![NPM][npm-download-img]][npm-url]
 [![Bundlephobia][bundlephobia-img]][bundlephobia-url]
 [![Build Status][ci-img]][ci-url]
 [![Code Coverage][coverage-img]][coverage-url]
@@ -40,6 +41,16 @@ Web Component that run natively or near-natively in all widely used desktop and 
 [MIT License](./LICENSE)
 
 <!--
+  B A D G E S
+-->
+
+[bundlephobia-img]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat-square&colorA=202d3a&colorB=0c57fb
+[ci-img]: https://img.shields.io/github/workflow/status/giotramu/logo/test%20+%20build?style=flat-square&colorA=202d3a&colorB=0c57fb
+[coverage-img]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat-square&colorA=202d3a&colorB=0c57fb
+[npm-download-img]: https://img.shields.io/npm/dm/@giotramu/logo?style=flat-square&colorA=202d3a&colorB=0c57fb
+[npm-version-img]: https://img.shields.io/npm/v/@giotramu/logo?style=flat-square&colorA=202d3a&colorB=0c57fb
+
+<!--
   L I N K S
 -->
 
@@ -49,12 +60,3 @@ Web Component that run natively or near-natively in all widely used desktop and 
 [deps-url]: https://david-dm.org/giotramu/logo
 [devdeps-url]: https://david-dm.org/giotramu/logo?type=dev
 [npm-url]: https://www.npmjs.com/package/@giotramu/logo
-
-<!--
-  B A D G E S
--->
-
-[bundlephobia-img]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat-square&colorA=202d3a&colorB=0c57fb
-[ci-img]: https://img.shields.io/github/workflow/status/giotramu/logo/test%20+%20build?style=flat-square&colorA=202d3a&colorB=0c57fb
-[coverage-img]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat-square&colorA=202d3a&colorB=0c57fb
-[npm-img]: https://img.shields.io/npm/v/@giotramu/logo?style=flat-square&colorA=202d3a&colorB=0c57fb
