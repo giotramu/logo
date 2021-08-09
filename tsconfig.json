@@ -7,8 +7,8 @@
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "jsxFactory": "h",
-    "lib": ["esnext", "DOM", "DOM.iterable"],
-    "module": "esnext",
+    "lib": ["ESNext", "DOM", "DOM.iterable"],
+    "module": "ESNext",
     "moduleResolution": "Node",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
@@ -21,6 +21,5 @@
     "target": "ES2017",
     "typeRoots": ["./src/types", "./node_modules/@types"]
   },
-  "include": ["./src/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["./src/**/*"]
 }

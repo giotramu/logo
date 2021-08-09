@@ -1,10 +1,10 @@
+*.config.js
+*.d.ts
 /.stencil/
 /coverage/
 /dist/
 /loader/
 /www/
-*.d.ts
 
 .cache
-*.config.js
 node_modules
