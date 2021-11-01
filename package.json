@@ -50,7 +50,7 @@
     "@arkweid/lefthook": "0.7.6",
     "@giotramu/prettier-config": "1.1.2",
     "@giotramu/stylelint-config": "8.0.0",
-    "@stencil/core": "2.8.1",
+    "@stencil/core": "2.9.0",
     "@types/jest": "26.0.24",
     "@types/puppeteer": "5.4.4",
     "del-cli": "4.0.1",
