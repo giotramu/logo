@@ -47,7 +47,7 @@
   },
   "prettier": "@giotramu/prettier-config",
   "devDependencies": {
-    "@arkweid/lefthook": "0.7.6",
+    "@arkweid/lefthook": "0.7.7",
     "@giotramu/prettier-config": "1.1.2",
     "@giotramu/stylelint-config": "8.0.0",
     "@stencil/core": "2.8.1",
