@@ -5,6 +5,7 @@
     "source.fixAll.stylelint": true
   },
   "css.validate": false,
+  "stylelint.validate": ["css"],
   "eslint.validate": ["javascript", "typescript", "typescriptreact"],
   "typescript.validate.enable": true,
   "typescript.reportStyleChecksAsWarnings": false,

@@ -4,8 +4,8 @@
 
 .logo {
   display: flex;
-  box-sizing: border-box;
   align-items: center;
+  box-sizing: border-box;
   font-size: 0;
   line-height: 0;
 }
@@ -16,9 +16,9 @@
 }
 
 .typo {
-  width: 64%;
   position: relative;
   top: -1px;
+  width: 64%;
 }
 
 .logo[data-align='column'] {
@@ -33,6 +33,6 @@
 }
 
 .logo[data-align='column'] .typo {
-  width: 100%;
   position: static;
+  width: 100%;
 }
