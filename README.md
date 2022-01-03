@@ -28,8 +28,6 @@ Web Component that run natively or near-natively in all widely used desktop and 
 
 - [Color scheme](./docs/color-scheme.md)
 - [Favicon](./resources/favicon)
-- [JPG](./resources/jpg)
-- [PNG](./resources/png)
 - [SVG](./resources/svg)
 
 ## Thanks
