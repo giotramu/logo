@@ -4,12 +4,10 @@ pre-commit:
     typecheck:
       glob: '*.{ts,tsx}'
       run: npm run typecheck
-    eslint:
-      glob: '*.{js,jsx,ts,tsx}'
-      run: npm run lint:src -- --fix
-    stylelint:
-      glob: '*.css'
-      run: npm run lint:css -- --fix
+    linting:
+      run:
+        - npm run lint:src -- --fix
+        - npm run lint:css -- --fix
     prettier:
       glob: '*'
       run: npx --no-install prettier {staged_files} --write --ignore-unknown && git add {staged_files}
