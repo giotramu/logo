@@ -5,7 +5,7 @@ import {calcSvgPadding, getHexColorCode} from '../../utils';
 @Component({
   shadow: true,
   tag: 'giotramu-typo',
-  styleUrl: './styles.css'
+  styleUrl: 'styles.css'
 })
 export class Typo {
   @Prop() size = '100%';
@@ -32,7 +32,8 @@ export class Typo {
             style={{
               paddingBottom
             }}
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <g data-key="giovanni">
               <path
                 data-key="g"

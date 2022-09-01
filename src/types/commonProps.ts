@@ -1,4 +1,5 @@
 export type Size = string;
+
 export type HexColorCode =
   | '#0c57fb'
   | '#0072ff'
@@ -8,4 +9,5 @@ export type HexColorCode =
   | '#fafafa'
   | '#fff'
   | '#000';
+
 export type Alignment = 'row' | 'column';

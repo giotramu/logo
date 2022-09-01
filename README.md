@@ -1,6 +1,6 @@
 # Logo
 
-A Web Component version of my logo built with Stencil.js
+A Web Component version of my logo built with Stencil.
 
 [![NPM][npm-version-img]][npm-url]
 [![NPM][npm-download-img]][npm-url]
@@ -38,19 +38,15 @@ Web Component that run natively or near-natively in all widely used desktop and 
 
 [MIT License](./LICENSE)
 
-<!--
-  B A D G E S
--->
+<!-- Badges -->
 
-[bundlephobia-img]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat-square&colorA=001133&colorB=0055FF
-[ci-img]: https://img.shields.io/github/workflow/status/giotramu/logo/test%20+%20build?style=flat-square&colorA=001133&colorB=0055FF
-[coverage-img]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat-square&colorA=001133&colorB=0055FF
-[npm-download-img]: https://img.shields.io/npm/dm/@giotramu/logo?style=flat-square&colorA=001133&colorB=0055FF
-[npm-version-img]: https://img.shields.io/npm/v/@giotramu/logo?style=flat-square&colorA=001133&colorB=0055FF
+[bundlephobia-img]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat-square&colorA=141414&colorB=0055FF
+[ci-img]: https://img.shields.io/github/workflow/status/giotramu/logo/test%20+%20build?style=flat-square&colorA=141414&colorB=0055FF
+[coverage-img]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat-square&colorA=141414&colorB=0055FF
+[npm-download-img]: https://img.shields.io/npm/dm/@giotramu/logo?style=flat-square&colorA=141414&colorB=0055FF
+[npm-version-img]: https://img.shields.io/npm/v/@giotramu/logo?style=flat-square&colorA=141414&colorB=0055FF
 
-<!--
-  L I N K S
--->
+<!-- Links -->
 
 [bundlephobia-url]: https://bundlephobia.com/result?p=@giotramu/logo
 [ci-url]: https://github.com/giotramu/logo/actions

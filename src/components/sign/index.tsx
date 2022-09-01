@@ -5,7 +5,7 @@ import {calcSvgPadding, getHexColorCode} from '../../utils';
 @Component({
   shadow: true,
   tag: 'giotramu-sign',
-  styleUrl: './styles.css'
+  styleUrl: 'styles.css'
 })
 export class Sign {
   @Prop() size = '100%';
@@ -32,7 +32,8 @@ export class Sign {
             style={{
               paddingBottom
             }}
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path d="M218.868 81.052c-23.444 20.088-38.302 49.924-38.302 83.234 0 60.488 48.995 109.524 109.434 109.524v-38.334c-39.285 0-71.132-31.873-71.132-71.19V81.052z" />
             <path d="M180.566 37.238h38.302v164.286h-38.302z" />
             <path d="M182.208 73.381c20.247 0 36.66-16.427 36.66-36.69C218.868 16.427 202.455 0 182.208 0c-.551 0-1.098.012-1.642.036v73.309c.544.024 1.091.036 1.642.036z" />

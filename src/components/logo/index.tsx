@@ -4,7 +4,7 @@ import type {Alignment, Size} from '../../types';
 @Component({
   shadow: true,
   tag: 'giotramu-logo',
-  styleUrl: './styles.css'
+  styleUrl: 'styles.css'
 })
 export class Logo {
   @Prop() size = '100%';

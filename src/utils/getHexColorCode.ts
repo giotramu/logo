@@ -22,6 +22,7 @@ export function getHexColorCode(color: string): HexColorCode {
   let hexColorCode = FillColors['accent-high'];
 
   let key: keyof typeof FillColors;
+
   for (key in FillColors) {
     if (color === key) {
       hexColorCode = FillColors[key];

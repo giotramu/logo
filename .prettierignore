@@ -1,9 +1,12 @@
-/.stencil/
-/coverage/
-/dist/
 /loader/
 /www/
-*.d.ts
+.stencil/
+coverage/
+dist/
 
 .cache
+.env*
+.DS_Store
+*log
 node_modules
+Thumbs.db

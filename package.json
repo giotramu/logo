@@ -13,20 +13,20 @@
     "url": "https://github.com/giotramu/logo/issues"
   },
   "engines": {
-    "node": ">=16.x",
-    "npm": ">=8.x"
+    "node": ">=14",
+    "npm": ">=8"
   },
   "publishConfig": {
     "access": "public"
   },
   "main": "dist/index.cjs.js",
-  "module": "dist/custom-elements/index.js",
+  "module": "dist/index.js",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
-  "types": "dist/custom-elements/index.d.ts",
-  "unpkg": "dist/giotramu-logo/giotramu-logo.js",
+  "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/giotramu-logo/giotramu-logo.esm.js",
   "files": [
     "dist/",
     "loader/",
@@ -34,39 +34,42 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "typecheck": "tsc --noEmit",
-    "lint:css": "stylelint ./src/**/*.css",
-    "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint": "npm run lint:css & npm run lint:src",
+    "check:tsc": "tsc --noEmit",
+    "check:css": "stylelint ./src/**/*.css",
+    "check:src": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "check": "run-p -cln check:*",
     "test": "stencil test --spec --coverage",
     "test:e2e": "stencil test --e2e",
-    "dev": "npm run build -- --dev --watch --serve",
+    "dev": "stencil build --dev --watch --serve",
     "clean": "del ./coverage ./dist ./loader ./www",
     "prebuild": "npm run clean",
     "build": "stencil build"
   },
   "prettier": "@giotramu/prettier-config",
+  "dependencies": {
+    "@stencil/core": "2.17.4"
+  },
   "devDependencies": {
-    "@arkweid/lefthook": "0.7.7",
-    "@giotramu/prettier-config": "1.3.0",
-    "@giotramu/stylelint-config": "9.1.0",
-    "@stencil/core": "2.13.0",
-    "@types/jest": "26.0.24",
-    "@types/puppeteer": "5.4.4",
-    "del-cli": "4.0.1",
-    "eslint": "8.8.0",
-    "eslint-config-contactlab": "8.0.0",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-react": "7.28.0",
-    "jest": "26.6.3",
-    "jest-cli": "26.6.3",
-    "prettier": "2.5.1",
-    "puppeteer": "13.1.3",
-    "stylelint": "14.3.0",
-    "typescript": "4.5.5"
+    "@evilmartians/lefthook": "1.1.1",
+    "@giotramu/prettier-config": "1.4.0",
+    "@giotramu/stylelint-config": "11.1.0",
+    "@types/jest": "27.0.3",
+    "@types/puppeteer": "5.4.6",
+    "del-cli": "5.0.0",
+    "eslint": "8.23.0",
+    "eslint-config-contactlab": "9.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-react": "7.31.1",
+    "jest": "27.4.3",
+    "jest-cli": "27.4.5",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.7.1",
+    "puppeteer": "17.0.0",
+    "stylelint": "14.11.0",
+    "typescript": "4.8.2"
   },
   "keywords": [
-    "custom-elements-v1",
+    "custom-elements",
     "logo",
     "stencil-components",
     "stenciljs",

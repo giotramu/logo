@@ -1,13 +1,8 @@
 pre-commit:
   parallel: true
   commands:
-    typecheck:
-      glob: '*.{ts,tsx}'
-      run: npm run typecheck
-    linting:
-      run:
-        - npm run lint:src -- --fix
-        - npm run lint:css -- --fix
+    check:
+      run: npm run check
     prettier:
       glob: '*'
       run: npx --no-install prettier {staged_files} --write --ignore-unknown && git add {staged_files}
