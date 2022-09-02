@@ -2,16 +2,8 @@
   display: block;
 }
 
-.wrapper {
+.sign,
+.sign > * {
+  display: block;
   box-sizing: border-box;
-  width: attr(data-width);
-  overflow: visible;
-  font-size: 0;
-  line-height: 0;
-}
-
-.vector {
-  width: 100%;
-  height: 1px;
-  overflow: visible;
 }

@@ -28,38 +28,14 @@
       href="https://cdn.jsdelivr.net/npm/@giotramu/logo/resources/favicon/favicon-16.png"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@giotramu/css-kit"
-    />
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
 
     <style>
-      .showcase {
-        overflow: hidden;
-        padding: 1rem;
-      }
-
-      .showcase > ul {
+      .showcase > section {
         display: flex;
-        width: 80%;
-        max-width: 72rem;
-        height: 100vh;
-        margin: 0 auto;
-        padding: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        list-style: none;
-      }
-
-      .showcase > ul > li {
+        justify-content: center;
         padding: 1.6rem;
-      }
-
-      @media only screen and (min-width: 60em) {
-        .showcase > ul {
-          flex-direction: row;
-        }
+        overflow: hidden;
       }
     </style>
 
@@ -67,25 +43,22 @@
     <script nomodule src="/build/giotramu-logo.js"></script>
   </head>
   <body>
-    <section class="showcase">
-      <ul>
-        <li>
-          <giotramu-logo
-            size="140px"
-            fill-color="accent-high"
-            column
-          ></giotramu-logo>
-        </li>
-        <li>
-          <giotramu-logo size="180px" fill-color="accent-high"></giotramu-logo>
-        </li>
-        <li>
-          <giotramu-sign size="60px" fill-color="accent-high"></giotramu-sign>
-        </li>
-        <li>
-          <giotramu-typo size="140px" fill-color="accent-high"></giotramu-typo>
-        </li>
-      </ul>
-    </section>
+    <div class="showcase">
+      <section>
+        <giotramu-sign size="200px" fill-color="accent"></giotramu-sign>
+      </section>
+
+      <section>
+        <giotramu-typo size="200px" fill-color="accent"></giotramu-typo>
+      </section>
+
+      <section>
+        <giotramu-logo column size="200px" fill-color="accent"></giotramu-logo>
+      </section>
+
+      <section>
+        <giotramu-logo size="200px" fill-color="accent"></giotramu-logo>
+      </section>
+    </div>
   </body>
 </html>

@@ -1,6 +1,8 @@
+/* eslint-disable react/no-unknown-property */
+
 import {Component, Host, Prop, h} from '@stencil/core';
-import type {HexColorCode, Size} from '../../types';
-import {calcSvgPadding, getHexColorCode} from '../../utils';
+import type {HexCode, Size} from '../../types';
+import {hexCode} from '../../utils';
 
 @Component({
   shadow: true,
@@ -9,37 +11,32 @@ import {calcSvgPadding, getHexColorCode} from '../../utils';
 })
 export class Sign {
   @Prop() size = '100%';
-  @Prop() fillColor = 'accent-high';
+
+  @Prop() fillColor?: string;
 
   render(): SVGElement {
     const fill = this.getFillColor();
+
     const width = this.getSize();
-    const viewBoxWidth = 290;
-    const viewBoxHeight = 345;
-    const paddingBottom = calcSvgPadding({
-      width: viewBoxWidth,
-      height: viewBoxHeight
-    });
+
+    const svgWidth = 400;
+
+    const svgHeight = 400;
 
     return (
       <Host>
-        <div class="wrapper" style={{width}} data-width={width}>
+        <div class="sign" style={{width}}>
           <svg
-            class="vector"
             fill={fill}
-            preserveAspectRatio="xMidYMin slice"
-            viewBox={`0 0 ${viewBoxWidth} ${viewBoxHeight}`}
-            style={{
-              paddingBottom
-            }}
+            viewBox={`0 0 ${svgWidth} ${svgHeight}`}
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M218.868 81.052c-23.444 20.088-38.302 49.924-38.302 83.234 0 60.488 48.995 109.524 109.434 109.524v-38.334c-39.285 0-71.132-31.873-71.132-71.19V81.052z" />
-            <path d="M180.566 37.238h38.302v164.286h-38.302z" />
-            <path d="M182.208 73.381c20.247 0 36.66-16.427 36.66-36.69C218.868 16.427 202.455 0 182.208 0c-.551 0-1.098.012-1.642.036v73.309c.544.024 1.091.036 1.642.036z" />
-            <path d="M180.566 54.762H290v38.333H180.566z" />
-            <path d="M218.868 235.476c0 60.488-48.995 109.524-109.434 109.524-28.653 0-54.733-11.021-74.241-29.058l29.967-24.743c12.15 9.682 27.536 15.468 44.274 15.468 39.285 0 71.132-31.873 71.132-71.191 0-11.878-2.906-23.076-8.046-32.921l29.968-24.745c10.384 16.748 16.38 36.506 16.38 57.666z" />
-            <path d="M109.434 54.762C48.995 54.762 0 103.797 0 164.286 0 224.774 48.995 273.81 109.434 273.81s109.434-49.036 109.434-109.524c0-33.31-14.858-63.146-38.302-83.234v83.234c0 39.317-31.847 71.19-71.132 71.19-39.285 0-71.132-31.873-71.132-71.19 0-39.318 31.847-71.19 71.132-71.19V54.761z" />
+            <path d="M165.944 128C128.414 128.03 98 158.463 98 196c0 37.555 30.445 68 68 68 36.213 0 65.814-28.306 67.884-64H234v-72h-68.056Z" />
+            <path
+              clip-rule="evenodd"
+              fill-rule="evenodd"
+              d="M0 0h400v400H0V0Zm234 96V40.284a28.229 28.229 0 0 1 3.994-.284h.012C253.467 40.003 266 52.538 266 68v28h68v32h-68v72h.116c2.07 35.694 31.671 64 67.884 64v32c-26.455 0-50.511-10.273-68.395-27.047C261.076 319.987 218.211 360 166 360c-25.954 0-49.599-9.888-67.373-26.102l25.447-20.357C135.626 322.599 150.182 328 166 328c34.161 0 62.439-25.19 67.271-58.009C215.509 286.15 191.905 296 166 296c-55.228 0-100-44.772-100-100 0-54.895 44.232-99.459 99-99.995V96h69Z"
+            />
           </svg>
         </div>
       </Host>
@@ -50,7 +47,7 @@ export class Sign {
     return this.size;
   }
 
-  private getFillColor(): HexColorCode {
-    return getHexColorCode(this.fillColor);
+  private getFillColor(): HexCode | 'black' {
+    return this.fillColor ? hexCode(this.fillColor) : 'black';
   }
 }

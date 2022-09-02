@@ -2,37 +2,41 @@
   display: block;
 }
 
+:host > * {
+  box-sizing: border-box;
+}
+
 .logo {
+  --gap: 5%;
   display: flex;
   align-items: center;
-  box-sizing: border-box;
-  font-size: 0;
-  line-height: 0;
 }
 
-.sign {
-  width: 28%;
-  margin-right: 8%;
+/* Row alignment */
+.logo[data-align='row'] {
+  column-gap: var(--gap);
+  aspect-ratio: 2 / 1;
 }
 
-.typo {
-  position: relative;
-  top: -1px;
-  width: 64%;
+.logo[data-align='row'] > giotramu-sign {
+  width: 30%;
 }
 
+.logo[data-align='row'] > giotramu-typo {
+  width: calc(70% - var(--gap));
+}
+
+/* Column alignment */
 .logo[data-align='column'] {
   flex-direction: column;
-  justify-content: flex-start;
+  row-gap: var(--gap);
+  aspect-ratio: 1 / 1;
 }
 
-.logo[data-align='column'] .sign {
-  width: 44%;
-  margin-right: 0;
-  margin-bottom: 8%;
+.logo[data-align='column'] > giotramu-sign {
+  width: 50%;
 }
 
-.logo[data-align='column'] .typo {
-  position: static;
+.logo[data-align='column'] > giotramu-typo {
   width: 100%;
 }

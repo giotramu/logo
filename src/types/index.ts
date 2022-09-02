@@ -1,1 +1,1 @@
-export type {Alignment, HexColorCode, Size} from './commonProps';
+export type {Alignment, HexCode, Size} from './commonProps';

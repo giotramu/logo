@@ -1,2 +1,2 @@
 export {calcSvgPadding} from './calcSvgPadding';
-export {getHexColorCode} from './getHexColorCode';
+export {hexCode} from './hexCode';
