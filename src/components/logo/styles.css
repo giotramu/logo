@@ -1,8 +1,5 @@
 :host {
   display: block;
-}
-
-:host > * {
   box-sizing: border-box;
 }
 

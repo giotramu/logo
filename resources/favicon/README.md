@@ -25,11 +25,15 @@ Copy/paste the link tag in the head of your `index.html` document:
 />
 ```
 
-Do you have a [`manifest.json`][manifest-doc-url] in your project? Perfect! Copy and paste the following properties:
+Do you have a [`manifest.json`](https://developer.chrome.com/extensions/manifest) in your project? Perfect! Copy and paste the following properties:
 
 ```json
 {
+  "name": "",
+  "short_name": "",
   "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#141414",
   "icons": [
     {
       "src": "https://cdn.jsdelivr.net/npm/@giotramu/logo/resources/favicon/android-chrome-192.png",
@@ -41,14 +45,6 @@ Do you have a [`manifest.json`][manifest-doc-url] in your project? Perfect! Copy
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "background_color": "#fafafa",
-  "theme_color": "#202d3a"
+  ]
 }
 ```
-
-<!---
-  L I N K S
--->
-
-[manifest-doc-url]: https://developer.chrome.com/extensions/manifest
