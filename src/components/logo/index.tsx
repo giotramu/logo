@@ -11,20 +11,20 @@ export class Logo {
 
   @Prop() size = '100%';
 
-  @Prop() fillColor?: string;
+  @Prop() color?: string;
 
   render(): Element {
+    const color = this.getColor();
+
     const width = this.getSize();
 
     const align = this.getAlignment();
 
-    const fillColor = this.getFillColor();
-
     return (
       <Host>
         <div class="logo" style={{width}} data-align={align}>
-          <giotramu-sign class="sign" fill-color={fillColor} />
-          <giotramu-typo class="typo" fill-color={fillColor} />
+          <giotramu-sign class="sign" color={color} />
+          <giotramu-typo class="typo" color={color} />
         </div>
       </Host>
     );
@@ -38,7 +38,7 @@ export class Logo {
     return this.size;
   }
 
-  private getFillColor(): string | undefined {
-    return this.fillColor;
+  private getColor(): string | undefined {
+    return this.color;
   }
 }

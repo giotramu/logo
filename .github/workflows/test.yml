@@ -32,7 +32,6 @@ jobs:
         run: |
           npm run check
           npm test
-          npm run test:e2e
 
       - name: 'Build the artifact'
         run: npm run build

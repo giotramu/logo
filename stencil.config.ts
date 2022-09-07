@@ -5,7 +5,7 @@ export const config: Config = {
 
   outputTargets: [
     {
-      /*
+      /**
        * The dist type is to generate the component(s)
        * as a reusable library that can be self-lazy loading.
        */
@@ -13,14 +13,14 @@ export const config: Config = {
       esmLoaderPath: '../loader'
     },
     {
-      /*
+      /**
        * The `dist-custom-elements-bundle` output target
        * is used to generate custom elements as a single bundle.
        */
       type: 'dist-custom-elements'
     },
     {
-      /*
+      /**
        * The www output target type is oriented for webapps and websites,
        * hosted from an http server for demo purposes.
        */

@@ -7,16 +7,16 @@
 import {HTMLStencilElement, JSXBase} from '@stencil/core/internal';
 export namespace Components {
   interface GiotramuLogo {
+    color?: string;
     column: boolean;
-    fillColor?: string;
     size: string;
   }
   interface GiotramuSign {
-    fillColor?: string;
+    color?: string;
     size: string;
   }
   interface GiotramuTypo {
-    fillColor: string;
+    color?: string;
     size: string;
   }
 }
@@ -50,16 +50,16 @@ declare global {
 }
 declare namespace LocalJSX {
   interface GiotramuLogo {
+    color?: string;
     column?: boolean;
-    fillColor?: string;
     size?: string;
   }
   interface GiotramuSign {
-    fillColor?: string;
+    color?: string;
     size?: string;
   }
   interface GiotramuTypo {
-    fillColor?: string;
+    color?: string;
     size?: string;
   }
   interface IntrinsicElements {
