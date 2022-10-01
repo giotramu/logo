@@ -46,7 +46,7 @@
   },
   "prettier": "@giotramu/prettier-config",
   "dependencies": {
-    "@stencil/core": "2.17.4"
+    "@stencil/core": "2.18.0"
   },
   "devDependencies": {
     "@evilmartians/lefthook": "1.1.1",
