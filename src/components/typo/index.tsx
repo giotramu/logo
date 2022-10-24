@@ -1,6 +1,6 @@
 import {Component, Host, Prop, h} from '@stencil/core';
 import {HexCode, Size} from '../../types';
-import {DEFAULT_COLOR, hexCode} from '../../utils/hex-code';
+import {hexCode} from '../../utils/hex-code';
 
 @Component({
   shadow: true,
@@ -17,16 +17,12 @@ export class Typo {
 
     const width = this.getSize();
 
-    const svgWidth = 800;
-
-    const svgHeight = 323;
-
     return (
       <Host>
         <div class="typo" style={{width, color}}>
           <svg
             fill="currentColor"
-            viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+            viewBox="0 0 800 323"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g id="giovanni">
@@ -61,6 +57,6 @@ export class Typo {
   }
 
   private getColor(): HexCode {
-    return hexCode(this.color ?? DEFAULT_COLOR);
+    return hexCode(this.color);
   }
 }

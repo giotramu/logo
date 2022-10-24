@@ -2,7 +2,7 @@
 
 import {Component, Host, Prop, h} from '@stencil/core';
 import type {HexCode, Size} from '../../types';
-import {DEFAULT_COLOR, hexCode} from '../../utils/hex-code';
+import {hexCode} from '../../utils/hex-code';
 
 @Component({
   shadow: true,
@@ -19,16 +19,12 @@ export class Sign {
 
     const width = this.getSize();
 
-    const svgWidth = 400;
-
-    const svgHeight = 400;
-
     return (
       <Host>
         <div class="sign" style={{width, color}}>
           <svg
             fill="currentColor"
-            viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+            viewBox="0 0 400 400"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -47,6 +43,6 @@ export class Sign {
   }
 
   private getColor(): HexCode {
-    return hexCode(this.color ?? DEFAULT_COLOR);
+    return hexCode(this.color);
   }
 }

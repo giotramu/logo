@@ -1,6 +1,6 @@
 # Logo
 
-A Web Component version of my logo built with Stencil.
+A Web Component version of my logo built with [Stencil.js](https://stenciljs.com).
 
 [![NPM][npm-version-img]][npm-url]
 [![NPM][npm-download-img]][npm-url]
@@ -11,12 +11,11 @@ A Web Component version of my logo built with Stencil.
 - [Logo](#logo)
   - [Web Component](#web-component)
   - [Resources](#resources)
-  - [Thanks](#thanks)
   - [License](#license)
 
 ## Web Component
 
-Web Component that run natively or near-natively in all widely used desktop and mobile browsers. [Check the browsers support](./docs/browsers-support.md).
+Web Components run natively in all modern browsers. [Check the browsers support](./docs/browsers-support.md).
 
 **[Try live on CodePen!](https://codepen.io/giotramu/full/xxGBBVm)**
 
@@ -29,10 +28,6 @@ Web Component that run natively or near-natively in all widely used desktop and 
 - [Color scheme](./docs/color-scheme.md)
 - [Favicon](./resources/favicon)
 - [SVG](./resources/svg)
-
-## Thanks
-
-- [Stencil.js](https://stenciljs.com)
 
 ## License
 

@@ -1,4 +1,4 @@
-export type Size = string;
+export type Alignment = 'row' | 'column';
 
 export type HexCode =
   | '#0055FF'
@@ -12,4 +12,4 @@ export type HexCode =
   | '#EBEBEB'
   | '#FFFFFF';
 
-export type Alignment = 'row' | 'column';
+export type Size = string;
