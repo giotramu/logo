@@ -10,6 +10,7 @@ export namespace Components {
     color?: string;
     column: boolean;
     size: string;
+    twoTone: boolean;
   }
   interface GiotramuSign {
     color?: string;
@@ -53,6 +54,7 @@ declare namespace LocalJSX {
     color?: string;
     column?: boolean;
     size?: string;
+    twoTone?: boolean;
   }
   interface GiotramuSign {
     color?: string;

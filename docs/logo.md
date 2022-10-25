@@ -29,20 +29,22 @@ Put the following scripts tag in the head of your document:
 Drop this line into your HTML document:
 
 ```html
-<giotramu-logo size="150px" column></giotramu-logo>
+<giotramu-logo size="150px" column two-tone></giotramu-logo>
 ```
 
 Et... Voilà:
 
-<img width="150px" src="../resources/svg/logo-v-base-900.svg" alt="Giovanni Tramutola" />
+<img width="150px" src="../resources/svg/logo-v-accent-base-900.svg" alt="Giovanni Tramutola" />
 
 Or use the code below for the horizontal version:
 
 ```html
-<giotramu-logo size="250px"></giotramu-logo>
+<giotramu-logo size="250px" two-tone></giotramu-logo>
 ```
 
-<img width="250px" src="../resources/svg/logo-h-base-900.svg" alt="Giovanni Tramutola" />
+<img width="250px" src="../resources/svg/logo-h-accent-base-900.svg" alt="Giovanni Tramutola" />
+
+---
 
 ## Attributes
 
@@ -57,9 +59,15 @@ Or use the code below for the horizontal version:
   <tbody>
     <tr>
       <td>color</td>
-      <td><code><a href="./color-scheme.md" title="Color scheme">ColorScheme</a></code></td>
+      <td><a href="./color-scheme.md" title="Color scheme">ColorScheme</a></td>
       <td><code>'base-900'</code></td>
-      <td>The color of the component. The default is <code>'base-900'</code>, equal to <code>#141414</code>.</td>
+      <td>The color of the component. The default is the <code>'base-900'</code> color, equal to the hexadecimal code <code>#141414</code>.</td>
+    </tr>
+    <tr>
+      <td>two-tone</td>
+      <td><code>boolean</code></td>
+      <td><code>false</code></td>
+      <td>Differentiate the monogram color. The default is the <code>'accent'</code> color, equal to the hexadecimal code <code>#05F</code>.</td>
     </tr>
     <tr>
       <td>column</td>
@@ -71,8 +79,7 @@ Or use the code below for the horizontal version:
       <td>size</td>
       <td><code>string</code></td>
       <td><code>'100%'</code></td>
-      <td>The width of the component. You can use a length in <code>px</code>, <code>rem</code>, <code>em</code>, <code>%</code> unit.
-      </td>
+      <td>The width of the component. You can use a length in <code>px</code>, <code>rem</code>, <code>em</code>, <code>%</code> unit.</td>
     <tr>
   </tbody>
 </table>

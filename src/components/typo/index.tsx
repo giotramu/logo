@@ -13,13 +13,13 @@ export class Typo {
   @Prop() color?: string;
 
   render(): SVGElement {
-    const color = this.getColor();
-
     const width = this.getSize();
+
+    const colorCode = this.getColor();
 
     return (
       <Host>
-        <div class="typo" style={{width, color}}>
+        <div class="typo" style={{width, color: colorCode}}>
           <svg
             fill="currentColor"
             viewBox="0 0 800 323"

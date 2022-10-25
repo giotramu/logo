@@ -13,18 +13,22 @@ export class Logo {
 
   @Prop() color?: string;
 
-  render(): Element {
-    const color = this.getColor();
+  @Prop() twoTone = false;
 
+  render(): Element {
     const width = this.getSize();
 
     const align = this.getAlignment();
 
+    const signColorName = this.getSignColor();
+
+    const typoColorName = this.getTypoColor();
+
     return (
       <Host>
         <div class="logo" style={{width}} data-align={align}>
-          <giotramu-sign class="sign" color={color} />
-          <giotramu-typo class="typo" color={color} />
+          <giotramu-sign class="sign" color={signColorName} />
+          <giotramu-typo class="typo" color={typoColorName} />
         </div>
       </Host>
     );
@@ -38,7 +42,11 @@ export class Logo {
     return this.size;
   }
 
-  private getColor(): string | undefined {
+  private getSignColor(): string | undefined {
+    return this.twoTone ? 'accent' : this.color;
+  }
+
+  private getTypoColor(): string | undefined {
     return this.color;
   }
 }

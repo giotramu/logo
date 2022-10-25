@@ -36,6 +36,8 @@ Et... Voilà:
 
 <img width="100px" src="../resources/svg/sign-base-900.svg" alt="Giovanni Tramutola" />
 
+---
+
 ## Attributes
 
 <table>
@@ -49,9 +51,9 @@ Et... Voilà:
   <tbody>
     <tr>
       <td>color</td>
-      <td><code><a href="./color-scheme.md" title="Color scheme">ColorScheme</a></code></td>
+      <td><a href="./color-scheme.md" title="Color scheme">ColorScheme</a></td>
       <td><code>'base-900'</code></td>
-      <td>The color of the component. The default is <code>'base-900'</code>, equal to <code>#141414</code>.</td>
+      <td>The color of the component. The default is the <code>'base-900'</code> color, equal to the hexadecimal code <code>#141414</code>.</td>
     </tr>
     <tr>
       <td>size</td>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
   <head>
-    <title>Logo — Web component showcase</title>
+    <title>Logo — Web Component Showcase</title>
 
     <meta charset="utf-8" />
 
@@ -37,35 +37,151 @@
     />
 
     <style>
-      .showcase > section {
-        display: flex;
-        justify-content: center;
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+      }
+
+      .showcase {
+        --_background: #fff;
+        --_foreground: #707070;
         padding: 1.6rem;
-        overflow: hidden;
+        background-color: var(--_background);
+      }
+
+      .showcase--dark {
+        --_background: #000;
+      }
+
+      .showcase > h1 {
+        font-size: 0.8rem;
+        color: var(--_foreground);
+      }
+
+      .showcase > ul {
+        display: grid;
+        margin: 0 auto;
+        padding-left: 0;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 1.6rem;
+        list-style: none;
+      }
+
+      @media only screen and (min-width: 80em) {
+        .showcase > ul {
+          max-width: 76vw;
+        }
+      }
+
+      @media only screen and (min-width: 100em) {
+        .showcase > ul {
+          max-width: 68vw;
+        }
+      }
+
+      .showcase > ul > li {
+        display: flex;
+        padding: 1.6rem;
+        align-items: center;
+        justify-content: center;
       }
     </style>
 
     <script type="module" src="/build/giotramu-logo.esm.js"></script>
-    <script nomodule src="/build/giotramu-logo.js"></script>
   </head>
 
   <body>
-    <div class="showcase">
-      <section>
-        <giotramu-sign size="200px"></giotramu-sign>
-      </section>
+    <!-- Light background with dark logo -->
+    <section class="showcase">
+      <h1>Light background with dark logo</h1>
+      <ul>
+        <li>
+          <giotramu-logo size="180px"></giotramu-logo>
+        </li>
+        <li>
+          <giotramu-logo size="120px" column></giotramu-logo>
+        </li>
+      </ul>
+    </section>
 
-      <section>
-        <giotramu-typo size="200px"></giotramu-typo>
-      </section>
+    <!-- Dark background with light logo -->
+    <section class="showcase showcase--dark">
+      <h1>Dark background with light logo</h1>
+      <ul>
+        <li>
+          <giotramu-logo size="180px" color="base-100"></giotramu-logo>
+        </li>
+        <li>
+          <giotramu-logo size="120px" color="base-100" column></giotramu-logo>
+        </li>
+      </ul>
+    </section>
 
-      <section>
-        <giotramu-logo column size="200px"></giotramu-logo>
-      </section>
+    <!-- Light background with two-tone logo -->
+    <section class="showcase">
+      <h1>Light background with two-tone logo</h1>
+      <ul>
+        <li>
+          <giotramu-logo size="180px" two-tone></giotramu-logo>
+        </li>
+        <li>
+          <giotramu-logo size="120px" two-tone column></giotramu-logo>
+        </li>
+      </ul>
+    </section>
 
-      <section>
-        <giotramu-logo size="200px"></giotramu-logo>
-      </section>
-    </div>
+    <!-- Dark background with two-tone logo -->
+    <section class="showcase showcase--dark">
+      <h1>Dark background with two-tone logo</h1>
+      <ul>
+        <li>
+          <giotramu-logo size="180px" color="base-100" two-tone></giotramu-logo>
+        </li>
+        <li>
+          <giotramu-logo
+            size="120px"
+            color="base-100"
+            two-tone
+            column
+          ></giotramu-logo>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Gray Scale -->
+    <section class="showcase showcase--accent">
+      <h1>Gray Scale</h1>
+      <ul>
+        <li>
+          <giotramu-sign size="80px" color="base-900"></giotramu-sign>
+        </li>
+        <li>
+          <giotramu-sign size="80px" color="base-800"></giotramu-sign>
+        </li>
+        <li>
+          <giotramu-sign size="80px" color="base-700"></giotramu-sign>
+        </li>
+        <li>
+          <giotramu-sign size="80px" color="base-600"></giotramu-sign>
+        </li>
+        <li>
+          <giotramu-sign size="80px" color="base-500"></giotramu-sign>
+        </li>
+        <li>
+          <giotramu-sign size="80px" color="base-400"></giotramu-sign>
+        </li>
+        <li>
+          <giotramu-sign size="80px" color="base-300"></giotramu-sign>
+        </li>
+        <li>
+          <giotramu-sign size="80px" color="base-200"></giotramu-sign>
+        </li>
+        <li>
+          <giotramu-sign size="80px" color="base-100"></giotramu-sign>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
