@@ -2,6 +2,18 @@
 
 All notable changes to the project will be documented in this file.
 
+## [2.0.0](https://github.com/giotramu/logo/releases/tag/2.0.0)
+
+**Features:**
+
+- ![breaking] Logo design updated
+- ![breaking] Added new assets and updated the existing one
+- ![breaking] The `resources` folder was renamed to `assets`
+
+**Internals:**
+
+- `@stencil/core` updated
+
 ## [1.8.0](https://github.com/giotramu/logo/releases/tag/1.8.0)
 
 **Features:**
@@ -13,7 +25,7 @@ All notable changes to the project will be documented in this file.
 
 **Internals:**
 
-- Update dependencies
+- Dependencies updated
 
 ## [1.7.0](https://github.com/giotramu/logo/releases/tag/1.7.0)
 
@@ -24,7 +36,7 @@ All notable changes to the project will be documented in this file.
 **Internals:**
 
 - Distribute the `CHANGELOG.md` (this file) with NPM and GitHub packages
-- Update dependencies
+- Dependencies updated
 
 ## [1.6.0](https://github.com/giotramu/logo/releases/tag/1.6.0)
 
@@ -44,7 +56,7 @@ All notable changes to the project will be documented in this file.
 **Internals:**
 
 - Rename the `resources/fav` folder in `resources/favicon`
-- Update dependencies
+- Dependencies updated
 
 ## [1.4.0](https://github.com/giotramu/logo/releases/tag/1.4.0)
 
@@ -62,7 +74,7 @@ All notable changes to the project will be documented in this file.
 
 **Internals:**
 
-- Update dependencies
+- Dependencies updated
 
 ## [1.1.2](https://github.com/giotramu/logo/releases/tag/1.1.2)
 
@@ -87,3 +99,5 @@ All notable changes to the project will be documented in this file.
 **Features:**
 
 - The stable release of the logo, logotype and monogram web-components
+
+[breaking]: https://shields.io/badge/-breaking-141414?style=flat-square

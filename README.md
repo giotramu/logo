@@ -35,11 +35,11 @@ Web Components run natively in all modern browsers. [Check the browsers support]
 
 <!-- Badges -->
 
-[bundlephobia-img]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat-square&colorA=141414&colorB=0055FF
-[ci-img]: https://img.shields.io/github/workflow/status/giotramu/logo/test%20+%20build?style=flat-square&colorA=141414&colorB=0055FF
-[coverage-img]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat-square&colorA=141414&colorB=0055FF
-[npm-download-img]: https://img.shields.io/npm/dm/@giotramu/logo?style=flat-square&colorA=141414&colorB=0055FF
-[npm-version-img]: https://img.shields.io/npm/v/@giotramu/logo?style=flat-square&colorA=141414&colorB=0055FF
+[bundlephobia-img]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat-square&colorA=141414&colorB=05F
+[ci-img]: https://img.shields.io/github/workflow/status/giotramu/logo/test%20+%20build?style=flat-square&colorA=141414&colorB=05F
+[coverage-img]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat-square&colorA=141414&colorB=05F
+[npm-download-img]: https://img.shields.io/npm/dm/@giotramu/logo?style=flat-square&colorA=141414&colorB=05F
+[npm-version-img]: https://img.shields.io/npm/v/@giotramu/logo?style=flat-square&colorA=141414&colorB=05F
 
 <!-- Links -->
 
