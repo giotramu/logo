@@ -64,12 +64,6 @@ Or use the code below for the horizontal version:
       <td>The color of the component. The default is the <code>'base-900'</code> color, equal to the hexadecimal code <code>#141414</code>.</td>
     </tr>
     <tr>
-      <td>two-tone</td>
-      <td><code>boolean</code></td>
-      <td><code>false</code></td>
-      <td>Differentiate the monogram color. The default is the <code>'accent'</code> color, equal to the hexadecimal code <code>#05F</code>.</td>
-    </tr>
-    <tr>
       <td>column</td>
       <td><code>boolean</code></td>
       <td><code>false</code></td>
@@ -81,5 +75,11 @@ Or use the code below for the horizontal version:
       <td><code>'100%'</code></td>
       <td>The width of the component. You can use a length in <code>px</code>, <code>rem</code>, <code>em</code>, <code>%</code> unit.</td>
     <tr>
+    <tr>
+      <td>two-tone</td>
+      <td><code>boolean</code></td>
+      <td><code>false</code></td>
+      <td>Differentiate the monogram color. The default is the <code>'accent'</code> color, equal to the hexadecimal code <code>#05F</code>.</td>
+    </tr>
   </tbody>
 </table>
