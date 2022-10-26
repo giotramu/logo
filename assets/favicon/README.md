@@ -9,17 +9,20 @@ Copy/paste the link tags below in the head of your `index.html` document:
   <meta name="theme-color" content="#141414" />
 
   <link
+    crossorigin
     rel="icon"
     href="https://cdn.jsdelivr.net/npm/@giotramu/logo/assets/favicon/favicon.svg"
   />
 
   <link
+    crossorigin
     rel="mask-icon"
     href="https://cdn.jsdelivr.net/npm/@giotramu/logo/assets/favicon/safari-pinned-tab.svg"
     color="#05F"
   />
 
   <link
+    crossorigin
     rel="apple-touch-icon"
     href="https://cdn.jsdelivr.net/npm/@giotramu/logo/assets/favicon/apple-touch-icon.png"
   />
