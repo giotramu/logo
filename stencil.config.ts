@@ -21,5 +21,9 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null // Disable service workers
     }
-  ]
+  ],
+
+  testing: {
+    moduleDirectories: ['node_modules', '<rootDir>']
+  }
 };
