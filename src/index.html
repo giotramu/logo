@@ -15,20 +15,20 @@
     <link
       crossorigin
       rel="icon"
-      href="https://cdn.jsdelivr.net/npm/@giotramu/logo@2.0.0-rc.4/lib/favicon/favicon.svg"
+      href="https://cdn.jsdelivr.net/npm/@giotramu/logo/lib/favicon/favicon.svg"
     />
 
     <link
       crossorigin
       rel="mask-icon"
-      href="https://cdn.jsdelivr.net/npm/@giotramu/logo@2.0.0-rc.4/lib/favicon/safari-pinned-tab.svg"
+      href="https://cdn.jsdelivr.net/npm/@giotramu/logo/lib/favicon/safari-pinned-tab.svg"
       color="#05F"
     />
 
     <link
       crossorigin
       rel="apple-touch-icon"
-      href="https://cdn.jsdelivr.net/npm/@giotramu/logo@2.0.0-rc.4/lib/favicon/apple-touch-icon.png"
+      href="https://cdn.jsdelivr.net/npm/@giotramu/logo/lib/favicon/apple-touch-icon.png"
     />
 
     <link
@@ -38,21 +38,24 @@
     />
 
     <style>
+      :root {
+        --_background: #fff;
+        --_foreground: #8f8f8f;
+        --_spacer: 1.6rem;
+        --_font-size: 1rem;
+      }
+
       body {
         margin: 0;
-        padding: var(--_spacer) 0;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
           Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
           sans-serif;
       }
 
       .showcase {
-        --_background: #fff;
-        --_foreground: #8f8f8f;
-        --_spacer: 1.6rem;
-        --_font-size: 0.8rem;
         padding: var(--_spacer);
         background-color: var(--_background);
+        transition: background-color 0.16s;
       }
 
       .showcase--dark {
@@ -174,9 +177,9 @@
       </ul>
     </section>
 
-    <!-- Monogram - Gray scale -->
+    <!-- Monogram — Gray scale -->
     <section class="showcase">
-      <h1>Monogram - Gray scale</h1>
+      <h1>Monogram — Gray scale</h1>
       <div class="toggle">
         <input
           type="checkbox"
@@ -219,9 +222,9 @@
       </ul>
     </section>
 
-    <!-- Typography - Gray scale -->
+    <!-- Typography — Gray scale -->
     <section class="showcase">
-      <h1>Typography - Gray scale</h1>
+      <h1>Typography — Gray scale</h1>
       <div class="toggle">
         <input
           type="checkbox"
