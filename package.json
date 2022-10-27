@@ -13,21 +13,20 @@
     "url": "https://github.com/giotramu/logo/issues"
   },
   "engines": {
-    "node": ">=14",
+    "node": ">=16",
     "npm": ">=8"
   },
   "publishConfig": {
     "access": "public"
   },
-  "main": "lib/webc/index.cjs.js",
-  "module": "lib/webc/index.js",
+  "main": "lib/webc/cjs/webc.cjs.js",
+  "module": "lib/webc/esm/webc.js",
   "types": "lib/webc/types/index.d.ts",
-  "unpkg": "lib/webc/giotramu-logo/giotramu-logo.esm.js",
+  "unpkg": "lib/webc/esm/webc.js",
   "collection": "lib/webc/collection/collection-manifest.json",
   "collection:main": "lib/webc/collection/index.js",
   "files": [
     "lib/",
-    "lib/webc/",
     "CHANGELOG.md"
   ],
   "scripts": {
