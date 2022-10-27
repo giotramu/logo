@@ -1,8 +1,8 @@
 *.config.js
 /.stencil/
 /coverage/
-/dist/
-/loader/
+/lib/loader
+/lib/webc
 /www/
 
 .cache

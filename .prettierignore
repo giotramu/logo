@@ -1,8 +1,8 @@
-/loader/
+/.stencil/
+/coverage/
+/lib/loader
+/lib/webc
 /www/
-.stencil/
-coverage/
-dist/
 
 .cache
 .env*

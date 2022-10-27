@@ -1,6 +1,6 @@
 import {Component, Host, Prop, h} from '@stencil/core';
-import {HexCode, Size} from '../../types';
-import {hexCode} from '../../utils/hex-code';
+import {HexCode, Size} from 'src/types';
+import {hexCode} from 'src/utils/hex-code';
 
 @Component({
   shadow: true,

@@ -12,7 +12,7 @@ Put the following scripts tag in the head of your document:
 <script
   type="module"
   crossorigin="anonymous"
-  src="https://cdn.jsdelivr.net/npm/@giotramu/logo/dist/giotramu-logo/giotramu-logo.esm.js"
+  src="https://cdn.jsdelivr.net/npm/@giotramu/logo/lib/webc/index.js"
 ></script>
 ```
 

@@ -19,8 +19,8 @@ Put the following scripts tag in the head of your document:
 ```html
 <script
   type="module"
-  crossorigin
-  src="https://cdn.jsdelivr.net/npm/@giotramu/logo/dist/giotramu-logo/giotramu-logo.esm.js"
+  crossorigin="anonymous"
+  src="https://cdn.jsdelivr.net/npm/@giotramu/logo/lib/webc/index.js"
 ></script>
 ```
 

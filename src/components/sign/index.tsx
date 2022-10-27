@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unknown-property */
 
 import {Component, Host, Prop, h} from '@stencil/core';
-import type {HexCode, Size} from '../../types';
-import {hexCode} from '../../utils/hex-code';
+import type {HexCode, Size} from 'src/types';
+import {hexCode} from 'src/utils/hex-code';
 
 @Component({
   shadow: true,

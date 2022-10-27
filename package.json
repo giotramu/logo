@@ -19,16 +19,15 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.js",
-  "types": "dist/types/index.d.ts",
-  "unpkg": "dist/giotramu-logo/giotramu-logo.esm.js",
-  "collection": "dist/collection/collection-manifest.json",
-  "collection:main": "dist/collection/index.js",
+  "main": "lib/webc/index.cjs.js",
+  "module": "lib/webc/index.js",
+  "types": "lib/webc/types/index.d.ts",
+  "unpkg": "lib/webc/giotramu-logo/giotramu-logo.esm.js",
+  "collection": "lib/webc/collection/collection-manifest.json",
+  "collection:main": "lib/webc/collection/index.js",
   "files": [
-    "dist/",
-    "loader/",
-    "assets/",
+    "lib/",
+    "lib/webc/",
     "CHANGELOG.md"
   ],
   "scripts": {
@@ -38,7 +37,7 @@
     "check": "run-p -cln check:*",
     "test": "stencil test --spec --coverage",
     "dev": "stencil build --dev --watch --serve",
-    "clean": "del ./coverage ./dist ./loader ./www",
+    "clean": "del ./coverage ./lib/webc ./lib/loader ./www",
     "prebuild": "npm run clean",
     "build": "stencil build"
   },
