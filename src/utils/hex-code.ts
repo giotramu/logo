@@ -1,4 +1,4 @@
-import type {HexCode} from '../types';
+import type {HexCode} from 'src/types';
 
 enum ColorScheme {
   'accent' = '#0055FF',

@@ -20,7 +20,7 @@ Put the following scripts tag in the head of your document:
 <script
   type="module"
   crossorigin="anonymous"
-  src="https://cdn.jsdelivr.net/npm/@giotramu/logo/lib/webc/index.js"
+  src="https://cdn.jsdelivr.net/npm/@giotramu/logo/lib/webc/esm/webc.js"
 ></script>
 ```
 
@@ -29,12 +29,12 @@ Put the following scripts tag in the head of your document:
 Drop this line into your HTML document:
 
 ```html
-<giotramu-sign size="100px"></giotramu-sign>
+<giotramu-sign size="100px" color="accent"></giotramu-sign>
 ```
 
 Et... Voilà:
 
-<img width="100px" src="../resources/svg/sign-base-900.svg" alt="Giovanni Tramutola" />
+<img width="100px" src="../lib/svg/sign-accent.svg" alt="Giovanni Tramutola" />
 
 ---
 

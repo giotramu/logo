@@ -20,7 +20,7 @@ Put the following scripts tag in the head of your document:
 <script
   type="module"
   crossorigin="anonymous"
-  src="https://cdn.jsdelivr.net/npm/@giotramu/logo/lib/webc/index.js"
+  src="https://cdn.jsdelivr.net/npm/@giotramu/logo/lib/webc/esm/webc.js"
 ></script>
 ```
 
@@ -34,7 +34,7 @@ Drop this line into your HTML document:
 
 Et... Voilà:
 
-<img width="150px" src="../assets/svg/logo-v-accent-base-900.svg" alt="Giovanni Tramutola" />
+<img width="150px" src="../lib/svg/logo-v-accent-base-900.svg" alt="Giovanni Tramutola" />
 
 Or use the code below for the horizontal version:
 
@@ -42,7 +42,7 @@ Or use the code below for the horizontal version:
 <giotramu-logo size="250px" two-tone></giotramu-logo>
 ```
 
-<img width="250px" src="../assets/svg/logo-h-accent-base-900.svg" alt="Giovanni Tramutola" />
+<img width="250px" src="../lib/svg/logo-h-accent-base-900.svg" alt="Giovanni Tramutola" />
 
 ---
 
