@@ -38,11 +38,11 @@
     />
 
     <style>
-      :where(:root) {
-        --_background: #fff;
-        --_foreground: #8f8f8f;
-        --_spacer: 1.6rem;
-        --_font-size: 1rem;
+      :root {
+        --background: #fff;
+        --foreground: #8f8f8f;
+        --spacer: 1.6rem;
+        --font-size: 1rem;
       }
 
       body {
@@ -52,39 +52,39 @@
           sans-serif;
       }
 
+      label {
+        font-size: var(--font-size);
+        color: var(--foreground);
+        cursor: pointer;
+      }
+
       .showcase {
-        padding: var(--_spacer);
-        background-color: var(--_background);
+        padding: var(--spacer);
+        background-color: var(--background);
         transition: background-color 0.16s;
       }
 
       .showcase--dark {
-        --_background: #000;
+        --background: #000;
       }
 
       .showcase:has([type='checkbox']:checked) {
-        --_background: #000;
-      }
-
-      label {
-        font-size: var(--_font-size);
-        color: var(--_foreground);
-        cursor: pointer;
+        --background: #000;
       }
 
       .toggle {
         display: flex;
         justify-content: center;
         align-items: center;
-        column-gap: 0.4rem;
-        margin-bottom: var(--_spacer);
+        column-gap: 0.4em;
+        margin-bottom: var(--spacer);
       }
 
       .showcase > h1 {
-        margin-bottom: var(--_spacer);
-        font-size: var(--_font-size);
+        margin-bottom: var(--spacer);
+        font-size: var(--font-size);
         text-align: center;
-        color: var(--_foreground);
+        color: var(--foreground);
       }
 
       .showcase > ul {
@@ -92,7 +92,7 @@
         margin: 0 auto;
         padding-left: 0;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        grid-gap: var(--_spacer);
+        grid-gap: var(--spacer);
         list-style: none;
       }
 
@@ -110,7 +110,7 @@
 
       .showcase > ul > li {
         display: flex;
-        padding: calc(var(--_spacer) / 2);
+        padding: calc(var(--spacer) / 2);
         align-items: center;
         justify-content: center;
       }
