@@ -17,14 +17,14 @@ Copy/paste the link tags below in the head of your `index.html` document:
   <link
     crossorigin
     rel="mask-icon"
-    href="https://cdn.jsdelivr.net/npm/@giotramu/logo/assets/favicon/safari-pinned-tab.svg"
+    href="https://cdn.jsdelivr.net/npm/@giotramu/logo/assets/favicon/mask-icon.svg"
     color="#05F"
   />
 
   <link
     crossorigin
     rel="apple-touch-icon"
-    href="https://cdn.jsdelivr.net/npm/@giotramu/logo/assets/favicon/apple-touch-icon.png"
+    href="https://cdn.jsdelivr.net/npm/@giotramu/logo/assets/favicon/touch-icon-180.png"
   />
 
   <!--
@@ -47,7 +47,7 @@ Do you have a [`manifest.json`](https://developer.chrome.com/extensions/manifest
   "theme_color": "#141414",
   "icons": [
     {
-      "src": "https://cdn.jsdelivr.net/npm/@giotramu/logo/resources/favicon/google-touch-icon.png",
+      "src": "https://cdn.jsdelivr.net/npm/@giotramu/logo/resources/favicon/touch-icon-512.png",
       "sizes": "512x512"
     }
   ]
