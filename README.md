@@ -25,9 +25,8 @@ Web Components run natively in all modern browsers. [Check the browsers support]
 
 ## Resources
 
-- [Color scheme](./docs/color-scheme.md)
 - [Favicon](./lib/favicon)
-- [SVG](./lib/svg)
+- [SVGs](./lib/svg)
 
 ## License
 
