@@ -2,6 +2,12 @@
 
 All notable changes to the project will be documented in this file.
 
+## [2.1.0](https://github.com/giotramu/logo/releases/tag/2.1.0)
+
+**Features:**
+
+- Favicon resources updated
+
 ## [2.0.0](https://github.com/giotramu/logo/releases/tag/2.0.0)
 
 **Features:**
