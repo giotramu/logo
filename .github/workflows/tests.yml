@@ -1,4 +1,4 @@
-name: Test & Build
+name: Tests
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - 'stable'
 
 jobs:
-  test_build:
+  tests:
     runs-on: ubuntu-latest
 
     strategy:
