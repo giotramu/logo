@@ -112,4 +112,4 @@ All notable changes to the project will be documented in this file.
 
 - The stable release of the logo, logotype and monogram web-components
 
-[breaking]: https://shields.io/badge/-breaking-141414?style=flat-square
+[breaking]: https://shields.io/badge/-breaking-d52941?style=flat-square
