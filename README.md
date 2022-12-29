@@ -35,7 +35,7 @@ Web Components run natively in all modern browsers. [Check the browsers support]
 <!-- Badges -->
 
 [bundlephobia_badge]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat-square&colorA=141414&colorB=05F
-[ci_badge]: https://img.shields.io/github/workflow/status/giotramu/logo/tests?style=flat-square&colorA=141414&colorB=05F
+[ci_badge]: https://img.shields.io/github/actions/workflow/status/giotramu/logo/tests.yml?style=flat-square&colorA=141414&colorB=05F
 [coverage_badge]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat-square&colorA=141414&colorB=05F
 [downloads_badge]: https://img.shields.io/npm/dm/@giotramu/logo?style=flat-square&colorA=141414&colorB=05F
 [version_badge]: https://img.shields.io/npm/v/@giotramu/logo?style=flat-square&colorA=141414&colorB=05F
@@ -43,7 +43,7 @@ Web Components run natively in all modern browsers. [Check the browsers support]
 <!-- Links -->
 
 [bundlephobia_url]: https://bundlephobia.com/result?p=@giotramu/logo
-[ci_url]: https://github.com/giotramu/logo/actions
+[ci_url]: https://github.com/giotramu/logo/actions/workflows/tests.yml
 [coverage_url]: https://coveralls.io/github/giotramu/logo
 [deps_url]: https://david-dm.org/giotramu/logo
 [devdeps_url]: https://david-dm.org/giotramu/logo?type=dev
