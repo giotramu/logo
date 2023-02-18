@@ -6,7 +6,7 @@ Copy/paste the link tags below in the head of your `index.html` document:
 <head>
   <!-- ... -->
 
-  <meta name="theme-color" content="#141414" />
+  <meta name="theme-color" content="#313133" />
 
   <link
     crossorigin
@@ -18,7 +18,7 @@ Copy/paste the link tags below in the head of your `index.html` document:
     crossorigin
     rel="mask-icon"
     href="https://cdn.jsdelivr.net/npm/@giotramu/logo/lib/favicon/mask-icon.svg"
-    color="#05F"
+    color="#4169E1"
   />
 
   <link
@@ -43,8 +43,8 @@ Do you have a [`manifest.json`](https://developer.chrome.com/extensions/manifest
   "name": "Sample App",
   "short_name": "Sample App",
   "display": "fullscreen",
-  "background_color": "#FFFFFF",
-  "theme_color": "#141414",
+  "background_color": "#F8F8FF",
+  "theme_color": "#313133",
   "icons": [
     {
       "src": "https://cdn.jsdelivr.net/npm/@giotramu/logo/lib/favicon/touch-icon-512.png",
@@ -53,5 +53,3 @@ Do you have a [`manifest.json`](https://developer.chrome.com/extensions/manifest
   ]
 }
 ```
-
-Sadly, not everyone is on modern browsers yet, BUT it can be quickly resolved by dropping the `favicon.ico` at the root of your website.

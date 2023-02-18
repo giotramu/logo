@@ -3,8 +3,8 @@
     Copyright 2022–Today (c) Giovanni Tramutola (https://github.com/giotramu). All rights reserved.
   </metadata>
   <style>
-    :root {--fill-color: #05F}
-    @media (prefers-color-scheme: dark) {:root {--fill-color: #CCC}}
+    :root {--fill-color: #4169E1}
+    @media (prefers-color-scheme: dark) {:root {--fill-color: #F8F8FF}}
   </style>
   <path
     fill="var(--fill-color)"

@@ -1,6 +1,6 @@
 import {Component, Host, Prop, h} from '@stencil/core';
-import {HexCode, Size} from 'src/types';
-import {hexCode} from 'src/utils/hex-code';
+import {HexCode, Size} from 'src/types/model';
+import {getHexCode} from 'src/utils/hex-code';
 
 @Component({
   shadow: true,
@@ -57,6 +57,6 @@ export class Typo {
   }
 
   private getColor(): HexCode {
-    return hexCode(this.color);
+    return getHexCode(this.color);
   }
 }

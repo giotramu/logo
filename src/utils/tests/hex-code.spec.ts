@@ -1,21 +1,19 @@
-import {hexCode} from '../hex-code';
+import {getHexCode} from '../hex-code';
 
-describe('hexCode', () => {
-  it('returns the right hex color code', () => {
-    expect(hexCode('accent')).toBe('#0055FF');
-    expect(hexCode('base-900')).toBe('#141414');
-    expect(hexCode('base-800')).toBe('#333333');
-    expect(hexCode('base-700')).toBe('#525252');
-    expect(hexCode('base-600')).toBe('#707070');
-    expect(hexCode('base-500')).toBe('#8F8F8F');
-    expect(hexCode('base-400')).toBe('#ADADAD');
-    expect(hexCode('base-300')).toBe('#CCCCCC');
-    expect(hexCode('base-200')).toBe('#EBEBEB');
-    expect(hexCode('base-100')).toBe('#FFFFFF');
-  });
+it('getHexCode fn should return the right hex color code', () => {
+  expect(getHexCode('accent')).toBe('#4169E1');
+  expect(getHexCode('base-900')).toBe('#313133');
+  expect(getHexCode('base-800')).toBe('#4A4A4C');
+  expect(getHexCode('base-700')).toBe('#636366');
+  expect(getHexCode('base-600')).toBe('#7C7C7F');
+  expect(getHexCode('base-500')).toBe('#949499');
+  expect(getHexCode('base-400')).toBe('#ADADB2');
+  expect(getHexCode('base-300')).toBe('#C6C6CC');
+  expect(getHexCode('base-200')).toBe('#DFDFE5');
+  expect(getHexCode('base-100')).toBe('#F8F8FF');
+});
 
-  it('returns the default color for unknown keywords', () => {
-    expect(hexCode('none')).toBe('#141414');
-    expect(hexCode('fake')).toBe('#141414');
-  });
+it('getHexCode fn should return the default color for unknown keywords', () => {
+  expect(getHexCode('none')).toBe('#313133');
+  expect(getHexCode('fake')).toBe('#313133');
 });

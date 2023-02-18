@@ -1,11 +1,8 @@
-[← Back](../README.md)
+[← Back](https://github.com/giotramu/logo)
 
 # \<giotramu-sign>
 
-## Table of contents
-
-- [\<giotramu-sign>](#giotramu-sign)
-  - [Table of contents](#table-of-contents)
+- [\<giotramu-sign\>](#giotramu-sign)
   - [Install](#install)
   - [Usage](#usage)
   - [Attributes](#attributes)

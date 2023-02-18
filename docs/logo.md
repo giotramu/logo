@@ -1,11 +1,8 @@
-[← Back](../README.md)
+[← Back](https://github.com/giotramu/logo)
 
 # \<giotramu-logo>
 
-## Table of contents
-
-- [\<giotramu-logo>](#giotramu-logo)
-  - [Table of contents](#table-of-contents)
+- [\<giotramu-logo\>](#giotramu-logo)
   - [Install](#install)
   - [Usage](#usage)
   - [Attributes](#attributes)
@@ -61,7 +58,7 @@ Or use the code below for the horizontal version:
       <td>color</td>
       <td><a href="./color-scheme.md" title="Color scheme">ColorScheme</a></td>
       <td><code>'base-900'</code></td>
-      <td>The color of the component. The default is the <code>'base-900'</code> color, equal to the hexadecimal code <code>#141414</code>.</td>
+      <td>The color of the component. The default is the <code>'base-900'</code> color, equal to the hexadecimal code <code>#313133</code>.</td>
     </tr>
     <tr>
       <td>column</td>
@@ -79,7 +76,7 @@ Or use the code below for the horizontal version:
       <td>two-tone</td>
       <td><code>boolean</code></td>
       <td><code>false</code></td>
-      <td>Differentiate the monogram color. The default is the <code>'accent'</code> color, equal to the hexadecimal code <code>#05F</code>.</td>
+      <td>Differentiate the monogram color. The default is the <code>'accent'</code> color, equal to the hexadecimal code <code>#4169E1</code>.</td>
     </tr>
   </tbody>
 </table>

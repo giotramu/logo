@@ -1,6 +1,11 @@
-[← Back](../README.md)
+[← Back](https://github.com/giotramu/logo)
 
 # \<giotramu-typo>
+
+- [\<giotramu-typo\>](#giotramu-typo)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Attributes](#attributes)
 
 ## Install
 

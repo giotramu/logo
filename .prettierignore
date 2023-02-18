@@ -3,6 +3,7 @@
 /lib/loader
 /lib/webc
 /www/
+/src/components.d.ts
 
 .cache
 .env*

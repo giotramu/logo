@@ -1,4 +1,4 @@
-[← Back](../README.md)
+[← Back](https://github.com/giotramu/logo)
 
 # Browsers support
 

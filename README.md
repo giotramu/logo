@@ -19,14 +19,14 @@ Web Components run natively in all modern browsers. [Check the browsers support]
 
 **[Try live on CodePen!](https://codepen.io/giotramu/full/xxGBBVm)**
 
-- [\<giotramu-logo>](./docs/logo.md)
-- [\<giotramu-sign>](./docs/sign.md)
-- [\<giotramu-typo>](./docs/typo.md)
+- [\<giotramu-logo>](https://github.com/giotramu/logo/blob/stable/docs/logo.md)
+- [\<giotramu-sign>](https://github.com/giotramu/logo/blob/stable/docs/sign.md)
+- [\<giotramu-typo>](https://github.com/giotramu/logo/blob/stable/docs/typo.md)
 
 ## Resources
 
-- [Favicon](./lib/favicon)
-- [SVGs](./lib/svg)
+- [Favicon](https://github.com/giotramu/logo/tree/stable/lib/favicon)
+- [SVGs](https://github.com/giotramu/logo/tree/stable/lib/svg)
 
 ## License
 
@@ -34,11 +34,11 @@ Web Components run natively in all modern browsers. [Check the browsers support]
 
 <!-- Badges -->
 
-[bundlephobia_badge]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat-square&colorA=141414&colorB=05F
-[ci_badge]: https://img.shields.io/github/actions/workflow/status/giotramu/logo/tests.yml?style=flat-square&colorA=141414&colorB=05F
-[coverage_badge]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat-square&colorA=141414&colorB=05F
-[downloads_badge]: https://img.shields.io/npm/dm/@giotramu/logo?style=flat-square&colorA=141414&colorB=05F
-[version_badge]: https://img.shields.io/npm/v/@giotramu/logo?style=flat-square&colorA=141414&colorB=05F
+[bundlephobia_badge]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat-square&colorA=313133&colorB=4169E1
+[ci_badge]: https://img.shields.io/github/actions/workflow/status/giotramu/logo/tests.yml?style=flat-square&colorA=313133&colorB=4169E1
+[coverage_badge]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat-square&colorA=313133&colorB=4169E1
+[downloads_badge]: https://img.shields.io/npm/dm/@giotramu/logo?style=flat-square&colorA=313133&colorB=4169E1
+[version_badge]: https://img.shields.io/npm/v/@giotramu/logo?style=flat-square&colorA=313133&colorB=4169E1
 
 <!-- Links -->
 
