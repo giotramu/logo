@@ -17,7 +17,7 @@ Put the following scripts tag in the head of your document:
 <script
   type="module"
   crossorigin="anonymous"
-  src="https://cdn.jsdelivr.net/npm/@giotramu/logo/lib/webc/esm/webc.js"
+  src="https://cdn.jsdelivr.net/npm/@giotramu/logo"
 ></script>
 ```
 

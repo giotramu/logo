@@ -2,6 +2,12 @@
 
 All notable changes to the project will be documented in this file.
 
+## [2.2.2]
+
+**Internals:**
+
+- Removed the `module` property in `package.json`
+
 ## [2.2.1]
 
 **Internals:**
@@ -128,6 +134,7 @@ All notable changes to the project will be documented in this file.
 
 - The stable release of the logo, logotype and monogram web-components
 
+[2.2.2]: https://github.com/giotramu/logo/releases/tag/2.2.2
 [2.2.1]: https://github.com/giotramu/logo/releases/tag/2.2.1
 [2.2.0]: https://github.com/giotramu/logo/releases/tag/2.2.0
 [2.1.1]: https://github.com/giotramu/logo/releases/tag/2.1.1

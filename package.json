@@ -1,6 +1,6 @@
 {
   "name": "@giotramu/logo",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Web Component version of personal logo and related resources.",
   "author": "giotramu <https://github.com/giotramu>",
   "homepage": "https://github.com/giotramu/logo#readme",
@@ -19,18 +19,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "lib/webc/cjs/webc.cjs.js",
-  "module": "lib/webc/esm/webc.js",
+  "main": "lib/webc/esm/webc.js",
   "types": "lib/webc/types/index.d.ts",
-  "unpkg": "lib/webc/esm/webc.js",
-  "collection": "lib/webc/collection/collection-manifest.json",
-  "collection:main": "lib/webc/collection/index.js",
   "files": [
     "lib/favicon",
     "lib/loader",
     "lib/svg",
-    "lib/webc",
-    "CHANGELOG.md"
+    "lib/webc"
   ],
   "prettier": "@giotramu/prettier-config",
   "scripts": {
