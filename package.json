@@ -22,10 +22,7 @@
   "main": "lib/webc/esm/webc.js",
   "types": "lib/webc/types/index.d.ts",
   "files": [
-    "lib/favicon",
-    "lib/loader",
-    "lib/svg",
-    "lib/webc"
+    "/lib/"
   ],
   "prettier": "@giotramu/prettier-config",
   "scripts": {
