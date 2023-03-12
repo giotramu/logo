@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unknown-property */
-
 import {Component, Host, Prop, h} from '@stencil/core';
 import type {HexCode, Size} from 'src/types/model';
 import {getHexCode} from 'src/utils/hex-code';
@@ -10,11 +8,11 @@ import {getHexCode} from 'src/utils/hex-code';
   styleUrl: 'styles.css'
 })
 export class Sign {
-  @Prop() size = '100%';
+  @Prop() public size = '100%';
 
-  @Prop() color?: string;
+  @Prop() public color?: string;
 
-  render(): SVGElement {
+  protected render(): SVGElement {
     const width = this.getSize();
 
     const colorName = this.color;

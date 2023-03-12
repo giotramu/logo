@@ -5,9 +5,4 @@
 /www/
 /src/components.d.ts
 
-.cache
-.env*
-.DS_Store
-*log
 node_modules
-Thumbs.db

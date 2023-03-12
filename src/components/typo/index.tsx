@@ -8,11 +8,11 @@ import {getHexCode} from 'src/utils/hex-code';
   styleUrl: 'styles.css'
 })
 export class Typo {
-  @Prop() size = '100%';
+  @Prop() public size = '100%';
 
-  @Prop() color?: string;
+  @Prop() public color?: string;
 
-  render(): SVGElement {
+  protected render(): SVGElement {
     const width = this.getSize();
 
     const colorCode = this.getColor();

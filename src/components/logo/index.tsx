@@ -7,15 +7,15 @@ import type {Alignment, Size} from 'src/types/model';
   styleUrl: 'styles.css'
 })
 export class Logo {
-  @Prop() column = false;
+  @Prop() public column = false;
 
-  @Prop() size = '100%';
+  @Prop() public size = '100%';
 
-  @Prop() color?: string;
+  @Prop() public color?: string;
 
-  @Prop() twoTone = false;
+  @Prop() public twoTone = false;
 
-  render(): Element {
+  protected render(): Element {
     const width = this.getSize();
 
     const align = this.getAlignment();
