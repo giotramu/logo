@@ -1,11 +1,11 @@
-import {newSpecPage} from '@stencil/core/testing';
-import {Sign} from '../index';
+import { newSpecPage } from '@stencil/core/testing'
+import { Sign } from '../index'
 
-test('<giotramu-sign> should render the monogram', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-sign> should render the monogram.', async () => {
+  const { root } = await newSpecPage({
     components: [Sign],
     html: '<giotramu-sign></giotramu-sign>'
-  });
+  })
 
   expect(root).toEqualHtml(`
     <giotramu-sign>
@@ -22,14 +22,14 @@ test('<giotramu-sign> should render the monogram', async () => {
         </div>
       </mock:shadow-root>
     </giotramu-sign>
-  `);
-});
+  `)
+})
 
-test('<giotramu-sign> should render the monogram with a custom size', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-sign> should render the monogram with a custom size.', async () => {
+  const { root } = await newSpecPage({
     components: [Sign],
     html: '<giotramu-sign size="320px"></giotramu-sign>'
-  });
+  })
 
   expect(root).toEqualHtml(`
     <giotramu-sign size="320px">
@@ -46,14 +46,14 @@ test('<giotramu-sign> should render the monogram with a custom size', async () =
         </div>
       </mock:shadow-root>
     </giotramu-sign>
-  `);
-});
+  `)
+})
 
-test('<giotramu-sign> should render the monogram with an accent color', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-sign> should render the monogram with an accent color.', async () => {
+  const { root } = await newSpecPage({
     components: [Sign],
     html: '<giotramu-sign color="accent"></giotramu-sign>'
-  });
+  })
 
   expect(root).toEqualHtml(`
     <giotramu-sign color="accent">
@@ -73,14 +73,14 @@ test('<giotramu-sign> should render the monogram with an accent color', async ()
         </div>
       </mock:shadow-root>
     </giotramu-sign>
-  `);
-});
+  `)
+})
 
-test('<giotramu-sign> should render the monogram ignoring custom color', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-sign> should render the monogram ignoring custom color.', async () => {
+  const { root } = await newSpecPage({
     components: [Sign],
     html: '<giotramu-sign color="#EFEF"></giotramu-sign>'
-  });
+  })
 
   expect(root).toEqualHtml(`
     <giotramu-sign color="#EFEF">
@@ -97,5 +97,5 @@ test('<giotramu-sign> should render the monogram ignoring custom color', async (
         </div>
       </mock:shadow-root>
     </giotramu-sign>
-  `);
-});
+  `)
+})

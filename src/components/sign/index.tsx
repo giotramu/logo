@@ -1,6 +1,6 @@
-import {Component, Host, Prop, h} from '@stencil/core';
-import type {HexCode, Size} from 'src/types/model';
-import {getHexCode} from 'src/utils/hex-code';
+import { Component, Host, Prop, h } from '@stencil/core'
+import type { HexCode, Size } from 'src/types/model'
+import { getHexCode } from 'src/utils/hex-code'
 
 @Component({
   shadow: true,
@@ -8,20 +8,20 @@ import {getHexCode} from 'src/utils/hex-code';
   styleUrl: 'styles.css'
 })
 export class Sign {
-  @Prop() public size = '100%';
+  @Prop() public size = '100%'
 
-  @Prop() public color?: string;
+  @Prop() public color?: string
 
   protected render(): SVGElement {
-    const width = this.getSize();
+    const width = this.getSize()
 
-    const colorName = this.color;
+    const colorName = this.color
 
-    const colorCode = this.getColor();
+    const colorCode = this.getColor()
 
     return (
       <Host>
-        <div class="sign" style={{width, color: colorCode}}>
+        <div class="sign" style={{ width, color: colorCode }}>
           <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
             {colorName === 'accent' ? (
               <g>
@@ -44,14 +44,14 @@ export class Sign {
           </svg>
         </div>
       </Host>
-    );
+    )
   }
 
   private getSize(): Size {
-    return this.size;
+    return this.size
   }
 
   private getColor(): HexCode {
-    return getHexCode(this.color);
+    return getHexCode(this.color)
   }
 }

@@ -1,5 +1,5 @@
-import {Component, Host, Prop, h} from '@stencil/core';
-import type {Alignment, Size} from 'src/types/model';
+import { Component, Host, Prop, h } from '@stencil/core'
+import type { Alignment, Size } from 'src/types/model'
 
 @Component({
   shadow: true,
@@ -7,46 +7,52 @@ import type {Alignment, Size} from 'src/types/model';
   styleUrl: 'styles.css'
 })
 export class Logo {
-  @Prop() public column = false;
+  @Prop() public column = false
 
-  @Prop() public size = '100%';
+  @Prop() public size = '100%'
 
-  @Prop() public color?: string;
+  @Prop() public color?: string
 
-  @Prop() public twoTone = false;
+  @Prop() public twoTone = false
 
   protected render(): Element {
-    const width = this.getSize();
+    const width = this.getSize()
 
-    const align = this.getAlignment();
+    const align = this.getAlignment()
 
-    const signColorName = this.getSignColor();
+    const signColor = this.getSignColor()
 
-    const typoColorName = this.getTypoColor();
+    const typoColor = this.getTypoColor()
 
     return (
       <Host>
-        <div class="logo" style={{width}} data-align={align}>
-          <giotramu-sign class="sign" color={signColorName} />
-          <giotramu-typo class="typo" color={typoColorName} />
+        <div class="logo" style={{ width }} data-align={align}>
+          <giotramu-sign
+            class="sign"
+            {...(signColor ? { color: signColor } : {})}
+          />
+          <giotramu-typo
+            class="typo"
+            {...(typoColor ? { color: typoColor } : {})}
+          />
         </div>
       </Host>
-    );
+    )
   }
 
   private getAlignment(): Alignment {
-    return this.column ? 'column' : 'row';
+    return this.column ? 'column' : 'row'
   }
 
   private getSize(): Size {
-    return this.size;
+    return this.size
   }
 
   private getSignColor(): string | undefined {
-    return this.twoTone ? 'accent' : this.color;
+    return this.twoTone ? 'accent' : this.color
   }
 
   private getTypoColor(): string | undefined {
-    return this.color;
+    return this.color
   }
 }

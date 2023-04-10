@@ -1,1 +1,1 @@
-export type ObjectValues<O> = O[keyof O];
+export type ObjectValues<O> = O[keyof O]

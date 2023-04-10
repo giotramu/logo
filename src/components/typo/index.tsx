@@ -1,6 +1,6 @@
-import {Component, Host, Prop, h} from '@stencil/core';
-import {HexCode, Size} from 'src/types/model';
-import {getHexCode} from 'src/utils/hex-code';
+import { Component, Host, Prop, h } from '@stencil/core'
+import { HexCode, Size } from 'src/types/model'
+import { getHexCode } from 'src/utils/hex-code'
 
 @Component({
   shadow: true,
@@ -8,18 +8,18 @@ import {getHexCode} from 'src/utils/hex-code';
   styleUrl: 'styles.css'
 })
 export class Typo {
-  @Prop() public size = '100%';
+  @Prop() public size = '100%'
 
-  @Prop() public color?: string;
+  @Prop() public color?: string
 
   protected render(): SVGElement {
-    const width = this.getSize();
+    const width = this.getSize()
 
-    const colorCode = this.getColor();
+    const colorCode = this.getColor()
 
     return (
       <Host>
-        <div class="typo" style={{width, color: colorCode}}>
+        <div class="typo" style={{ width, color: colorCode }}>
           <svg
             fill="currentColor"
             viewBox="0 0 800 323"
@@ -49,14 +49,14 @@ export class Typo {
           </svg>
         </div>
       </Host>
-    );
+    )
   }
 
   private getSize(): Size {
-    return this.size;
+    return this.size
   }
 
   private getColor(): HexCode {
-    return getHexCode(this.color);
+    return getHexCode(this.color)
   }
 }

@@ -1,11 +1,11 @@
-import {newSpecPage} from '@stencil/core/testing';
-import {Typo} from '../index';
+import { newSpecPage } from '@stencil/core/testing'
+import { Typo } from '../index'
 
-test('<giotramu-typo> should render the logotype', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-typo> should render the logotype.', async () => {
+  const { root } = await newSpecPage({
     components: [Typo],
     html: '<giotramu-typo></giotramu-typo>'
-  });
+  })
 
   expect(root).toEqualHtml(`
     <giotramu-typo>
@@ -37,14 +37,14 @@ test('<giotramu-typo> should render the logotype', async () => {
         </div>
       </mock:shadow-root>
     </giotramu-typo>
-  `);
-});
+  `)
+})
 
-test('<giotramu-typo> should render the logotype with a custom size', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-typo> should render the logotype with a custom size.', async () => {
+  const { root } = await newSpecPage({
     components: [Typo],
     html: '<giotramu-typo size="320px"></giotramu-typo>'
-  });
+  })
 
   expect(root).toEqualHtml(`
     <giotramu-typo size="320px">
@@ -76,14 +76,14 @@ test('<giotramu-typo> should render the logotype with a custom size', async () =
         </div>
       </mock:shadow-root>
     </giotramu-typo>
-  `);
-});
+  `)
+})
 
-test('<giotramu-typo> should render the logotype with an accent color', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-typo> should render the logotype with an accent color.', async () => {
+  const { root } = await newSpecPage({
     components: [Typo],
     html: '<giotramu-typo color="accent"></giotramu-typo>'
-  });
+  })
 
   expect(root).toEqualHtml(`
     <giotramu-typo color="accent">
@@ -115,14 +115,14 @@ test('<giotramu-typo> should render the logotype with an accent color', async ()
         </div>
       </mock:shadow-root>
     </giotramu-typo>
-  `);
-});
+  `)
+})
 
-test('<giotramu-typo> should render the logotype and ignore custom color', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-typo> should render the logotype and ignore custom color.', async () => {
+  const { root } = await newSpecPage({
     components: [Typo],
     html: '<giotramu-typo color="#EFEF"></giotramu-typo>'
-  });
+  })
 
   expect(root).toEqualHtml(`
     <giotramu-typo color="#EFEF">
@@ -154,5 +154,5 @@ test('<giotramu-typo> should render the logotype and ignore custom color', async
         </div>
       </mock:shadow-root>
     </giotramu-typo>
-  `);
-});
+  `)
+})

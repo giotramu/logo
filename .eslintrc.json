@@ -4,13 +4,14 @@
     "@giotramu/eslint-config/typescript",
     "@giotramu/eslint-config/react"
   ],
-
+  "parserOptions": {
+    "project": ["./tsconfig.test.json"]
+  },
   "settings": {
     "react": {
       "pragma": "h"
     }
   },
-
   "rules": {
     "react/no-unknown-property": [
       "error",

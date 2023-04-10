@@ -1,4 +1,4 @@
-export const DEFAULT_COLOR = 'base-900' as const;
+export const DEFAULT_COLOR = 'base-900' as const
 
 export const COLOR_SCHEME = {
   accent: '#4169E1',
@@ -11,4 +11,4 @@ export const COLOR_SCHEME = {
   'base-300': '#C6C6CC',
   'base-200': '#DFDFE5',
   'base-100': '#F8F8FF'
-} as const;
+} as const

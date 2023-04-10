@@ -1,5 +1,5 @@
-import {COLOR_SCHEME, DEFAULT_COLOR} from 'src/constants/color-scheme';
-import type {ColorName, HexCode} from 'src/types/model';
+import { COLOR_SCHEME, DEFAULT_COLOR } from 'src/constants/color-scheme'
+import type { ColorName, HexCode } from 'src/types/model'
 
 /**
  * Map a color name to the related Hex code.
@@ -9,13 +9,13 @@ import type {ColorName, HexCode} from 'src/types/model';
  * @returns HexCode
  */
 export function getHexCode(name?: string): HexCode {
-  return isValidColor(name) ? COLOR_SCHEME[name] : COLOR_SCHEME[DEFAULT_COLOR];
+  return isValidColor(name) ? COLOR_SCHEME[name] : COLOR_SCHEME[DEFAULT_COLOR]
 }
 
 function isValidColor(name?: string): name is ColorName {
   if (typeof name === 'undefined') {
-    return false;
+    return false
   }
 
-  return Object.hasOwn(COLOR_SCHEME, name);
+  return Object.hasOwn(COLOR_SCHEME, name)
 }

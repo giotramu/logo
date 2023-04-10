@@ -1,11 +1,11 @@
-import {newSpecPage} from '@stencil/core/testing';
-import {Logo} from '../index';
+import { newSpecPage } from '@stencil/core/testing'
+import { Logo } from '../index'
 
-test('<giotramu-logo> should render the logo', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-logo> should render the logo.', async () => {
+  const { root } = await newSpecPage({
     components: [Logo],
     html: '<giotramu-logo></giotramu-logo>'
-  });
+  })
 
   expect(root).toEqualHtml(`
       <giotramu-logo>
@@ -20,14 +20,14 @@ test('<giotramu-logo> should render the logo', async () => {
           </div>
         </mock:shadow-root>
       </giotramu-logo>
-    `);
-});
+    `)
+})
 
-test('<giotramu-logo> should render the logo with a vertical alignment', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-logo> should render the logo with a vertical alignment.', async () => {
+  const { root } = await newSpecPage({
     components: [Logo],
     html: '<giotramu-logo column></giotramu-logo>'
-  });
+  })
 
   expect(root).toEqualHtml(`
       <giotramu-logo column>
@@ -42,14 +42,14 @@ test('<giotramu-logo> should render the logo with a vertical alignment', async (
           </div>
         </mock:shadow-root>
       </giotramu-logo>
-    `);
-});
+    `)
+})
 
-test('<giotramu-logo> should render the logo with a custom size', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-logo> should render the logo with a custom size.', async () => {
+  const { root } = await newSpecPage({
     components: [Logo],
     html: '<giotramu-logo size="320px"></giotramu-logo>'
-  });
+  })
 
   expect(root).toEqualHtml(`
       <giotramu-logo size="320px">
@@ -64,14 +64,14 @@ test('<giotramu-logo> should render the logo with a custom size', async () => {
           </div>
         </mock:shadow-root>
       </giotramu-logo>
-    `);
-});
+    `)
+})
 
-test('<giotramu-logo> should render the logo with an accent color', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-logo> should render the logo with an accent color.', async () => {
+  const { root } = await newSpecPage({
     components: [Logo],
     html: '<giotramu-logo color="accent"></giotramu-logo>'
-  });
+  })
 
   expect(root).toEqualHtml(`
       <giotramu-logo color="accent">
@@ -86,14 +86,14 @@ test('<giotramu-logo> should render the logo with an accent color', async () => 
           </div>
         </mock:shadow-root>
       </giotramu-logo>
-    `);
-});
+    `)
+})
 
-test('<giotramu-logo> should render the logo with a custom color', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-logo> should render the logo with a custom color.', async () => {
+  const { root } = await newSpecPage({
     components: [Logo],
     html: '<giotramu-logo color="#EFEF"></giotramu-logo>'
-  });
+  })
 
   expect(root).toEqualHtml(`
       <giotramu-logo color="#EFEF">
@@ -108,14 +108,14 @@ test('<giotramu-logo> should render the logo with a custom color', async () => {
           </div>
         </mock:shadow-root>
       </giotramu-logo>
-    `);
-});
+    `)
+})
 
-test('<giotramu-logo> should render the logo with two color tone', async () => {
-  const {root} = await newSpecPage({
+test('<giotramu-logo> should render the logo with two color tone.', async () => {
+  const { root } = await newSpecPage({
     components: [Logo],
     html: '<giotramu-logo color="base-500" two-tone></giotramu-logo>'
-  });
+  })
 
   expect(root).toEqualHtml(`
       <giotramu-logo color="base-500" two-tone>
@@ -130,5 +130,5 @@ test('<giotramu-logo> should render the logo with two color tone', async () => {
           </div>
         </mock:shadow-root>
       </giotramu-logo>
-    `);
-});
+    `)
+})

@@ -1,4 +1,4 @@
-import {Config} from '@stencil/core';
+import { Config } from '@stencil/core'
 
 export const config: Config = {
   namespace: 'webc',
@@ -28,4 +28,4 @@ export const config: Config = {
   testing: {
     moduleDirectories: ['node_modules', '<rootDir>']
   }
-};
+}
