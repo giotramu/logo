@@ -1,3 +1,3 @@
 {
-  "extends": "@giotramu/stylelint-config"
+  "extends": "@detra-lab/stylelint-config"
 }

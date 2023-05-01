@@ -3,7 +3,6 @@
 A Web Component version of my logo built with [Stencil.js](https://stenciljs.com).
 
 [![NPM Version][version_badge]][npm_url]
-[![NPM Downloads][downloads_badge]][npm_url]
 [![Bundlephobia][bundlephobia_badge]][bundlephobia_url]
 [![Build Status][ci_badge]][ci_url]
 [![Code Coverage][coverage_badge]][coverage_url]
@@ -37,7 +36,6 @@ Web Components run natively in all modern browsers. [Check the browsers support]
 [bundlephobia_badge]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat-square&colorA=313133&colorB=4169E1
 [ci_badge]: https://img.shields.io/github/actions/workflow/status/giotramu/logo/tests.yml?style=flat-square&colorA=313133&colorB=4169E1
 [coverage_badge]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat-square&colorA=313133&colorB=4169E1
-[downloads_badge]: https://img.shields.io/npm/dm/@giotramu/logo?style=flat-square&colorA=313133&colorB=4169E1
 [version_badge]: https://img.shields.io/npm/v/@giotramu/logo?style=flat-square&colorA=313133&colorB=4169E1
 
 <!-- Links -->
