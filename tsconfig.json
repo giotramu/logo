@@ -1,5 +1,5 @@
 {
-  "extends": "@giotramu/tsc/react/tsconfig.json",
+  "extends": "@detra-lab/tsc/react/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
     "experimentalDecorators": true,

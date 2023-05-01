@@ -1,8 +1,8 @@
 {
   "extends": [
-    "@giotramu/eslint-config",
-    "@giotramu/eslint-config/typescript",
-    "@giotramu/eslint-config/react"
+    "@detra-lab/eslint-config",
+    "@detra-lab/eslint-config/typescript",
+    "@detra-lab/eslint-config/react"
   ],
   "parserOptions": {
     "project": ["./tsconfig.test.json"]

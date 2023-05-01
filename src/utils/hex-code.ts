@@ -3,7 +3,6 @@ import type { ColorName, HexCode } from 'src/types/model'
 
 /**
  * Map a color name to the related Hex code.
- *
  * @private
  * @param name - Choose between: `accent`, `base-900`, `base-800`, `base-700`, `base-600`, `base-500`, `base-400`, `base-300`, `base-200`, `base-100`
  * @returns HexCode
