@@ -52,7 +52,7 @@
     "stylelint": "^15.6.0"
   },
   "dependencies": {
-    "@stencil/core": "3.2.2"
+    "@stencil/core": "3.3.1"
   },
   "keywords": [
     "custom-elements",
