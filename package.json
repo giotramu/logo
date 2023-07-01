@@ -37,7 +37,7 @@
     "build": "stencil build"
   },
   "devDependencies": {
-    "@detra-lab/eslint-config": "^0.1.0",
+    "@detra-lab/eslint-config": "^0.2.0",
     "@detra-lab/prettier-config": "^0.1.0",
     "@detra-lab/stylelint-config": "^0.1.0",
     "@detra-lab/tsc": "^0.1.0",
