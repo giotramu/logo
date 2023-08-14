@@ -5,7 +5,7 @@
     "@detra-lab/eslint-config/react"
   ],
   "parserOptions": {
-    "project": ["./tsconfig.test.json"]
+    "project": true
   },
   "settings": {
     "react": {
@@ -13,6 +13,7 @@
     }
   },
   "rules": {
+    "@typescript-eslint/no-unsafe-return": "off",
     "react/no-unknown-property": [
       "error",
       {

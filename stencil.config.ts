@@ -1,31 +1,23 @@
-import { Config } from '@stencil/core'
+import type { Config } from '@stencil/core'
 
 export const config: Config = {
   namespace: 'webc',
-
   sourceMap: false,
-
   outputTargets: [
     {
-      /**
-       * The `dist` type is to generate the component(s)
-       * as a reusable library that can be self-lazy loading.
-       */
       type: 'dist',
+      empty: true,
       dir: 'lib/webc',
-      esmLoaderPath: '../loader'
+      isPrimaryPackageOutputTarget: true
     },
     {
-      /**
-       * The `www` output target type is oriented for webapps and websites,
-       * hosted from an http server for demo purposes.
-       */
       type: 'www',
+      empty: true,
       serviceWorker: null // Disable service workers
     }
   ],
-
   testing: {
-    moduleDirectories: ['node_modules', '<rootDir>']
-  }
+    browserHeadless: 'new'
+  },
+  validatePrimaryPackageOutputTarget: true
 }

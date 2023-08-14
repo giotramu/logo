@@ -1,5 +1,6 @@
-import { COLOR_SCHEME } from 'src/constants/color-scheme'
-import type { ObjectValues } from 'src/types/object-values'
+// eslint-disable-next-line @typescript-eslint/consistent-type-imports
+import { COLOR_SCHEME } from './constants'
+import type { ObjectValues } from './type-utils'
 
 export type Alignment = 'row' | 'column'
 

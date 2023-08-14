@@ -1,5 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing'
-import { Typo } from '../index'
+import { Typo } from 'src/components/typo'
 
 test('<giotramu-typo> should render the logotype.', async () => {
   const { root } = await newSpecPage({

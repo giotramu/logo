@@ -1,5 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing'
-import { Logo } from '../index'
+import { Logo } from 'src/components/logo'
 
 test('<giotramu-logo> should render the logo.', async () => {
   const { root } = await newSpecPage({

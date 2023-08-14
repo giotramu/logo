@@ -2,12 +2,13 @@
   "extends": "@detra-lab/tsc/react/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "declaration": false,
     "experimentalDecorators": true,
-    "isolatedModules": false,
+    "jsx": "react",
     "jsxFactory": "h",
+    "moduleResolution": "Node",
     "noEmit": false,
-    "typeRoots": ["src/types", "node_modules/@types"]
+    "target": "ES2017"
   },
-  "include": ["src"],
-  "exclude": ["node_modules"]
+  "include": ["src", "./stencil.config.ts"]
 }
