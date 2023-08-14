@@ -10,10 +10,5 @@ import type { ColorName, HexCode } from './types'
 export const getHexCode = (name?: string): HexCode =>
   isValidColor(name) ? COLOR_SCHEME[name] : COLOR_SCHEME[DEFAULT_COLOR]
 
-const isValidColor = (name?: string): name is ColorName => {
-  if (typeof name === 'undefined') {
-    return false
-  }
-
-  return Object.hasOwn(COLOR_SCHEME, name)
-}
+const isValidColor = (name?: string): name is ColorName =>
+  typeof name === 'undefined' ? false : Object.hasOwn(COLOR_SCHEME, name)

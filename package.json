@@ -1,17 +1,19 @@
 {
   "name": "@giotramu/logo",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "Web Component version of personal logo and related resources.",
-  "collection": "./lib/webc/collection/collection-manifest.json",
-  "collection:main": "./lib/webc/collection/index.js",
-  "es2015": "./lib/webc/esm/index.mjs",
-  "es2017": "./lib/webc/esm/index.mjs",
   "main": "./lib/webc/index.cjs.js",
   "module": "./lib/webc/index.js",
+  "es2015": "./lib/webc/esm/index.mjs",
+  "es2017": "./lib/webc/esm/index.mjs",
   "types": "./lib/webc/types/index.d.ts",
   "unpkg": "./lib/webc/webc/webc.esm.js",
+  "collection:main": "./lib/webc/collection/index.js",
+  "collection": "./lib/webc/collection/collection-manifest.json",
   "files": [
-    "./lib"
+    "./lib/webc",
+    "./lib/svg",
+    "./lib/favicon"
   ],
   "prettier": "@detra-lab/prettier-config",
   "scripts": {

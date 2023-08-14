@@ -2,7 +2,7 @@
 
 All notable changes to the project will be documented in this file.
 
-## [2.3.0]
+## [2.3.2]
 
 **Internals:**
 
@@ -141,7 +141,7 @@ All notable changes to the project will be documented in this file.
 
 - The stable release of the logo, logotype and monogram web-components
 
-[2.3.0]: https://github.com/giotramu/logo/releases/tag/2.3.0
+[2.3.2]: https://github.com/giotramu/logo/releases/tag/2.3.2
 [2.2.2]: https://github.com/giotramu/logo/releases/tag/2.2.2
 [2.2.1]: https://github.com/giotramu/logo/releases/tag/2.2.1
 [2.2.0]: https://github.com/giotramu/logo/releases/tag/2.2.0
