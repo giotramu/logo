@@ -1,5 +1,5 @@
 import { newSpecPage } from '@stencil/core/testing'
-import { Sign } from '../index'
+import { Sign } from 'src/components/sign'
 
 test('<giotramu-sign> should render the monogram.', async () => {
   const { root } = await newSpecPage({

@@ -1,0 +1,43 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - 'stable'
+  pull_request:
+    branches:
+      - 'stable'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18, 20]
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v3
+
+      - name: 📦 Setup PNPm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - name: 🟢 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: pnpm
+
+      - name: 🧩 Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: 🧪 Linters & Tests
+        run: |
+          pnpm run check
+          pnpm run test
+
+      - name: 🔥 Build the artifact
+        run: pnpm run build

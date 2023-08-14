@@ -29,19 +29,19 @@ Web Components run natively in all modern browsers. [Check the browsers support]
 
 ## License
 
-[MIT License](./LICENSE)
+[Apache License 2.0](./LICENSE)
 
 <!-- Badges -->
 
 [bundlephobia_badge]: https://img.shields.io/bundlephobia/min/@giotramu/logo?label=bundle%20size&style=flat-square&colorA=313133&colorB=4169E1
-[ci_badge]: https://img.shields.io/github/actions/workflow/status/giotramu/logo/tests.yml?style=flat-square&colorA=313133&colorB=4169E1
+[ci_badge]: https://img.shields.io/github/actions/workflow/status/giotramu/logo/test.yml?style=flat-square&colorA=313133&colorB=4169E1
 [coverage_badge]: https://img.shields.io/coveralls/github/giotramu/logo/stable?style=flat-square&colorA=313133&colorB=4169E1
 [version_badge]: https://img.shields.io/npm/v/@giotramu/logo?style=flat-square&colorA=313133&colorB=4169E1
 
 <!-- Links -->
 
 [bundlephobia_url]: https://bundlephobia.com/result?p=@giotramu/logo
-[ci_url]: https://github.com/giotramu/logo/actions/workflows/tests.yml
+[ci_url]: https://github.com/giotramu/logo/actions/workflows/test.yml
 [coverage_url]: https://coveralls.io/github/giotramu/logo
 [deps_url]: https://david-dm.org/giotramu/logo
 [devdeps_url]: https://david-dm.org/giotramu/logo?type=dev

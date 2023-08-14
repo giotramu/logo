@@ -1,8 +1,8 @@
-/.stencil/
-/coverage/
+/.stencil
+/coverage
 /lib/loader
 /lib/webc
-/www/
+/www
 /src/components.d.ts
 
 node_modules
