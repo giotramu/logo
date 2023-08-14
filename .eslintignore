@@ -2,6 +2,7 @@
 /coverage
 /lib/loader
 /lib/webc
+/src/components.d.ts
 /www
 
 node_modules
