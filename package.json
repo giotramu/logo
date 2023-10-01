@@ -42,7 +42,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@stencil/core": "4.0.5"
+    "@stencil/core": "4.3.0"
   },
   "engines": {
     "node": ">=18"
