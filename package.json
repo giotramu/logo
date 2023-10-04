@@ -27,7 +27,7 @@
     "build": "pnpm run clean && stencil build"
   },
   "devDependencies": {
-    "@detra-lab/eslint-config": "^1.1.0",
+    "@detra-lab/eslint-config": "^2.0.0",
     "@detra-lab/prettier-config": "^0.2.0",
     "@detra-lab/stylelint-config": "^0.1.0",
     "@detra-lab/tsc": "^0.2.5",
