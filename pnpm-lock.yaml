@@ -15,7 +15,7 @@ devDependencies:
     version: 2.0.0(eslint@8.50.0)(typescript@5.2.2)
   '@detra-lab/prettier-config':
     specifier: ^0.2.0
-    version: 0.2.0(prettier@3.0.3)
+    version: 0.2.1(prettier@3.0.3)
   '@detra-lab/stylelint-config':
     specifier: ^0.1.0
     version: 0.1.0(postcss@8.4.31)(stylelint@15.10.3)
@@ -590,8 +590,8 @@ packages:
       - supports-color
     dev: true
 
-  /@detra-lab/prettier-config@0.2.0(prettier@3.0.3):
-    resolution: {integrity: sha512-gk8wgmSclS8O2AUXZaaL0Ioi1/znMH8dBDCJdwMZPBfRZ+DjSYDyYf8I0ZXpURjOxQNlmGcIzc5lQLXkQnA3xg==}
+  /@detra-lab/prettier-config@0.2.1(prettier@3.0.3):
+    resolution: {integrity: sha512-4DZn0C4nlwAYDcvVxsf+nEby0WnntHZs4oGFioUDzcSCzuRk8ewp1VKME3wUZVD33VLh+3VTT7hNcrACcf92gw==}
     peerDependencies:
       prettier: ^2.8 || ^3.0
     dependencies:
