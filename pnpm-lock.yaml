@@ -21,7 +21,7 @@ devDependencies:
     version: 0.1.0(postcss@8.4.31)(stylelint@15.11.0)
   '@detra-lab/tsc':
     specifier: ^0.2.5
-    version: 0.2.5(typescript@5.2.2)
+    version: 0.2.7(typescript@5.2.2)
   '@evilmartians/lefthook':
     specifier: ^1.4.8
     version: 1.5.5
@@ -627,8 +627,8 @@ packages:
       - postcss-markdown
     dev: true
 
-  /@detra-lab/tsc@0.2.5(typescript@5.2.2):
-    resolution: {integrity: sha512-Zq8O3GmKL6UzWqYla3VATdJUa9rtnJsE++zCWd6N1Liqxi9sCTn+o4HUgX4IEQ+Vc3tXO3MIi4vv+HLyrWZV4Q==}
+  /@detra-lab/tsc@0.2.7(typescript@5.2.2):
+    resolution: {integrity: sha512-HyxvtJ9SWosph8e178tYyyXe6lEP8PR0tvEGrJhctBPH7heCvTGt/cB7S30P480uiXWlTQCm4l6okZ5KLmOHjg==}
     peerDependencies:
       '@types/node': '>=16'
       typescript: ^4.9 || ^5.0
