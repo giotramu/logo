@@ -15,7 +15,7 @@ devDependencies:
     version: 2.0.0(eslint@8.56.0)(typescript@5.2.2)
   '@detra-lab/prettier-config':
     specifier: ^0.2.0
-    version: 0.2.1(prettier@3.0.3)
+    version: 0.2.1(prettier@3.2.4)
   '@detra-lab/stylelint-config':
     specifier: ^0.1.0
     version: 0.1.0(postcss@8.4.31)(stylelint@15.11.0)
@@ -42,7 +42,7 @@ devDependencies:
     version: 27.5.1
   prettier:
     specifier: ^3.0.1
-    version: 3.0.3
+    version: 3.2.4
   stylelint:
     specifier: ^15.10.2
     version: 15.11.0
@@ -591,12 +591,12 @@ packages:
       - supports-color
     dev: true
 
-  /@detra-lab/prettier-config@0.2.1(prettier@3.0.3):
+  /@detra-lab/prettier-config@0.2.1(prettier@3.2.4):
     resolution: {integrity: sha512-4DZn0C4nlwAYDcvVxsf+nEby0WnntHZs4oGFioUDzcSCzuRk8ewp1VKME3wUZVD33VLh+3VTT7hNcrACcf92gw==}
     peerDependencies:
       prettier: ^2.8 || ^3.0
     dependencies:
-      prettier: 3.0.3
+      prettier: 3.2.4
     dev: true
 
   /@detra-lab/stylelint-config@0.1.0(postcss@8.4.31)(stylelint@15.11.0):
@@ -4271,8 +4271,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier@3.0.3:
-    resolution: {integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==}
+  /prettier@3.2.4:
+    resolution: {integrity: sha512-FWu1oLHKCrtpO1ypU6J0SbK2d9Ckwysq6bHj/uaCP26DxrPpppCLQRGVuqAxSTvhF00AcvDRyYrLNW7ocBhFFQ==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
