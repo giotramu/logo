@@ -4,12 +4,12 @@
   "description": "Web Component version of personal logo and related resources.",
   "main": "./lib/webc/index.cjs.js",
   "module": "./lib/webc/index.js",
-  "es2015": "./lib/webc/esm/index.mjs",
-  "es2017": "./lib/webc/esm/index.mjs",
+  "es2015": "./lib/webc/esm/index.js",
+  "es2017": "./lib/webc/esm/index.js",
   "types": "./lib/webc/types/index.d.ts",
   "unpkg": "./lib/webc/webc/webc.esm.js",
-  "collection:main": "./lib/webc/collection/index.js",
   "collection": "./lib/webc/collection/collection-manifest.json",
+  "collection:main": "./lib/webc/collection/index.js",
   "files": [
     "./lib/webc",
     "./lib/svg",
@@ -27,22 +27,23 @@
     "build": "pnpm run clean && stencil build"
   },
   "devDependencies": {
-    "@detra-lab/eslint-config": "^2.0.0",
-    "@detra-lab/prettier-config": "^0.2.0",
-    "@detra-lab/stylelint-config": "^0.1.0",
-    "@detra-lab/tsc": "^0.2.5",
-    "@evilmartians/lefthook": "^1.4.8",
-    "@types/jest": "^27.5.2",
-    "del-cli": "^5.0.0",
-    "eslint": "^8.47.0",
-    "jest": "^27.5.1",
-    "jest-cli": "^27.5.1",
-    "prettier": "^3.0.1",
-    "stylelint": "^15.10.2",
-    "typescript": "^5.1.6"
+    "@detra-lab/eslint-config": "^2.2.0",
+    "@detra-lab/prettier-config": "^0.2.1",
+    "@detra-lab/stylelint-config": "^1.0.0",
+    "@detra-lab/tsc": "^0.2.7",
+    "@evilmartians/lefthook": "^1.6.1",
+    "@types/jest": "^29.5.12",
+    "@types/node": "20.11.19",
+    "del-cli": "^5.1.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "jest-cli": "^29.7.0",
+    "prettier": "^3.2.5",
+    "stylelint": "^15.11.0",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@stencil/core": "4.0.5"
+    "@stencil/core": "4.12.2"
   },
   "engines": {
     "node": ">=18"
