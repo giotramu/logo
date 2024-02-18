@@ -27,19 +27,19 @@
     "build": "pnpm run clean && stencil build"
   },
   "devDependencies": {
-    "@detra-lab/eslint-config": "^2.0.0",
-    "@detra-lab/prettier-config": "^0.2.0",
-    "@detra-lab/stylelint-config": "^0.1.0",
-    "@detra-lab/tsc": "^0.2.5",
-    "@evilmartians/lefthook": "^1.4.8",
+    "@detra-lab/eslint-config": "^2.2.0",
+    "@detra-lab/prettier-config": "^0.2.1",
+    "@detra-lab/stylelint-config": "^1.0.0",
+    "@detra-lab/tsc": "^0.2.7",
+    "@evilmartians/lefthook": "^1.6.1",
     "@types/jest": "^27.5.2",
-    "del-cli": "^5.0.0",
-    "eslint": "^8.47.0",
+    "del-cli": "^5.1.0",
+    "eslint": "^8.56.0",
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1",
-    "prettier": "^3.0.1",
-    "stylelint": "^15.10.2",
-    "typescript": "^5.1.6"
+    "prettier": "^3.2.5",
+    "stylelint": "^15.11.0",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "@stencil/core": "4.0.5"

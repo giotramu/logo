@@ -1,5 +1,5 @@
 {
-  "extends": "@detra-lab/tsc/react/tsconfig.json",
+  "extends": "@detra-lab/tsc/react",
   "compilerOptions": {
     "baseUrl": ".",
     "declaration": false,
