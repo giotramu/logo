@@ -2,6 +2,12 @@
 
 All notable changes to the project will be documented in this file.
 
+## [2.4.0]
+
+**Internals:**
+
+- `@stencil/core` updated from `4.0.5` to `4.12.2`
+
 ## [2.3.2]
 
 **Internals:**
@@ -141,6 +147,7 @@ All notable changes to the project will be documented in this file.
 
 - The stable release of the logo, logotype and monogram web-components
 
+[2.4.0]: https://github.com/giotramu/logo/releases/tag/2.4.0
 [2.3.2]: https://github.com/giotramu/logo/releases/tag/2.3.2
 [2.2.2]: https://github.com/giotramu/logo/releases/tag/2.2.2
 [2.2.1]: https://github.com/giotramu/logo/releases/tag/2.2.1

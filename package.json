@@ -1,6 +1,6 @@
 {
   "name": "@giotramu/logo",
-  "version": "2.3.2",
+  "version": "2.4.0",
   "description": "Web Component version of personal logo and related resources.",
   "main": "./lib/webc/index.cjs.js",
   "module": "./lib/webc/index.js",
