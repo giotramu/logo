@@ -33,7 +33,7 @@
     "@detra-lab/tsc": "^0.2.7",
     "@evilmartians/lefthook": "^1.6.1",
     "@types/jest": "^29.5.12",
-    "@types/node": "20.11.19",
+    "@types/node": "20.11.24",
     "del-cli": "^5.1.0",
     "eslint": "^8.56.0",
     "jest": "^29.7.0",
