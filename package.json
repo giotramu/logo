@@ -30,7 +30,7 @@
     "@detra-lab/eslint-config": "^2.2.0",
     "@detra-lab/prettier-config": "^0.2.1",
     "@detra-lab/stylelint-config": "^1.0.0",
-    "@detra-lab/tsc": "^0.2.7",
+    "@detra-lab/tsc": "^0.3.0",
     "@evilmartians/lefthook": "^1.6.1",
     "@types/jest": "^29.5.12",
     "@types/node": "20.11.24",
