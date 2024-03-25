@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@stencil/core':
-    specifier: 4.12.2
-    version: 4.12.2
+    specifier: 4.12.4
+    version: 4.12.4
 
 devDependencies:
   '@detra-lab/eslint-config':
@@ -946,8 +946,8 @@ packages:
       '@sinonjs/commons': 3.0.1
     dev: true
 
-  /@stencil/core@4.12.2:
-    resolution: {integrity: sha512-WEMpoqwMV4hY/ab2z9NxRhSeZwuKEugjyn6Vd+qA9xqZh6VNUL27QbP8vCa7IeqD4Zql4JBtKu3lVuBHutWE6w==}
+  /@stencil/core@4.12.4:
+    resolution: {integrity: sha512-KrwoXu9J1loWSvQQReilGPkt6/dCH/x5eTBDecCBPclz7vxUM13Iw9almBIffEpurk/kaMAglH0G7sAF/A2y1A==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
     dev: false
