@@ -18,7 +18,7 @@ devDependencies:
     version: 0.2.1(prettier@3.2.5)
   '@detra-lab/stylelint-config':
     specifier: ^1.0.0
-    version: 1.0.0(postcss@8.4.35)(stylelint@15.11.0)
+    version: 1.1.0(postcss@8.4.35)(stylelint@15.11.0)
   '@detra-lab/tsc':
     specifier: ^0.3.0
     version: 0.3.0(@types/node@20.11.24)(typescript@5.3.3)
@@ -528,14 +528,14 @@ packages:
       prettier: 3.2.5
     dev: true
 
-  /@detra-lab/stylelint-config@1.0.0(postcss@8.4.35)(stylelint@15.11.0):
-    resolution: {integrity: sha512-sDcaaMLxFlYycOq2NwqFswonSJR6A7TMHRtCVtQYK2A/WDzXGaOOr4dtXD3JI/kETAYpFqAOESHHYxgaGcoOCw==}
+  /@detra-lab/stylelint-config@1.1.0(postcss@8.4.35)(stylelint@15.11.0):
+    resolution: {integrity: sha512-kde5n7qwT13F+WnRtnCDrQ+7W9zHzM8gksCG9CumH2bkOjlxSus65aeSeHWg8jlQA3bo42t96mU/dP4pFCX5dA==}
     engines: {node: '>=18'}
     peerDependencies:
-      postcss-scss: ^4.0.0
-      postcss-styled-syntax: ^0.4.0 || ^0.5.0
-      stylelint: ^15.10.0 || ^16.0.0
-      stylelint-scss: ^5.0.0 || ^6.0.0
+      postcss-scss: ^4.0
+      postcss-styled-syntax: ^0.4 || ^0.5 || ^0.6
+      stylelint: ^15.10 || ^16.0
+      stylelint-scss: ^5.0 || ^6.0
     peerDependenciesMeta:
       postcss-scss:
         optional: true
@@ -546,7 +546,7 @@ packages:
     dependencies:
       postcss-syntax: 0.36.2(postcss@8.4.35)
       stylelint: 15.11.0(typescript@5.3.3)
-      stylelint-declaration-block-no-ignored-properties: 2.7.0(stylelint@15.11.0)
+      stylelint-declaration-block-no-ignored-properties: 2.8.0(stylelint@15.11.0)
       stylelint-order: 6.0.4(stylelint@15.11.0)
     transitivePeerDependencies:
       - postcss
@@ -4791,11 +4791,11 @@ packages:
     resolution: {integrity: sha512-Dj1Okke1C3uKKwQcetra4jSuk0DqbzbYtXipzFlFMZtowbF1x7BKJwB9AayVMyFARvU8EDrZdcax4At/452cAg==}
     dev: true
 
-  /stylelint-declaration-block-no-ignored-properties@2.7.0(stylelint@15.11.0):
-    resolution: {integrity: sha512-44SpI9+9Oc1ICuwwRfwS/3npQ2jPobDSTnwWdNgZGryGqQCp17CgEIWjCv1BgUOSzND3RqywNCNLKvO1AOxbfg==}
+  /stylelint-declaration-block-no-ignored-properties@2.8.0(stylelint@15.11.0):
+    resolution: {integrity: sha512-Ws8Cav7Y+SPN0JsV407LrnNXWOrqGjxShf+37GBtnU/C58Syve9c0+I/xpLcFOosST3ternykn3Lp77f3ITnFw==}
     engines: {node: '>=6'}
     peerDependencies:
-      stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0
+      stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       stylelint: 15.11.0(typescript@5.3.3)
     dev: true
